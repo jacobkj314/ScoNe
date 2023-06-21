@@ -11,7 +11,7 @@
 #SBATCH --mail-type=BEGIN,FAIL,END
 #SBATCH -o filename-%j
 
-cd /uufs/chpc.utah.edu/common/home/u0403624/scratch/ScoNe
+cd /uufs/chpc.utah.edu/common/home/u0403624/scratch/ScoNe/ScoNe
 
 source /scratch/general/vast/u0403624/miniconda3/etc/profile.d/conda.sh
 conda activate 38b
