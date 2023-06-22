@@ -1,0 +1,7 @@
+,A,B,C,D
+no_negation,"[True, False]","[True, False]","[True, False]","[True, False]"
+one_not_scoped,"[True, False]","[True, False]","[True, False]","[True, False]"
+one_scoped,"[True, False]","[False, True]","[False, True]","[False, False]"
+one_scoped_one_not_scoped,"[True, True]","[False, True]","[False, True]","[False, True]"
+two_not_scoped,"[True, False]","[True, False]","[True, False]","[True, False]"
+two_scoped,"[True, False]","[True, False]","[True, False]","[True, False]"

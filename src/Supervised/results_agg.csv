@@ -1,0 +1,7 @@
+,A,B,C,D
+no_negation,0.5,0.5,0.5,0.5
+one_not_scoped,0.5,0.5,0.5,0.5
+one_scoped,0.5,0.5,0.5,0.0
+one_scoped_one_not_scoped,1.0,0.5,0.5,0.5
+two_not_scoped,0.5,0.5,0.5,0.5
+two_scoped,0.5,0.5,0.5,0.5

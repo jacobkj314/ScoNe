@@ -1,0 +1,1052 @@
+W&B disabled.
+BEGINNING RUN_SING
+Downloading data files:   0%|          | 0/1 [00:00<?, ?it/s]Downloading data files: 100%|██████████| 1/1 [00:00<00:00, 6721.64it/s]
+Extracting data files:   0%|          | 0/1 [00:00<?, ?it/s]Extracting data files: 100%|██████████| 1/1 [00:00<00:00, 591.83it/s]
+0 tables [00:00, ? tables/s]                              0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 89.87it/s]
+Downloading data files:   0%|          | 0/2 [00:00<?, ?it/s]Downloading data files: 100%|██████████| 2/2 [00:00<00:00, 18558.87it/s]
+Extracting data files:   0%|          | 0/2 [00:00<?, ?it/s]Extracting data files: 100%|██████████| 2/2 [00:00<00:00, 572.95it/s]
+0 tables [00:00, ? tables/s]                            0 tables [00:00, ? tables/s]                              0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 620.05it/s]
+Downloading: 0.00B [00:00, ?B/s]Downloading: 1.36kB [00:00, 3.78MB/s]
+[INFO|configuration_utils.py:653] 2023-06-22 15:46:10,435 >> loading configuration file config.json from cache at ./models--allenai--unifiedqa-v2-t5-3b-1251000/snapshots/bbd009107d81ac360670828f404b2659658857cd/config.json
+[INFO|configuration_utils.py:705] 2023-06-22 15:46:10,549 >> Model config T5Config {
+  "_name_or_path": "allenai/unifiedqa-v2-t5-3b-1251000",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 16384,
+  "d_kv": 128,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "relu",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "gradient_checkpointing": false,
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": false,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 24,
+  "num_heads": 32,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "transformers_version": "4.23.1",
+  "use_cache": true,
+  "vocab_size": 32128
+}
+
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 15:46:12,031 >> loading file spiece.model from cache at /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/hub/models--allenai--unifiedqa-v2-t5-3b-1251000/snapshots/bbd009107d81ac360670828f404b2659658857cd/spiece.model
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 15:46:12,031 >> loading file added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 15:46:12,031 >> loading file special_tokens_map.json from cache at /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/hub/models--allenai--unifiedqa-v2-t5-3b-1251000/snapshots/bbd009107d81ac360670828f404b2659658857cd/special_tokens_map.json
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 15:46:12,031 >> loading file tokenizer_config.json from cache at /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/hub/models--allenai--unifiedqa-v2-t5-3b-1251000/snapshots/bbd009107d81ac360670828f404b2659658857cd/tokenizer_config.json
+Downloading:   0%|          | 0.00/11.4G [00:00<?, ?B/s]Downloading:   0%|          | 8.39M/11.4G [00:00<02:16, 83.4MB/s]Downloading:   0%|          | 17.4M/11.4G [00:00<02:18, 82.5MB/s]Downloading:   0%|          | 27.7M/11.4G [00:00<02:04, 91.5MB/s]Downloading:   0%|          | 37.7M/11.4G [00:00<01:59, 95.1MB/s]Downloading:   0%|          | 48.2M/11.4G [00:00<01:55, 98.3MB/s]Downloading:   1%|          | 58.0M/11.4G [00:00<01:55, 97.9MB/s]Downloading:   1%|          | 68.2M/11.4G [00:00<01:54, 99.2MB/s]Downloading:   1%|          | 78.5M/11.4G [00:00<01:52, 100MB/s] Downloading:   1%|          | 89.0M/11.4G [00:00<01:51, 102MB/s]Downloading:   1%|          | 99.2M/11.4G [00:01<01:51, 101MB/s]Downloading:   1%|          | 109M/11.4G [00:01<01:52, 100MB/s] Downloading:   1%|          | 119M/11.4G [00:01<01:57, 95.7MB/s]Downloading:   1%|          | 130M/11.4G [00:01<01:55, 97.4MB/s]Downloading:   1%|          | 140M/11.4G [00:01<01:53, 99.0MB/s]Downloading:   1%|▏         | 150M/11.4G [00:01<01:52, 100MB/s] Downloading:   1%|▏         | 160M/11.4G [00:01<02:05, 89.8MB/s]Downloading:   1%|▏         | 170M/11.4G [00:01<02:00, 93.2MB/s]Downloading:   2%|▏         | 180M/11.4G [00:01<02:00, 93.1MB/s]Downloading:   2%|▏         | 190M/11.4G [00:01<01:57, 95.6MB/s]Downloading:   2%|▏         | 200M/11.4G [00:02<01:55, 97.1MB/s]Downloading:   2%|▏         | 210M/11.4G [00:02<01:54, 97.9MB/s]Downloading:   2%|▏         | 220M/11.4G [00:02<01:54, 97.9MB/s]Downloading:   2%|▏         | 230M/11.4G [00:02<02:02, 91.5MB/s]Downloading:   2%|▏         | 240M/11.4G [00:02<01:59, 93.7MB/s]Downloading:   2%|▏         | 249M/11.4G [00:02<02:03, 90.7MB/s]Downloading:   2%|▏         | 260M/11.4G [00:02<01:57, 94.6MB/s]Downloading:   2%|▏         | 270M/11.4G [00:02<01:56, 95.9MB/s]Downloading:   2%|▏         | 280M/11.4G [00:02<01:54, 96.9MB/s]Downloading:   3%|▎         | 289M/11.4G [00:03<01:54, 97.3MB/s]Downloading:   3%|▎         | 300M/11.4G [00:03<01:51, 99.2MB/s]Downloading:   3%|▎         | 310M/11.4G [00:03<01:51, 99.5MB/s]Downloading:   3%|▎         | 320M/11.4G [00:03<01:53, 97.7MB/s]Downloading:   3%|▎         | 330M/11.4G [00:03<01:50, 99.9MB/s]Downloading:   3%|▎         | 340M/11.4G [00:03<01:54, 96.9MB/s]Downloading:   3%|▎         | 350M/11.4G [00:03<01:54, 96.4MB/s]Downloading:   3%|▎         | 361M/11.4G [00:03<01:52, 98.3MB/s]Downloading:   3%|▎         | 371M/11.4G [00:03<01:50, 99.4MB/s]Downloading:   3%|▎         | 381M/11.4G [00:03<01:50, 99.4MB/s]Downloading:   3%|▎         | 391M/11.4G [00:04<01:54, 96.1MB/s]Downloading:   4%|▎         | 401M/11.4G [00:04<01:52, 98.2MB/s]Downloading:   4%|▎         | 411M/11.4G [00:04<01:51, 98.9MB/s]Downloading:   4%|▎         | 421M/11.4G [00:04<01:51, 99.0MB/s]Downloading:   4%|▍         | 431M/11.4G [00:04<01:54, 96.3MB/s]Downloading:   4%|▍         | 441M/11.4G [00:04<01:52, 97.5MB/s]Downloading:   4%|▍         | 451M/11.4G [00:04<01:50, 99.2MB/s]Downloading:   4%|▍         | 461M/11.4G [00:04<01:54, 95.8MB/s]Downloading:   4%|▍         | 471M/11.4G [00:04<01:53, 96.0MB/s]Downloading:   4%|▍         | 481M/11.4G [00:04<01:50, 98.7MB/s]Downloading:   4%|▍         | 491M/11.4G [00:05<01:51, 98.1MB/s]Downloading:   4%|▍         | 502M/11.4G [00:05<01:49, 99.5MB/s]Downloading:   4%|▍         | 512M/11.4G [00:05<01:48, 100MB/s] Downloading:   5%|▍         | 522M/11.4G [00:05<01:51, 98.0MB/s]Downloading:   5%|▍         | 532M/11.4G [00:05<01:50, 98.8MB/s]Downloading:   5%|▍         | 542M/11.4G [00:05<01:48, 99.7MB/s]Downloading:   5%|▍         | 552M/11.4G [00:05<01:48, 100MB/s] Downloading:   5%|▍         | 562M/11.4G [00:05<01:49, 98.9MB/s]Downloading:   5%|▌         | 572M/11.4G [00:05<01:49, 99.2MB/s]Downloading:   5%|▌         | 582M/11.4G [00:06<01:54, 94.6MB/s]Downloading:   5%|▌         | 593M/11.4G [00:06<01:51, 97.3MB/s]Downloading:   5%|▌         | 603M/11.4G [00:06<01:49, 99.0MB/s]Downloading:   5%|▌         | 613M/11.4G [00:06<01:52, 95.9MB/s]Downloading:   5%|▌         | 623M/11.4G [00:06<01:52, 95.6MB/s]Downloading:   6%|▌         | 632M/11.4G [00:06<01:52, 95.4MB/s]Downloading:   6%|▌         | 642M/11.4G [00:06<01:51, 97.0MB/s]Downloading:   6%|▌         | 652M/11.4G [00:06<01:53, 94.9MB/s]Downloading:   6%|▌         | 662M/11.4G [00:06<01:49, 97.8MB/s]Downloading:   6%|▌         | 673M/11.4G [00:06<01:48, 99.0MB/s]Downloading:   6%|▌         | 683M/11.4G [00:07<01:47, 100MB/s] Downloading:   6%|▌         | 693M/11.4G [00:07<01:50, 96.9MB/s]Downloading:   6%|▌         | 703M/11.4G [00:07<01:54, 93.4MB/s]Downloading:   6%|▌         | 713M/11.4G [00:07<01:52, 95.1MB/s]Downloading:   6%|▋         | 722M/11.4G [00:07<01:53, 93.7MB/s]Downloading:   6%|▋         | 732M/11.4G [00:07<01:51, 96.0MB/s]Downloading:   7%|▋         | 742M/11.4G [00:07<01:50, 96.1MB/s]Downloading:   7%|▋         | 752M/11.4G [00:07<01:50, 96.9MB/s]Downloading:   7%|▋         | 762M/11.4G [00:07<01:48, 97.9MB/s]Downloading:   7%|▋         | 772M/11.4G [00:07<01:47, 99.3MB/s]Downloading:   7%|▋         | 782M/11.4G [00:08<01:49, 97.2MB/s]Downloading:   7%|▋         | 792M/11.4G [00:08<01:48, 97.9MB/s]Downloading:   7%|▋         | 802M/11.4G [00:08<01:53, 93.4MB/s]Downloading:   7%|▋         | 812M/11.4G [00:08<01:51, 94.7MB/s]Downloading:   7%|▋         | 822M/11.4G [00:08<01:51, 94.5MB/s]Downloading:   7%|▋         | 831M/11.4G [00:08<01:52, 94.3MB/s]Downloading:   7%|▋         | 841M/11.4G [00:08<01:48, 97.0MB/s]Downloading:   7%|▋         | 851M/11.4G [00:08<01:47, 98.1MB/s]Downloading:   8%|▊         | 861M/11.4G [00:08<01:47, 98.4MB/s]Downloading:   8%|▊         | 871M/11.4G [00:08<01:48, 97.4MB/s]Downloading:   8%|▊         | 881M/11.4G [00:09<01:48, 97.0MB/s]Downloading:   8%|▊         | 891M/11.4G [00:09<01:48, 96.7MB/s]Downloading:   8%|▊         | 901M/11.4G [00:09<01:47, 97.9MB/s]Downloading:   8%|▊         | 911M/11.4G [00:09<01:45, 99.1MB/s]Downloading:   8%|▊         | 921M/11.4G [00:09<01:50, 95.2MB/s]Downloading:   8%|▊         | 931M/11.4G [00:09<01:54, 91.4MB/s]Downloading:   8%|▊         | 940M/11.4G [00:09<01:53, 91.9MB/s]Downloading:   8%|▊         | 950M/11.4G [00:09<01:52, 93.2MB/s]Downloading:   8%|▊         | 960M/11.4G [00:09<01:48, 96.2MB/s]Downloading:   9%|▊         | 970M/11.4G [00:10<01:47, 97.3MB/s]Downloading:   9%|▊         | 980M/11.4G [00:10<01:45, 98.8MB/s]Downloading:   9%|▊         | 990M/11.4G [00:10<01:45, 98.8MB/s]Downloading:   9%|▉         | 1.00G/11.4G [00:10<01:43, 101MB/s]Downloading:   9%|▉         | 1.01G/11.4G [00:10<01:43, 101MB/s]Downloading:   9%|▉         | 1.02G/11.4G [00:10<01:44, 99.7MB/s]Downloading:   9%|▉         | 1.03G/11.4G [00:10<01:44, 99.5MB/s]Downloading:   9%|▉         | 1.04G/11.4G [00:10<01:50, 93.7MB/s]Downloading:   9%|▉         | 1.05G/11.4G [00:10<01:50, 94.1MB/s]Downloading:   9%|▉         | 1.06G/11.4G [00:10<01:47, 96.4MB/s]Downloading:   9%|▉         | 1.07G/11.4G [00:11<01:44, 98.7MB/s]Downloading:   9%|▉         | 1.08G/11.4G [00:11<01:44, 98.7MB/s]Downloading:  10%|▉         | 1.09G/11.4G [00:11<01:48, 94.7MB/s]Downloading:  10%|▉         | 1.10G/11.4G [00:11<01:50, 92.9MB/s]Downloading:  10%|▉         | 1.11G/11.4G [00:11<01:53, 90.4MB/s]Downloading:  10%|▉         | 1.12G/11.4G [00:11<01:51, 92.6MB/s]Downloading:  10%|▉         | 1.13G/11.4G [00:11<01:49, 94.3MB/s]Downloading:  10%|▉         | 1.14G/11.4G [00:11<01:45, 97.2MB/s]Downloading:  10%|█         | 1.15G/11.4G [00:11<01:51, 91.7MB/s]Downloading:  10%|█         | 1.16G/11.4G [00:12<01:50, 92.7MB/s]Downloading:  10%|█         | 1.17G/11.4G [00:12<01:48, 94.4MB/s]Downloading:  10%|█         | 1.18G/11.4G [00:12<01:49, 93.8MB/s]Downloading:  10%|█         | 1.19G/11.4G [00:12<01:46, 95.9MB/s]Downloading:  11%|█         | 1.20G/11.4G [00:12<01:44, 98.1MB/s]Downloading:  11%|█         | 1.21G/11.4G [00:12<01:52, 90.5MB/s]Downloading:  11%|█         | 1.22G/11.4G [00:12<01:53, 90.0MB/s]Downloading:  11%|█         | 1.23G/11.4G [00:12<01:49, 93.3MB/s]Downloading:  11%|█         | 1.24G/11.4G [00:12<01:47, 95.0MB/s]Downloading:  11%|█         | 1.25G/11.4G [00:12<01:51, 90.8MB/s]Downloading:  11%|█         | 1.26G/11.4G [00:13<01:52, 90.2MB/s]Downloading:  11%|█         | 1.27G/11.4G [00:13<01:49, 92.8MB/s]Downloading:  11%|█         | 1.28G/11.4G [00:13<01:53, 88.9MB/s]Downloading:  11%|█▏        | 1.29G/11.4G [00:13<01:50, 91.2MB/s]Downloading:  11%|█▏        | 1.30G/11.4G [00:13<01:47, 93.8MB/s]Downloading:  11%|█▏        | 1.31G/11.4G [00:13<02:41, 62.4MB/s]Downloading:  12%|█▏        | 1.32G/11.4G [00:13<02:12, 76.0MB/s]Downloading:  12%|█▏        | 1.33G/11.4G [00:13<02:04, 81.1MB/s]Downloading:  12%|█▏        | 1.34G/11.4G [00:14<01:56, 86.4MB/s]Downloading:  12%|█▏        | 1.35G/11.4G [00:14<01:50, 91.1MB/s]Downloading:  12%|█▏        | 1.36G/11.4G [00:14<01:51, 90.3MB/s]Downloading:  12%|█▏        | 1.37G/11.4G [00:14<01:47, 93.4MB/s]Downloading:  12%|█▏        | 1.38G/11.4G [00:14<01:44, 95.9MB/s]Downloading:  12%|█▏        | 1.39G/11.4G [00:14<01:43, 96.4MB/s]Downloading:  12%|█▏        | 1.40G/11.4G [00:14<01:45, 95.2MB/s]Downloading:  12%|█▏        | 1.41G/11.4G [00:14<01:44, 95.6MB/s]Downloading:  12%|█▏        | 1.42G/11.4G [00:14<01:41, 98.2MB/s]Downloading:  13%|█▎        | 1.43G/11.4G [00:14<01:40, 99.4MB/s]Downloading:  13%|█▎        | 1.44G/11.4G [00:15<01:39, 100MB/s] Downloading:  13%|█▎        | 1.45G/11.4G [00:15<01:37, 102MB/s]Downloading:  13%|█▎        | 1.46G/11.4G [00:15<01:38, 101MB/s]Downloading:  13%|█▎        | 1.47G/11.4G [00:15<01:43, 95.9MB/s]Downloading:  13%|█▎        | 1.48G/11.4G [00:15<01:43, 96.0MB/s]Downloading:  13%|█▎        | 1.49G/11.4G [00:15<01:42, 96.9MB/s]Downloading:  13%|█▎        | 1.50G/11.4G [00:15<01:41, 97.9MB/s]Downloading:  13%|█▎        | 1.51G/11.4G [00:15<01:41, 97.6MB/s]Downloading:  13%|█▎        | 1.52G/11.4G [00:15<01:40, 98.4MB/s]Downloading:  13%|█▎        | 1.53G/11.4G [00:15<01:39, 99.6MB/s]Downloading:  13%|█▎        | 1.54G/11.4G [00:16<01:40, 98.6MB/s]Downloading:  14%|█▎        | 1.55G/11.4G [00:16<01:38, 99.8MB/s]Downloading:  14%|█▎        | 1.56G/11.4G [00:16<01:38, 100MB/s] Downloading:  14%|█▍        | 1.57G/11.4G [00:16<01:38, 99.6MB/s]Downloading:  14%|█▍        | 1.58G/11.4G [00:16<01:41, 97.0MB/s]Downloading:  14%|█▍        | 1.59G/11.4G [00:16<01:48, 90.3MB/s]Downloading:  14%|█▍        | 1.60G/11.4G [00:16<01:45, 92.6MB/s]Downloading:  14%|█▍        | 1.61G/11.4G [00:16<01:46, 91.8MB/s]Downloading:  14%|█▍        | 1.62G/11.4G [00:16<01:44, 93.6MB/s]Downloading:  14%|█▍        | 1.63G/11.4G [00:17<01:51, 87.7MB/s]Downloading:  14%|█▍        | 1.64G/11.4G [00:17<01:47, 90.6MB/s]Downloading:  14%|█▍        | 1.65G/11.4G [00:17<01:48, 90.3MB/s]Downloading:  15%|█▍        | 1.66G/11.4G [00:17<01:49, 88.9MB/s]Downloading:  15%|█▍        | 1.67G/11.4G [00:17<01:47, 90.7MB/s]Downloading:  15%|█▍        | 1.68G/11.4G [00:17<01:44, 93.5MB/s]Downloading:  15%|█▍        | 1.69G/11.4G [00:17<01:41, 95.3MB/s]Downloading:  15%|█▍        | 1.69G/11.4G [00:17<01:46, 91.3MB/s]Downloading:  15%|█▍        | 1.70G/11.4G [00:17<01:42, 94.2MB/s]Downloading:  15%|█▌        | 1.71G/11.4G [00:17<01:41, 95.5MB/s]Downloading:  15%|█▌        | 1.72G/11.4G [00:18<01:42, 94.8MB/s]Downloading:  15%|█▌        | 1.73G/11.4G [00:18<01:40, 96.2MB/s]Downloading:  15%|█▌        | 1.74G/11.4G [00:18<01:39, 96.8MB/s]Downloading:  15%|█▌        | 1.75G/11.4G [00:18<01:44, 92.2MB/s]Downloading:  15%|█▌        | 1.76G/11.4G [00:18<01:44, 92.7MB/s]Downloading:  16%|█▌        | 1.77G/11.4G [00:18<01:44, 92.6MB/s]Downloading:  16%|█▌        | 1.78G/11.4G [00:18<01:43, 92.9MB/s]Downloading:  16%|█▌        | 1.79G/11.4G [00:18<01:47, 89.5MB/s]Downloading:  16%|█▌        | 1.80G/11.4G [00:18<01:44, 92.3MB/s]Downloading:  16%|█▌        | 1.81G/11.4G [00:19<01:51, 86.0MB/s]Downloading:  16%|█▌        | 1.82G/11.4G [00:19<01:53, 84.6MB/s]Downloading:  16%|█▌        | 1.83G/11.4G [00:19<01:47, 89.5MB/s]Downloading:  16%|█▌        | 1.84G/11.4G [00:19<01:43, 92.8MB/s]Downloading:  16%|█▌        | 1.85G/11.4G [00:19<01:39, 96.0MB/s]Downloading:  16%|█▋        | 1.86G/11.4G [00:19<01:36, 98.6MB/s]Downloading:  16%|█▋        | 1.87G/11.4G [00:19<01:36, 98.9MB/s]Downloading:  16%|█▋        | 1.88G/11.4G [00:19<01:35, 99.9MB/s]Downloading:  17%|█▋        | 1.89G/11.4G [00:19<01:34, 100MB/s] Downloading:  17%|█▋        | 1.90G/11.4G [00:19<01:36, 98.7MB/s]Downloading:  17%|█▋        | 1.91G/11.4G [00:20<01:35, 99.2MB/s]Downloading:  17%|█▋        | 1.92G/11.4G [00:20<01:39, 95.4MB/s]Downloading:  17%|█▋        | 1.93G/11.4G [00:20<01:43, 91.6MB/s]Downloading:  17%|█▋        | 1.94G/11.4G [00:20<01:40, 94.5MB/s]Downloading:  17%|█▋        | 1.95G/11.4G [00:20<01:37, 96.5MB/s]Downloading:  17%|█▋        | 1.96G/11.4G [00:20<01:37, 96.8MB/s]Downloading:  17%|█▋        | 1.97G/11.4G [00:20<01:35, 99.1MB/s]Downloading:  17%|█▋        | 1.98G/11.4G [00:20<01:37, 96.3MB/s]Downloading:  17%|█▋        | 1.99G/11.4G [00:20<01:39, 94.6MB/s]Downloading:  18%|█▊        | 2.00G/11.4G [00:21<01:41, 92.8MB/s]Downloading:  18%|█▊        | 2.01G/11.4G [00:21<01:38, 95.4MB/s]Downloading:  18%|█▊        | 2.02G/11.4G [00:21<01:36, 97.2MB/s]Downloading:  18%|█▊        | 2.03G/11.4G [00:21<01:40, 93.6MB/s]Downloading:  18%|█▊        | 2.04G/11.4G [00:21<01:38, 95.0MB/s]Downloading:  18%|█▊        | 2.05G/11.4G [00:21<01:36, 96.6MB/s]Downloading:  18%|█▊        | 2.06G/11.4G [00:21<01:35, 98.3MB/s]Downloading:  18%|█▊        | 2.07G/11.4G [00:21<01:34, 98.4MB/s]Downloading:  18%|█▊        | 2.08G/11.4G [00:21<01:38, 94.3MB/s]Downloading:  18%|█▊        | 2.09G/11.4G [00:21<01:39, 93.8MB/s]Downloading:  18%|█▊        | 2.10G/11.4G [00:22<01:36, 96.7MB/s]Downloading:  18%|█▊        | 2.11G/11.4G [00:22<01:37, 95.2MB/s]Downloading:  19%|█▊        | 2.12G/11.4G [00:22<01:36, 96.7MB/s]Downloading:  19%|█▊        | 2.13G/11.4G [00:22<01:35, 97.1MB/s]Downloading:  19%|█▉        | 2.14G/11.4G [00:22<01:35, 97.5MB/s]Downloading:  19%|█▉        | 2.15G/11.4G [00:22<01:39, 92.7MB/s]Downloading:  19%|█▉        | 2.16G/11.4G [00:22<01:36, 95.5MB/s]Downloading:  19%|█▉        | 2.17G/11.4G [00:22<01:35, 97.1MB/s]Downloading:  19%|█▉        | 2.18G/11.4G [00:22<01:41, 91.3MB/s]Downloading:  19%|█▉        | 2.19G/11.4G [00:22<01:41, 90.9MB/s]Downloading:  19%|█▉        | 2.20G/11.4G [00:23<01:38, 93.5MB/s]Downloading:  19%|█▉        | 2.21G/11.4G [00:23<01:36, 95.4MB/s]Downloading:  19%|█▉        | 2.22G/11.4G [00:23<01:34, 97.6MB/s]Downloading:  20%|█▉        | 2.23G/11.4G [00:23<01:33, 98.7MB/s]Downloading:  20%|█▉        | 2.24G/11.4G [00:23<01:31, 99.8MB/s]Downloading:  20%|█▉        | 2.25G/11.4G [00:23<01:31, 100MB/s] Downloading:  20%|█▉        | 2.26G/11.4G [00:23<01:36, 94.7MB/s]Downloading:  20%|█▉        | 2.27G/11.4G [00:23<01:33, 97.5MB/s]Downloading:  20%|█▉        | 2.28G/11.4G [00:23<01:33, 97.1MB/s]Downloading:  20%|██        | 2.29G/11.4G [00:24<01:31, 99.2MB/s]Downloading:  20%|██        | 2.30G/11.4G [00:24<01:32, 98.7MB/s]Downloading:  20%|██        | 2.31G/11.4G [00:24<01:31, 99.8MB/s]Downloading:  20%|██        | 2.32G/11.4G [00:24<01:30, 100MB/s] Downloading:  20%|██        | 2.33G/11.4G [00:24<01:29, 101MB/s]Downloading:  21%|██        | 2.34G/11.4G [00:24<01:31, 98.9MB/s]Downloading:  21%|██        | 2.35G/11.4G [00:24<01:31, 99.0MB/s]Downloading:  21%|██        | 2.36G/11.4G [00:24<01:30, 99.7MB/s]Downloading:  21%|██        | 2.37G/11.4G [00:24<01:34, 95.5MB/s]Downloading:  21%|██        | 2.38G/11.4G [00:24<01:38, 91.9MB/s]Downloading:  21%|██        | 2.39G/11.4G [00:25<01:34, 95.1MB/s]Downloading:  21%|██        | 2.40G/11.4G [00:25<01:35, 94.1MB/s]Downloading:  21%|██        | 2.41G/11.4G [00:25<01:32, 97.6MB/s]Downloading:  21%|██        | 2.42G/11.4G [00:25<01:31, 97.9MB/s]Downloading:  21%|██▏       | 2.43G/11.4G [00:25<01:30, 98.6MB/s]Downloading:  21%|██▏       | 2.44G/11.4G [00:25<01:30, 98.5MB/s]Downloading:  21%|██▏       | 2.45G/11.4G [00:25<01:30, 99.3MB/s]Downloading:  22%|██▏       | 2.46G/11.4G [00:25<01:31, 98.0MB/s]Downloading:  22%|██▏       | 2.47G/11.4G [00:25<01:31, 97.9MB/s]Downloading:  22%|██▏       | 2.48G/11.4G [00:25<01:29, 99.9MB/s]Downloading:  22%|██▏       | 2.49G/11.4G [00:26<01:38, 90.4MB/s]Downloading:  22%|██▏       | 2.50G/11.4G [00:26<01:38, 90.1MB/s]Downloading:  22%|██▏       | 2.51G/11.4G [00:26<01:35, 92.9MB/s]Downloading:  22%|██▏       | 2.52G/11.4G [00:26<01:32, 96.4MB/s]Downloading:  22%|██▏       | 2.53G/11.4G [00:26<01:30, 97.9MB/s]Downloading:  22%|██▏       | 2.54G/11.4G [00:26<01:31, 96.9MB/s]Downloading:  22%|██▏       | 2.55G/11.4G [00:26<01:30, 98.1MB/s]Downloading:  22%|██▏       | 2.56G/11.4G [00:26<01:29, 98.5MB/s]Downloading:  23%|██▎       | 2.57G/11.4G [00:26<01:28, 99.6MB/s]Downloading:  23%|██▎       | 2.58G/11.4G [00:26<01:28, 100MB/s] Downloading:  23%|██▎       | 2.59G/11.4G [00:27<01:27, 101MB/s]Downloading:  23%|██▎       | 2.60G/11.4G [00:27<01:36, 90.8MB/s]Downloading:  23%|██▎       | 2.61G/11.4G [00:27<01:34, 92.6MB/s]Downloading:  23%|██▎       | 2.62G/11.4G [00:27<01:33, 94.4MB/s]Downloading:  23%|██▎       | 2.63G/11.4G [00:27<01:31, 95.5MB/s]Downloading:  23%|██▎       | 2.64G/11.4G [00:27<01:30, 96.6MB/s]Downloading:  23%|██▎       | 2.65G/11.4G [00:27<01:36, 90.7MB/s]Downloading:  23%|██▎       | 2.66G/11.4G [00:27<01:33, 93.4MB/s]Downloading:  23%|██▎       | 2.67G/11.4G [00:27<01:30, 96.3MB/s]Downloading:  23%|██▎       | 2.68G/11.4G [00:28<01:29, 97.1MB/s]Downloading:  24%|██▎       | 2.69G/11.4G [00:28<01:29, 97.7MB/s]Downloading:  24%|██▎       | 2.70G/11.4G [00:28<01:28, 98.7MB/s]Downloading:  24%|██▍       | 2.71G/11.4G [00:28<01:28, 98.0MB/s]Downloading:  24%|██▍       | 2.72G/11.4G [00:28<01:32, 94.0MB/s]Downloading:  24%|██▍       | 2.73G/11.4G [00:28<01:30, 95.5MB/s]Downloading:  24%|██▍       | 2.74G/11.4G [00:28<01:29, 96.8MB/s]Downloading:  24%|██▍       | 2.75G/11.4G [00:28<01:27, 98.9MB/s]Downloading:  24%|██▍       | 2.76G/11.4G [00:28<01:28, 98.0MB/s]Downloading:  24%|██▍       | 2.77G/11.4G [00:28<01:26, 99.4MB/s]Downloading:  24%|██▍       | 2.78G/11.4G [00:29<01:26, 99.5MB/s]Downloading:  24%|██▍       | 2.79G/11.4G [00:29<01:30, 95.0MB/s]Downloading:  25%|██▍       | 2.80G/11.4G [00:29<01:29, 95.8MB/s]Downloading:  25%|██▍       | 2.81G/11.4G [00:29<01:28, 97.3MB/s]Downloading:  25%|██▍       | 2.82G/11.4G [00:29<01:32, 92.6MB/s]Downloading:  25%|██▍       | 2.83G/11.4G [00:29<01:33, 91.3MB/s]Downloading:  25%|██▍       | 2.84G/11.4G [00:29<01:31, 94.0MB/s]Downloading:  25%|██▍       | 2.85G/11.4G [00:29<01:31, 94.0MB/s]Downloading:  25%|██▌       | 2.86G/11.4G [00:30<02:22, 59.9MB/s]Downloading:  25%|██▌       | 2.87G/11.4G [00:30<01:49, 77.7MB/s]Downloading:  25%|██▌       | 2.89G/11.4G [00:30<01:37, 87.8MB/s]Downloading:  25%|██▌       | 2.90G/11.4G [00:30<01:33, 91.1MB/s]Downloading:  25%|██▌       | 2.91G/11.4G [00:30<01:29, 94.9MB/s]Downloading:  26%|██▌       | 2.92G/11.4G [00:30<01:30, 94.1MB/s]Downloading:  26%|██▌       | 2.93G/11.4G [00:30<01:27, 96.7MB/s]Downloading:  26%|██▌       | 2.94G/11.4G [00:30<01:30, 93.2MB/s]Downloading:  26%|██▌       | 2.95G/11.4G [00:30<01:28, 95.4MB/s]Downloading:  26%|██▌       | 2.96G/11.4G [00:31<01:29, 94.7MB/s]Downloading:  26%|██▌       | 2.97G/11.4G [00:31<01:27, 96.4MB/s]Downloading:  26%|██▌       | 2.98G/11.4G [00:31<01:27, 96.6MB/s]Downloading:  26%|██▌       | 2.99G/11.4G [00:31<01:25, 98.4MB/s]Downloading:  26%|██▋       | 3.00G/11.4G [00:31<01:24, 99.5MB/s]Downloading:  26%|██▋       | 3.01G/11.4G [00:31<01:25, 97.8MB/s]Downloading:  26%|██▋       | 3.02G/11.4G [00:31<01:24, 99.8MB/s]Downloading:  27%|██▋       | 3.03G/11.4G [00:31<01:23, 100MB/s] Downloading:  27%|██▋       | 3.04G/11.4G [00:31<01:23, 99.6MB/s]Downloading:  27%|██▋       | 3.05G/11.4G [00:31<01:23, 101MB/s] Downloading:  27%|██▋       | 3.06G/11.4G [00:32<01:26, 96.6MB/s]Downloading:  27%|██▋       | 3.07G/11.4G [00:32<01:25, 98.0MB/s]Downloading:  27%|██▋       | 3.08G/11.4G [00:32<01:24, 99.0MB/s]Downloading:  27%|██▋       | 3.09G/11.4G [00:32<01:24, 98.6MB/s]Downloading:  27%|██▋       | 3.10G/11.4G [00:32<01:23, 98.9MB/s]Downloading:  27%|██▋       | 3.11G/11.4G [00:32<01:22, 100MB/s] Downloading:  27%|██▋       | 3.12G/11.4G [00:32<01:22, 100MB/s]Downloading:  27%|██▋       | 3.13G/11.4G [00:32<01:22, 100MB/s]Downloading:  28%|██▊       | 3.14G/11.4G [00:32<01:28, 93.7MB/s]Downloading:  28%|██▊       | 3.15G/11.4G [00:33<01:25, 96.4MB/s]Downloading:  28%|██▊       | 3.16G/11.4G [00:33<01:25, 96.9MB/s]Downloading:  28%|██▊       | 3.17G/11.4G [00:33<01:27, 94.1MB/s]Downloading:  28%|██▊       | 3.18G/11.4G [00:33<01:28, 93.0MB/s]Downloading:  28%|██▊       | 3.19G/11.4G [00:33<01:29, 92.1MB/s]Downloading:  28%|██▊       | 3.20G/11.4G [00:33<01:26, 95.2MB/s]Downloading:  28%|██▊       | 3.21G/11.4G [00:33<01:25, 95.9MB/s]Downloading:  28%|██▊       | 3.22G/11.4G [00:33<01:23, 98.5MB/s]Downloading:  28%|██▊       | 3.23G/11.4G [00:33<01:21, 101MB/s] Downloading:  28%|██▊       | 3.24G/11.4G [00:33<01:23, 97.4MB/s]Downloading:  28%|██▊       | 3.25G/11.4G [00:34<01:22, 99.2MB/s]Downloading:  29%|██▊       | 3.26G/11.4G [00:34<01:21, 100MB/s] Downloading:  29%|██▊       | 3.27G/11.4G [00:34<01:20, 101MB/s]Downloading:  29%|██▉       | 3.28G/11.4G [00:34<01:25, 95.3MB/s]Downloading:  29%|██▉       | 3.29G/11.4G [00:34<01:23, 97.5MB/s]Downloading:  29%|██▉       | 3.30G/11.4G [00:34<01:22, 98.4MB/s]Downloading:  29%|██▉       | 3.31G/11.4G [00:34<01:21, 99.8MB/s]Downloading:  29%|██▉       | 3.32G/11.4G [00:34<01:26, 93.0MB/s]Downloading:  29%|██▉       | 3.33G/11.4G [00:34<01:25, 94.9MB/s]Downloading:  29%|██▉       | 3.34G/11.4G [00:34<01:22, 97.2MB/s]Downloading:  29%|██▉       | 3.35G/11.4G [00:35<01:21, 98.9MB/s]Downloading:  29%|██▉       | 3.36G/11.4G [00:35<01:21, 99.0MB/s]Downloading:  30%|██▉       | 3.37G/11.4G [00:35<01:20, 99.7MB/s]Downloading:  30%|██▉       | 3.38G/11.4G [00:35<01:26, 93.2MB/s]Downloading:  30%|██▉       | 3.39G/11.4G [00:35<01:28, 90.4MB/s]Downloading:  30%|██▉       | 3.40G/11.4G [00:35<01:25, 93.1MB/s]Downloading:  30%|██▉       | 3.41G/11.4G [00:35<01:34, 84.6MB/s]Downloading:  30%|██▉       | 3.42G/11.4G [00:35<01:29, 89.5MB/s]Downloading:  30%|███       | 3.43G/11.4G [00:35<01:25, 93.0MB/s]Downloading:  30%|███       | 3.44G/11.4G [00:36<01:28, 89.6MB/s]Downloading:  30%|███       | 3.45G/11.4G [00:36<01:25, 92.6MB/s]Downloading:  30%|███       | 3.46G/11.4G [00:36<01:23, 95.0MB/s]Downloading:  30%|███       | 3.47G/11.4G [00:36<01:21, 97.0MB/s]Downloading:  31%|███       | 3.48G/11.4G [00:36<01:21, 97.1MB/s]Downloading:  31%|███       | 3.49G/11.4G [00:36<01:20, 98.2MB/s]Downloading:  31%|███       | 3.50G/11.4G [00:36<01:23, 94.3MB/s]Downloading:  31%|███       | 3.51G/11.4G [00:36<01:21, 97.2MB/s]Downloading:  31%|███       | 3.52G/11.4G [00:36<01:24, 93.7MB/s]Downloading:  31%|███       | 3.53G/11.4G [00:36<01:21, 96.4MB/s]Downloading:  31%|███       | 3.54G/11.4G [00:37<01:20, 98.0MB/s]Downloading:  31%|███       | 3.55G/11.4G [00:37<01:20, 98.1MB/s]Downloading:  31%|███       | 3.56G/11.4G [00:37<01:19, 98.8MB/s]Downloading:  31%|███▏      | 3.57G/11.4G [00:37<01:19, 98.5MB/s]Downloading:  31%|███▏      | 3.58G/11.4G [00:37<01:18, 99.1MB/s]Downloading:  31%|███▏      | 3.59G/11.4G [00:37<01:17, 100MB/s] Downloading:  32%|███▏      | 3.60G/11.4G [00:37<01:19, 98.1MB/s]Downloading:  32%|███▏      | 3.61G/11.4G [00:37<01:19, 98.2MB/s]Downloading:  32%|███▏      | 3.62G/11.4G [00:37<01:21, 95.1MB/s]Downloading:  32%|███▏      | 3.63G/11.4G [00:38<01:19, 97.5MB/s]Downloading:  32%|███▏      | 3.64G/11.4G [00:38<01:18, 98.4MB/s]Downloading:  32%|███▏      | 3.65G/11.4G [00:38<01:18, 98.7MB/s]Downloading:  32%|███▏      | 3.66G/11.4G [00:38<01:17, 99.6MB/s]Downloading:  32%|███▏      | 3.67G/11.4G [00:38<01:18, 98.7MB/s]Downloading:  32%|███▏      | 3.68G/11.4G [00:38<01:19, 96.7MB/s]Downloading:  32%|███▏      | 3.69G/11.4G [00:38<01:19, 97.4MB/s]Downloading:  32%|███▏      | 3.70G/11.4G [00:38<01:19, 97.0MB/s]Downloading:  33%|███▎      | 3.71G/11.4G [00:38<01:19, 96.5MB/s]Downloading:  33%|███▎      | 3.72G/11.4G [00:38<01:20, 95.5MB/s]Downloading:  33%|███▎      | 3.73G/11.4G [00:39<01:18, 97.7MB/s]Downloading:  33%|███▎      | 3.74G/11.4G [00:39<01:21, 94.1MB/s]Downloading:  33%|███▎      | 3.75G/11.4G [00:39<01:19, 96.9MB/s]Downloading:  33%|███▎      | 3.76G/11.4G [00:39<01:20, 95.3MB/s]Downloading:  33%|███▎      | 3.77G/11.4G [00:39<01:18, 97.5MB/s]Downloading:  33%|███▎      | 3.78G/11.4G [00:39<01:19, 95.6MB/s]Downloading:  33%|███▎      | 3.79G/11.4G [00:39<01:17, 98.2MB/s]Downloading:  33%|███▎      | 3.80G/11.4G [00:39<01:26, 87.5MB/s]Downloading:  33%|███▎      | 3.81G/11.4G [00:39<01:23, 91.0MB/s]Downloading:  33%|███▎      | 3.82G/11.4G [00:40<01:21, 93.4MB/s]Downloading:  34%|███▎      | 3.83G/11.4G [00:40<01:18, 96.1MB/s]Downloading:  34%|███▎      | 3.84G/11.4G [00:40<01:16, 98.3MB/s]Downloading:  34%|███▍      | 3.85G/11.4G [00:40<01:28, 85.8MB/s]Downloading:  34%|███▍      | 3.86G/11.4G [00:40<01:24, 89.3MB/s]Downloading:  34%|███▍      | 3.87G/11.4G [00:40<01:23, 90.2MB/s]Downloading:  34%|███▍      | 3.88G/11.4G [00:40<01:20, 93.6MB/s]Downloading:  34%|███▍      | 3.89G/11.4G [00:40<02:01, 61.9MB/s]Downloading:  34%|███▍      | 3.90G/11.4G [00:41<01:35, 78.8MB/s]Downloading:  34%|███▍      | 3.92G/11.4G [00:41<01:23, 89.3MB/s]Downloading:  34%|███▍      | 3.93G/11.4G [00:41<01:21, 92.1MB/s]Downloading:  35%|███▍      | 3.94G/11.4G [00:41<01:20, 92.8MB/s]Downloading:  35%|███▍      | 3.95G/11.4G [00:41<01:23, 89.3MB/s]Downloading:  35%|███▍      | 3.96G/11.4G [00:41<01:22, 90.8MB/s]Downloading:  35%|███▍      | 3.97G/11.4G [00:41<01:19, 93.9MB/s]Downloading:  35%|███▍      | 3.98G/11.4G [00:41<01:17, 95.6MB/s]Downloading:  35%|███▍      | 3.99G/11.4G [00:41<01:16, 96.8MB/s]Downloading:  35%|███▌      | 4.00G/11.4G [00:41<01:15, 98.0MB/s]Downloading:  35%|███▌      | 4.01G/11.4G [00:42<01:17, 95.0MB/s]Downloading:  35%|███▌      | 4.02G/11.4G [00:42<01:15, 97.2MB/s]Downloading:  35%|███▌      | 4.03G/11.4G [00:42<01:16, 96.9MB/s]Downloading:  35%|███▌      | 4.04G/11.4G [00:42<01:14, 98.7MB/s]Downloading:  35%|███▌      | 4.05G/11.4G [00:42<01:13, 99.5MB/s]Downloading:  36%|███▌      | 4.06G/11.4G [00:42<01:13, 99.5MB/s]Downloading:  36%|███▌      | 4.07G/11.4G [00:42<01:15, 97.1MB/s]Downloading:  36%|███▌      | 4.08G/11.4G [00:42<01:15, 96.6MB/s]Downloading:  36%|███▌      | 4.09G/11.4G [00:42<01:14, 98.1MB/s]Downloading:  36%|███▌      | 4.10G/11.4G [00:42<01:13, 99.0MB/s]Downloading:  36%|███▌      | 4.11G/11.4G [00:43<01:12, 100MB/s] Downloading:  36%|███▌      | 4.12G/11.4G [00:43<01:12, 101MB/s]Downloading:  36%|███▌      | 4.13G/11.4G [00:43<01:12, 101MB/s]Downloading:  36%|███▋      | 4.14G/11.4G [00:43<01:12, 100MB/s]Downloading:  36%|███▋      | 4.15G/11.4G [00:43<01:11, 101MB/s]Downloading:  36%|███▋      | 4.16G/11.4G [00:43<01:14, 97.5MB/s]Downloading:  37%|███▋      | 4.17G/11.4G [00:43<01:15, 96.4MB/s]Downloading:  37%|███▋      | 4.18G/11.4G [00:43<01:19, 91.1MB/s]Downloading:  37%|███▋      | 4.19G/11.4G [00:43<01:18, 92.5MB/s]Downloading:  37%|███▋      | 4.20G/11.4G [00:44<01:15, 95.0MB/s]Downloading:  37%|███▋      | 4.21G/11.4G [00:44<01:14, 97.2MB/s]Downloading:  37%|███▋      | 4.22G/11.4G [00:44<01:13, 97.3MB/s]Downloading:  37%|███▋      | 4.23G/11.4G [00:44<01:14, 96.5MB/s]Downloading:  37%|███▋      | 4.24G/11.4G [00:44<01:13, 97.4MB/s]Downloading:  37%|███▋      | 4.25G/11.4G [00:44<01:16, 93.5MB/s]Downloading:  37%|███▋      | 4.26G/11.4G [00:44<01:14, 95.3MB/s]Downloading:  37%|███▋      | 4.27G/11.4G [00:44<01:15, 94.6MB/s]Downloading:  38%|███▊      | 4.28G/11.4G [00:44<01:14, 96.3MB/s]Downloading:  38%|███▊      | 4.29G/11.4G [00:44<01:13, 97.5MB/s]Downloading:  38%|███▊      | 4.30G/11.4G [00:45<01:14, 95.1MB/s]Downloading:  38%|███▊      | 4.31G/11.4G [00:45<01:13, 96.8MB/s]Downloading:  38%|███▊      | 4.32G/11.4G [00:45<01:12, 97.2MB/s]Downloading:  38%|███▊      | 4.33G/11.4G [00:45<01:15, 93.2MB/s]Downloading:  38%|███▊      | 4.34G/11.4G [00:45<01:14, 94.6MB/s]Downloading:  38%|███▊      | 4.35G/11.4G [00:45<01:15, 94.0MB/s]Downloading:  38%|███▊      | 4.36G/11.4G [00:45<01:19, 88.4MB/s]Downloading:  38%|███▊      | 4.37G/11.4G [00:45<01:16, 91.7MB/s]Downloading:  38%|███▊      | 4.37G/11.4G [00:45<01:18, 89.8MB/s]Downloading:  38%|███▊      | 4.38G/11.4G [00:46<01:15, 92.4MB/s]Downloading:  39%|███▊      | 4.40G/11.4G [00:46<01:13, 95.4MB/s]Downloading:  39%|███▊      | 4.40G/11.4G [00:46<01:15, 92.5MB/s]Downloading:  39%|███▊      | 4.41G/11.4G [00:46<01:13, 94.5MB/s]Downloading:  39%|███▉      | 4.42G/11.4G [00:46<01:12, 96.0MB/s]Downloading:  39%|███▉      | 4.43G/11.4G [00:46<01:11, 98.0MB/s]Downloading:  39%|███▉      | 4.45G/11.4G [00:46<01:10, 99.4MB/s]Downloading:  39%|███▉      | 4.46G/11.4G [00:46<01:12, 96.5MB/s]Downloading:  39%|███▉      | 4.46G/11.4G [00:46<01:13, 95.0MB/s]Downloading:  39%|███▉      | 4.48G/11.4G [00:46<01:10, 97.6MB/s]Downloading:  39%|███▉      | 4.49G/11.4G [00:47<01:10, 98.4MB/s]Downloading:  39%|███▉      | 4.50G/11.4G [00:47<01:08, 100MB/s] Downloading:  40%|███▉      | 4.51G/11.4G [00:47<01:08, 100MB/s]Downloading:  40%|███▉      | 4.52G/11.4G [00:47<01:09, 99.9MB/s]Downloading:  40%|███▉      | 4.53G/11.4G [00:47<01:14, 92.6MB/s]Downloading:  40%|███▉      | 4.54G/11.4G [00:47<01:13, 93.8MB/s]Downloading:  40%|███▉      | 4.55G/11.4G [00:47<01:11, 95.4MB/s]Downloading:  40%|███▉      | 4.56G/11.4G [00:47<01:12, 94.6MB/s]Downloading:  40%|████      | 4.56G/11.4G [00:47<01:11, 95.6MB/s]Downloading:  40%|████      | 4.57G/11.4G [00:47<01:11, 95.3MB/s]Downloading:  40%|████      | 4.58G/11.4G [00:48<01:10, 97.4MB/s]Downloading:  40%|████      | 4.59G/11.4G [00:48<01:12, 94.3MB/s]Downloading:  40%|████      | 4.60G/11.4G [00:48<01:12, 93.7MB/s]Downloading:  40%|████      | 4.61G/11.4G [00:48<01:11, 94.4MB/s]Downloading:  41%|████      | 4.62G/11.4G [00:48<01:10, 96.2MB/s]Downloading:  41%|████      | 4.63G/11.4G [00:48<01:11, 94.2MB/s]Downloading:  41%|████      | 4.64G/11.4G [00:48<01:10, 96.2MB/s]Downloading:  41%|████      | 4.65G/11.4G [00:48<01:11, 94.8MB/s]Downloading:  41%|████      | 4.66G/11.4G [00:48<01:12, 93.1MB/s]Downloading:  41%|████      | 4.67G/11.4G [00:49<01:10, 95.3MB/s]Downloading:  41%|████      | 4.68G/11.4G [00:49<01:09, 97.4MB/s]Downloading:  41%|████      | 4.69G/11.4G [00:49<01:07, 99.6MB/s]Downloading:  41%|████      | 4.70G/11.4G [00:49<01:10, 95.0MB/s]Downloading:  41%|████▏     | 4.71G/11.4G [00:49<01:08, 97.0MB/s]Downloading:  41%|████▏     | 4.72G/11.4G [00:49<01:08, 97.3MB/s]Downloading:  41%|████▏     | 4.73G/11.4G [00:49<01:07, 98.2MB/s]Downloading:  42%|████▏     | 4.74G/11.4G [00:49<01:10, 94.5MB/s]Downloading:  42%|████▏     | 4.75G/11.4G [00:49<01:09, 95.4MB/s]Downloading:  42%|████▏     | 4.76G/11.4G [00:49<01:08, 97.4MB/s]Downloading:  42%|████▏     | 4.77G/11.4G [00:50<01:08, 96.7MB/s]Downloading:  42%|████▏     | 4.78G/11.4G [00:50<01:13, 89.6MB/s]Downloading:  42%|████▏     | 4.79G/11.4G [00:50<01:13, 90.5MB/s]Downloading:  42%|████▏     | 4.80G/11.4G [00:50<01:10, 93.1MB/s]Downloading:  42%|████▏     | 4.81G/11.4G [00:50<01:08, 95.9MB/s]Downloading:  42%|████▏     | 4.82G/11.4G [00:50<01:07, 97.9MB/s]Downloading:  42%|████▏     | 4.83G/11.4G [00:50<01:06, 98.7MB/s]Downloading:  42%|████▏     | 4.84G/11.4G [00:50<01:06, 99.1MB/s]Downloading:  43%|████▎     | 4.85G/11.4G [00:50<01:10, 93.3MB/s]Downloading:  43%|████▎     | 4.86G/11.4G [00:50<01:08, 95.1MB/s]Downloading:  43%|████▎     | 4.87G/11.4G [00:51<01:07, 97.1MB/s]Downloading:  43%|████▎     | 4.88G/11.4G [00:51<01:06, 97.5MB/s]Downloading:  43%|████▎     | 4.89G/11.4G [00:51<01:07, 96.4MB/s]Downloading:  43%|████▎     | 4.90G/11.4G [00:51<01:06, 98.2MB/s]Downloading:  43%|████▎     | 4.91G/11.4G [00:51<01:05, 99.2MB/s]Downloading:  43%|████▎     | 4.92G/11.4G [00:51<01:04, 100MB/s] Downloading:  43%|████▎     | 4.93G/11.4G [00:51<01:05, 98.3MB/s]Downloading:  43%|████▎     | 4.94G/11.4G [00:51<01:05, 98.3MB/s]Downloading:  43%|████▎     | 4.95G/11.4G [00:51<01:05, 98.7MB/s]Downloading:  44%|████▎     | 4.96G/11.4G [00:52<01:04, 99.2MB/s]Downloading:  44%|████▎     | 4.97G/11.4G [00:52<01:09, 92.2MB/s]Downloading:  44%|████▎     | 4.98G/11.4G [00:52<01:08, 93.9MB/s]Downloading:  44%|████▍     | 4.99G/11.4G [00:52<01:08, 94.1MB/s]Downloading:  44%|████▍     | 5.00G/11.4G [00:52<01:06, 95.9MB/s]Downloading:  44%|████▍     | 5.01G/11.4G [00:52<01:06, 96.2MB/s]Downloading:  44%|████▍     | 5.02G/11.4G [00:52<01:06, 96.1MB/s]Downloading:  44%|████▍     | 5.03G/11.4G [00:52<01:05, 97.6MB/s]Downloading:  44%|████▍     | 5.04G/11.4G [00:52<01:05, 96.6MB/s]Downloading:  44%|████▍     | 5.05G/11.4G [00:52<01:07, 94.6MB/s]Downloading:  44%|████▍     | 5.06G/11.4G [00:53<01:06, 95.4MB/s]Downloading:  44%|████▍     | 5.07G/11.4G [00:53<01:04, 97.8MB/s]Downloading:  45%|████▍     | 5.08G/11.4G [00:53<01:07, 93.5MB/s]Downloading:  45%|████▍     | 5.09G/11.4G [00:53<01:07, 93.0MB/s]Downloading:  45%|████▍     | 5.10G/11.4G [00:53<01:06, 95.1MB/s]Downloading:  45%|████▍     | 5.11G/11.4G [00:53<01:06, 95.3MB/s]Downloading:  45%|████▍     | 5.12G/11.4G [00:53<01:05, 96.3MB/s]Downloading:  45%|████▍     | 5.13G/11.4G [00:53<01:03, 98.3MB/s]Downloading:  45%|████▌     | 5.14G/11.4G [00:53<01:04, 96.5MB/s]Downloading:  45%|████▌     | 5.15G/11.4G [00:53<01:03, 97.8MB/s]Downloading:  45%|████▌     | 5.16G/11.4G [00:54<01:03, 97.8MB/s]Downloading:  45%|████▌     | 5.17G/11.4G [00:54<01:03, 98.8MB/s]Downloading:  45%|████▌     | 5.18G/11.4G [00:54<01:02, 100MB/s] Downloading:  46%|████▌     | 5.19G/11.4G [00:54<01:03, 98.3MB/s]Downloading:  46%|████▌     | 5.20G/11.4G [00:54<01:05, 95.4MB/s]Downloading:  46%|████▌     | 5.21G/11.4G [00:54<01:05, 94.3MB/s]Downloading:  46%|████▌     | 5.22G/11.4G [00:54<01:03, 96.9MB/s]Downloading:  46%|████▌     | 5.23G/11.4G [00:54<01:03, 96.7MB/s]Downloading:  46%|████▌     | 5.24G/11.4G [00:54<01:04, 95.7MB/s]Downloading:  46%|████▌     | 5.25G/11.4G [00:54<01:03, 97.1MB/s]Downloading:  46%|████▌     | 5.26G/11.4G [00:55<01:02, 97.6MB/s]Downloading:  46%|████▌     | 5.27G/11.4G [00:55<01:03, 97.1MB/s]Downloading:  46%|████▋     | 5.28G/11.4G [00:55<01:03, 95.9MB/s]Downloading:  46%|████▋     | 5.29G/11.4G [00:55<01:04, 95.4MB/s]Downloading:  46%|████▋     | 5.30G/11.4G [00:55<01:04, 95.4MB/s]Downloading:  47%|████▋     | 5.31G/11.4G [00:55<01:02, 97.7MB/s]Downloading:  47%|████▋     | 5.32G/11.4G [00:55<01:06, 91.3MB/s]Downloading:  47%|████▋     | 5.33G/11.4G [00:55<01:06, 90.9MB/s]Downloading:  47%|████▋     | 5.34G/11.4G [00:55<01:04, 93.5MB/s]Downloading:  47%|████▋     | 5.35G/11.4G [00:56<01:05, 92.2MB/s]Downloading:  47%|████▋     | 5.36G/11.4G [00:56<01:04, 94.5MB/s]Downloading:  47%|████▋     | 5.37G/11.4G [00:56<01:02, 96.3MB/s]Downloading:  47%|████▋     | 5.38G/11.4G [00:56<01:02, 96.1MB/s]Downloading:  47%|████▋     | 5.39G/11.4G [00:56<01:02, 96.2MB/s]Downloading:  47%|████▋     | 5.40G/11.4G [00:56<01:01, 97.7MB/s]Downloading:  47%|████▋     | 5.41G/11.4G [00:56<01:02, 96.0MB/s]Downloading:  47%|████▋     | 5.42G/11.4G [00:56<01:01, 97.0MB/s]Downloading:  48%|████▊     | 5.43G/11.4G [00:56<01:03, 94.5MB/s]Downloading:  48%|████▊     | 5.44G/11.4G [00:56<01:02, 95.6MB/s]Downloading:  48%|████▊     | 5.45G/11.4G [00:57<01:01, 96.7MB/s]Downloading:  48%|████▊     | 5.46G/11.4G [00:57<01:02, 95.4MB/s]Downloading:  48%|████▊     | 5.47G/11.4G [00:57<01:02, 95.3MB/s]Downloading:  48%|████▊     | 5.48G/11.4G [00:57<01:01, 96.6MB/s]Downloading:  48%|████▊     | 5.48G/11.4G [00:57<01:02, 94.2MB/s]Downloading:  48%|████▊     | 5.49G/11.4G [00:57<01:01, 95.4MB/s]Downloading:  48%|████▊     | 5.50G/11.4G [00:57<01:01, 96.7MB/s]Downloading:  48%|████▊     | 5.51G/11.4G [00:57<01:00, 96.9MB/s]Downloading:  48%|████▊     | 5.52G/11.4G [00:57<01:01, 95.4MB/s]Downloading:  49%|████▊     | 5.53G/11.4G [00:57<01:00, 96.6MB/s]Downloading:  49%|████▊     | 5.54G/11.4G [00:58<01:02, 93.6MB/s]Downloading:  49%|████▊     | 5.55G/11.4G [00:58<01:03, 92.8MB/s]Downloading:  49%|████▉     | 5.56G/11.4G [00:58<01:02, 93.6MB/s]Downloading:  49%|████▉     | 5.57G/11.4G [00:58<01:01, 95.2MB/s]Downloading:  49%|████▉     | 5.58G/11.4G [00:58<01:01, 94.3MB/s]Downloading:  49%|████▉     | 5.59G/11.4G [00:58<01:02, 93.1MB/s]Downloading:  49%|████▉     | 5.60G/11.4G [00:58<01:00, 95.5MB/s]Downloading:  49%|████▉     | 5.61G/11.4G [00:58<00:59, 97.8MB/s]Downloading:  49%|████▉     | 5.62G/11.4G [00:58<01:00, 96.4MB/s]Downloading:  49%|████▉     | 5.63G/11.4G [00:58<00:59, 97.7MB/s]Downloading:  49%|████▉     | 5.64G/11.4G [00:59<00:58, 99.1MB/s]Downloading:  50%|████▉     | 5.65G/11.4G [00:59<01:06, 86.5MB/s]Downloading:  50%|████▉     | 5.66G/11.4G [00:59<01:03, 90.0MB/s]Downloading:  50%|████▉     | 5.67G/11.4G [00:59<01:01, 93.7MB/s]Downloading:  50%|████▉     | 5.68G/11.4G [00:59<00:59, 95.6MB/s]Downloading:  50%|████▉     | 5.69G/11.4G [00:59<00:59, 96.0MB/s]Downloading:  50%|████▉     | 5.70G/11.4G [00:59<00:59, 95.9MB/s]Downloading:  50%|█████     | 5.71G/11.4G [00:59<00:58, 97.3MB/s]Downloading:  50%|█████     | 5.72G/11.4G [00:59<00:58, 96.8MB/s]Downloading:  50%|█████     | 5.73G/11.4G [01:00<00:57, 98.1MB/s]Downloading:  50%|█████     | 5.74G/11.4G [01:00<00:58, 96.5MB/s]Downloading:  50%|█████     | 5.75G/11.4G [01:00<00:58, 96.2MB/s]Downloading:  51%|█████     | 5.76G/11.4G [01:00<00:59, 95.6MB/s]Downloading:  51%|█████     | 5.77G/11.4G [01:00<01:01, 92.2MB/s]Downloading:  51%|█████     | 5.78G/11.4G [01:00<00:59, 95.3MB/s]Downloading:  51%|█████     | 5.79G/11.4G [01:00<00:57, 97.9MB/s]Downloading:  51%|█████     | 5.80G/11.4G [01:00<00:57, 98.1MB/s]Downloading:  51%|█████     | 5.81G/11.4G [01:00<00:58, 95.0MB/s]Downloading:  51%|█████     | 5.82G/11.4G [01:00<00:57, 96.5MB/s]Downloading:  51%|█████     | 5.83G/11.4G [01:01<00:57, 97.4MB/s]Downloading:  51%|█████     | 5.84G/11.4G [01:01<00:56, 98.8MB/s]Downloading:  51%|█████▏    | 5.85G/11.4G [01:01<00:58, 95.1MB/s]Downloading:  51%|█████▏    | 5.86G/11.4G [01:01<00:58, 95.2MB/s]Downloading:  51%|█████▏    | 5.87G/11.4G [01:01<01:00, 91.4MB/s]Downloading:  52%|█████▏    | 5.88G/11.4G [01:01<01:04, 86.2MB/s]Downloading:  52%|█████▏    | 5.89G/11.4G [01:01<01:37, 56.8MB/s]Downloading:  52%|█████▏    | 5.90G/11.4G [01:02<01:14, 73.7MB/s]Downloading:  52%|█████▏    | 5.92G/11.4G [01:02<01:01, 89.7MB/s]Downloading:  52%|█████▏    | 5.93G/11.4G [01:02<00:58, 93.8MB/s]Downloading:  52%|█████▏    | 5.94G/11.4G [01:02<00:57, 95.5MB/s]Downloading:  52%|█████▏    | 5.95G/11.4G [01:02<00:56, 97.4MB/s]Downloading:  52%|█████▏    | 5.96G/11.4G [01:02<00:55, 98.6MB/s]Downloading:  52%|█████▏    | 5.97G/11.4G [01:02<00:56, 95.9MB/s]Downloading:  52%|█████▏    | 5.98G/11.4G [01:02<00:57, 94.0MB/s]Downloading:  52%|█████▏    | 5.99G/11.4G [01:02<00:57, 94.8MB/s]Downloading:  53%|█████▎    | 6.00G/11.4G [01:02<00:57, 94.9MB/s]Downloading:  53%|█████▎    | 6.01G/11.4G [01:03<00:55, 97.9MB/s]Downloading:  53%|█████▎    | 6.02G/11.4G [01:03<00:54, 98.4MB/s]Downloading:  53%|█████▎    | 6.03G/11.4G [01:03<00:55, 97.3MB/s]Downloading:  53%|█████▎    | 6.04G/11.4G [01:03<00:56, 95.2MB/s]Downloading:  53%|█████▎    | 6.05G/11.4G [01:03<00:56, 95.2MB/s]Downloading:  53%|█████▎    | 6.06G/11.4G [01:03<00:55, 95.8MB/s]Downloading:  53%|█████▎    | 6.07G/11.4G [01:03<00:54, 97.9MB/s]Downloading:  53%|█████▎    | 6.08G/11.4G [01:03<00:56, 95.0MB/s]Downloading:  53%|█████▎    | 6.09G/11.4G [01:03<00:56, 94.3MB/s]Downloading:  53%|█████▎    | 6.10G/11.4G [01:03<00:54, 96.7MB/s]Downloading:  54%|█████▎    | 6.11G/11.4G [01:04<00:55, 95.7MB/s]Downloading:  54%|█████▎    | 6.12G/11.4G [01:04<00:54, 97.8MB/s]Downloading:  54%|█████▎    | 6.13G/11.4G [01:04<00:54, 96.9MB/s]Downloading:  54%|█████▍    | 6.14G/11.4G [01:04<00:56, 93.0MB/s]Downloading:  54%|█████▍    | 6.15G/11.4G [01:04<00:55, 94.2MB/s]Downloading:  54%|█████▍    | 6.16G/11.4G [01:04<00:54, 95.5MB/s]Downloading:  54%|█████▍    | 6.17G/11.4G [01:04<00:53, 97.6MB/s]Downloading:  54%|█████▍    | 6.18G/11.4G [01:04<00:55, 93.8MB/s]Downloading:  54%|█████▍    | 6.19G/11.4G [01:04<00:54, 95.3MB/s]Downloading:  54%|█████▍    | 6.20G/11.4G [01:05<00:54, 95.9MB/s]Downloading:  54%|█████▍    | 6.21G/11.4G [01:05<00:55, 93.5MB/s]Downloading:  54%|█████▍    | 6.22G/11.4G [01:05<00:54, 95.9MB/s]Downloading:  55%|█████▍    | 6.23G/11.4G [01:05<00:53, 96.9MB/s]Downloading:  55%|█████▍    | 6.24G/11.4G [01:05<00:52, 98.3MB/s]Downloading:  55%|█████▍    | 6.25G/11.4G [01:05<00:51, 100MB/s] Downloading:  55%|█████▍    | 6.26G/11.4G [01:05<00:51, 100MB/s]Downloading:  55%|█████▍    | 6.27G/11.4G [01:05<00:52, 98.3MB/s]Downloading:  55%|█████▌    | 6.28G/11.4G [01:05<00:51, 99.2MB/s]Downloading:  55%|█████▌    | 6.29G/11.4G [01:05<00:51, 100MB/s] Downloading:  55%|█████▌    | 6.30G/11.4G [01:06<00:50, 101MB/s]Downloading:  55%|█████▌    | 6.31G/11.4G [01:06<00:50, 101MB/s]Downloading:  55%|█████▌    | 6.32G/11.4G [01:06<00:51, 99.1MB/s]Downloading:  55%|█████▌    | 6.33G/11.4G [01:06<00:53, 94.4MB/s]Downloading:  56%|█████▌    | 6.34G/11.4G [01:06<00:52, 96.5MB/s]Downloading:  56%|█████▌    | 6.35G/11.4G [01:06<00:51, 97.6MB/s]Downloading:  56%|█████▌    | 6.36G/11.4G [01:06<00:52, 96.8MB/s]Downloading:  56%|█████▌    | 6.37G/11.4G [01:06<00:54, 92.1MB/s]Downloading:  56%|█████▌    | 6.38G/11.4G [01:06<00:53, 94.6MB/s]Downloading:  56%|█████▌    | 6.39G/11.4G [01:06<00:52, 96.1MB/s]Downloading:  56%|█████▌    | 6.40G/11.4G [01:07<00:52, 96.0MB/s]Downloading:  56%|█████▌    | 6.41G/11.4G [01:07<00:51, 96.5MB/s]Downloading:  56%|█████▋    | 6.42G/11.4G [01:07<00:51, 97.4MB/s]Downloading:  56%|█████▋    | 6.43G/11.4G [01:07<00:53, 93.1MB/s]Downloading:  56%|█████▋    | 6.44G/11.4G [01:07<00:56, 88.6MB/s]Downloading:  57%|█████▋    | 6.45G/11.4G [01:07<00:53, 92.1MB/s]Downloading:  57%|█████▋    | 6.46G/11.4G [01:07<00:54, 90.3MB/s]Downloading:  57%|█████▋    | 6.47G/11.4G [01:07<00:53, 93.0MB/s]Downloading:  57%|█████▋    | 6.48G/11.4G [01:07<00:53, 92.8MB/s]Downloading:  57%|█████▋    | 6.48G/11.4G [01:08<00:54, 90.7MB/s]Downloading:  57%|█████▋    | 6.49G/11.4G [01:08<00:55, 88.3MB/s]Downloading:  57%|█████▋    | 6.51G/11.4G [01:08<00:50, 97.9MB/s]Downloading:  57%|█████▋    | 6.52G/11.4G [01:08<00:49, 99.1MB/s]Downloading:  57%|█████▋    | 6.53G/11.4G [01:08<00:50, 96.6MB/s]Downloading:  57%|█████▋    | 6.54G/11.4G [01:08<00:50, 97.1MB/s]Downloading:  57%|█████▋    | 6.55G/11.4G [01:08<00:52, 92.1MB/s]Downloading:  57%|█████▋    | 6.56G/11.4G [01:08<00:52, 93.2MB/s]Downloading:  58%|█████▊    | 6.56G/11.4G [01:08<00:51, 93.8MB/s]Downloading:  58%|█████▊    | 6.57G/11.4G [01:08<00:50, 96.2MB/s]Downloading:  58%|█████▊    | 6.59G/11.4G [01:09<00:49, 97.8MB/s]Downloading:  58%|█████▊    | 6.60G/11.4G [01:09<00:48, 99.0MB/s]Downloading:  58%|█████▊    | 6.61G/11.4G [01:09<00:49, 96.3MB/s]Downloading:  58%|█████▊    | 6.61G/11.4G [01:09<00:52, 90.5MB/s]Downloading:  58%|█████▊    | 6.62G/11.4G [01:09<00:52, 90.7MB/s]Downloading:  58%|█████▊    | 6.63G/11.4G [01:09<00:50, 93.9MB/s]Downloading:  58%|█████▊    | 6.64G/11.4G [01:09<00:50, 93.6MB/s]Downloading:  58%|█████▊    | 6.65G/11.4G [01:09<00:52, 91.2MB/s]Downloading:  58%|█████▊    | 6.66G/11.4G [01:09<00:50, 93.9MB/s]Downloading:  58%|█████▊    | 6.67G/11.4G [01:10<00:50, 92.9MB/s]Downloading:  59%|█████▊    | 6.68G/11.4G [01:10<00:49, 95.8MB/s]Downloading:  59%|█████▊    | 6.69G/11.4G [01:10<00:48, 96.7MB/s]Downloading:  59%|█████▉    | 6.70G/11.4G [01:10<00:47, 98.0MB/s]Downloading:  59%|█████▉    | 6.71G/11.4G [01:10<00:47, 99.6MB/s]Downloading:  59%|█████▉    | 6.72G/11.4G [01:10<00:47, 98.8MB/s]Downloading:  59%|█████▉    | 6.73G/11.4G [01:10<00:51, 90.8MB/s]Downloading:  59%|█████▉    | 6.74G/11.4G [01:10<00:50, 92.4MB/s]Downloading:  59%|█████▉    | 6.75G/11.4G [01:10<00:50, 92.5MB/s]Downloading:  59%|█████▉    | 6.76G/11.4G [01:10<00:53, 86.8MB/s]Downloading:  59%|█████▉    | 6.77G/11.4G [01:11<00:53, 86.4MB/s]Downloading:  59%|█████▉    | 6.78G/11.4G [01:11<00:54, 85.5MB/s]Downloading:  60%|█████▉    | 6.79G/11.4G [01:11<00:51, 89.4MB/s]Downloading:  60%|█████▉    | 6.80G/11.4G [01:11<00:50, 91.6MB/s]Downloading:  60%|█████▉    | 6.81G/11.4G [01:11<00:50, 91.2MB/s]Downloading:  60%|█████▉    | 6.82G/11.4G [01:11<00:49, 93.6MB/s]Downloading:  60%|█████▉    | 6.83G/11.4G [01:11<00:48, 95.0MB/s]Downloading:  60%|█████▉    | 6.84G/11.4G [01:11<00:47, 97.2MB/s]Downloading:  60%|██████    | 6.85G/11.4G [01:11<00:46, 98.7MB/s]Downloading:  60%|██████    | 6.86G/11.4G [01:11<00:46, 98.2MB/s]Downloading:  60%|██████    | 6.87G/11.4G [01:12<00:48, 93.0MB/s]Downloading:  60%|██████    | 6.88G/11.4G [01:12<00:49, 92.3MB/s]Downloading:  60%|██████    | 6.89G/11.4G [01:12<00:47, 94.9MB/s]Downloading:  60%|██████    | 6.90G/11.4G [01:12<00:46, 96.4MB/s]Downloading:  61%|██████    | 6.91G/11.4G [01:12<00:45, 98.3MB/s]Downloading:  61%|██████    | 6.92G/11.4G [01:12<00:46, 96.5MB/s]Downloading:  61%|██████    | 6.93G/11.4G [01:12<01:13, 61.1MB/s]Downloading:  61%|██████    | 6.94G/11.4G [01:13<00:56, 78.5MB/s]Downloading:  61%|██████    | 6.96G/11.4G [01:13<00:47, 93.9MB/s]Downloading:  61%|██████    | 6.97G/11.4G [01:13<00:44, 99.9MB/s]Downloading:  61%|██████    | 6.98G/11.4G [01:13<00:48, 92.2MB/s]Downloading:  61%|██████▏   | 6.99G/11.4G [01:13<00:49, 89.0MB/s]Downloading:  61%|██████▏   | 7.00G/11.4G [01:13<00:48, 90.6MB/s]Downloading:  61%|██████▏   | 7.01G/11.4G [01:13<00:48, 91.4MB/s]Downloading:  62%|██████▏   | 7.02G/11.4G [01:13<00:46, 93.4MB/s]Downloading:  62%|██████▏   | 7.03G/11.4G [01:13<00:46, 95.1MB/s]Downloading:  62%|██████▏   | 7.04G/11.4G [01:14<00:45, 95.4MB/s]Downloading:  62%|██████▏   | 7.05G/11.4G [01:14<00:44, 97.0MB/s]Downloading:  62%|██████▏   | 7.06G/11.4G [01:14<00:44, 97.9MB/s]Downloading:  62%|██████▏   | 7.07G/11.4G [01:14<00:43, 99.0MB/s]Downloading:  62%|██████▏   | 7.08G/11.4G [01:14<00:44, 98.4MB/s]Downloading:  62%|██████▏   | 7.09G/11.4G [01:14<00:44, 97.7MB/s]Downloading:  62%|██████▏   | 7.10G/11.4G [01:14<00:46, 93.0MB/s]Downloading:  62%|██████▏   | 7.11G/11.4G [01:14<00:52, 82.1MB/s]Downloading:  62%|██████▏   | 7.12G/11.4G [01:14<00:49, 85.9MB/s]Downloading:  62%|██████▏   | 7.13G/11.4G [01:14<00:48, 88.3MB/s]Downloading:  63%|██████▎   | 7.14G/11.4G [01:15<00:47, 89.5MB/s]Downloading:  63%|██████▎   | 7.15G/11.4G [01:15<00:45, 93.4MB/s]Downloading:  63%|██████▎   | 7.16G/11.4G [01:15<00:45, 94.2MB/s]Downloading:  63%|██████▎   | 7.17G/11.4G [01:15<00:44, 95.4MB/s]Downloading:  63%|██████▎   | 7.18G/11.4G [01:15<00:44, 95.8MB/s]Downloading:  63%|██████▎   | 7.19G/11.4G [01:15<00:43, 96.5MB/s]Downloading:  63%|██████▎   | 7.19G/11.4G [01:15<00:43, 96.7MB/s]Downloading:  63%|██████▎   | 7.20G/11.4G [01:15<00:48, 87.1MB/s]Downloading:  63%|██████▎   | 7.21G/11.4G [01:15<00:46, 90.3MB/s]Downloading:  63%|██████▎   | 7.22G/11.4G [01:16<00:44, 93.5MB/s]Downloading:  63%|██████▎   | 7.23G/11.4G [01:16<00:43, 95.9MB/s]Downloading:  64%|██████▎   | 7.24G/11.4G [01:16<00:42, 97.0MB/s]Downloading:  64%|██████▎   | 7.25G/11.4G [01:16<00:44, 92.5MB/s]Downloading:  64%|██████▎   | 7.26G/11.4G [01:16<00:43, 94.8MB/s]Downloading:  64%|██████▍   | 7.27G/11.4G [01:16<00:42, 96.4MB/s]Downloading:  64%|██████▍   | 7.28G/11.4G [01:16<00:43, 95.1MB/s]Downloading:  64%|██████▍   | 7.29G/11.4G [01:16<00:42, 96.0MB/s]Downloading:  64%|██████▍   | 7.30G/11.4G [01:16<00:43, 94.2MB/s]Downloading:  64%|██████▍   | 7.31G/11.4G [01:16<00:47, 86.6MB/s]Downloading:  64%|██████▍   | 7.32G/11.4G [01:17<00:45, 90.1MB/s]Downloading:  64%|██████▍   | 7.33G/11.4G [01:17<00:43, 93.1MB/s]Downloading:  64%|██████▍   | 7.34G/11.4G [01:17<00:43, 94.5MB/s]Downloading:  64%|██████▍   | 7.35G/11.4G [01:17<00:41, 97.1MB/s]Downloading:  65%|██████▍   | 7.36G/11.4G [01:17<00:41, 98.6MB/s]Downloading:  65%|██████▍   | 7.37G/11.4G [01:17<00:40, 99.7MB/s]Downloading:  65%|██████▍   | 7.38G/11.4G [01:17<00:40, 100MB/s] Downloading:  65%|██████▍   | 7.39G/11.4G [01:17<00:42, 95.3MB/s]Downloading:  65%|██████▍   | 7.40G/11.4G [01:17<00:41, 97.2MB/s]Downloading:  65%|██████▌   | 7.41G/11.4G [01:17<00:40, 98.8MB/s]Downloading:  65%|██████▌   | 7.42G/11.4G [01:18<00:42, 93.8MB/s]Downloading:  65%|██████▌   | 7.43G/11.4G [01:18<00:41, 96.2MB/s]Downloading:  65%|██████▌   | 7.44G/11.4G [01:18<00:41, 96.0MB/s]Downloading:  65%|██████▌   | 7.45G/11.4G [01:18<00:40, 97.2MB/s]Downloading:  65%|██████▌   | 7.46G/11.4G [01:18<00:42, 93.2MB/s]Downloading:  66%|██████▌   | 7.47G/11.4G [01:18<00:42, 92.8MB/s]Downloading:  66%|██████▌   | 7.48G/11.4G [01:18<00:41, 95.0MB/s]Downloading:  66%|██████▌   | 7.49G/11.4G [01:18<00:40, 95.9MB/s]Downloading:  66%|██████▌   | 7.50G/11.4G [01:18<00:40, 96.8MB/s]Downloading:  66%|██████▌   | 7.51G/11.4G [01:19<00:39, 98.3MB/s]Downloading:  66%|██████▌   | 7.52G/11.4G [01:19<00:39, 99.2MB/s]Downloading:  66%|██████▌   | 7.53G/11.4G [01:19<00:40, 96.6MB/s]Downloading:  66%|██████▌   | 7.54G/11.4G [01:19<00:42, 91.8MB/s]Downloading:  66%|██████▌   | 7.55G/11.4G [01:19<00:41, 94.0MB/s]Downloading:  66%|██████▋   | 7.56G/11.4G [01:19<00:40, 95.9MB/s]Downloading:  66%|██████▋   | 7.57G/11.4G [01:19<00:41, 92.8MB/s]Downloading:  66%|██████▋   | 7.58G/11.4G [01:19<00:40, 95.1MB/s]Downloading:  67%|██████▋   | 7.59G/11.4G [01:19<00:39, 96.9MB/s]Downloading:  67%|██████▋   | 7.60G/11.4G [01:19<00:39, 95.4MB/s]Downloading:  67%|██████▋   | 7.61G/11.4G [01:20<00:38, 97.5MB/s]Downloading:  67%|██████▋   | 7.62G/11.4G [01:20<00:38, 99.4MB/s]Downloading:  67%|██████▋   | 7.63G/11.4G [01:20<00:38, 98.6MB/s]Downloading:  67%|██████▋   | 7.64G/11.4G [01:20<00:37, 99.5MB/s]Downloading:  67%|██████▋   | 7.65G/11.4G [01:20<00:37, 99.9MB/s]Downloading:  67%|██████▋   | 7.66G/11.4G [01:20<00:38, 96.3MB/s]Downloading:  67%|██████▋   | 7.67G/11.4G [01:20<00:41, 90.7MB/s]Downloading:  67%|██████▋   | 7.68G/11.4G [01:20<00:39, 93.3MB/s]Downloading:  67%|██████▋   | 7.69G/11.4G [01:20<00:40, 91.1MB/s]Downloading:  68%|██████▊   | 7.70G/11.4G [01:21<00:39, 92.9MB/s]Downloading:  68%|██████▊   | 7.71G/11.4G [01:21<00:39, 94.5MB/s]Downloading:  68%|██████▊   | 7.72G/11.4G [01:21<00:39, 93.7MB/s]Downloading:  68%|██████▊   | 7.73G/11.4G [01:21<00:38, 96.0MB/s]Downloading:  68%|██████▊   | 7.74G/11.4G [01:21<00:40, 89.7MB/s]Downloading:  68%|██████▊   | 7.75G/11.4G [01:21<00:39, 92.5MB/s]Downloading:  68%|██████▊   | 7.76G/11.4G [01:21<00:38, 93.5MB/s]Downloading:  68%|██████▊   | 7.77G/11.4G [01:21<00:40, 90.8MB/s]Downloading:  68%|██████▊   | 7.78G/11.4G [01:21<00:39, 92.3MB/s]Downloading:  68%|██████▊   | 7.79G/11.4G [01:21<00:39, 92.3MB/s]Downloading:  68%|██████▊   | 7.80G/11.4G [01:22<00:38, 94.3MB/s]Downloading:  68%|██████▊   | 7.81G/11.4G [01:22<00:37, 96.4MB/s]Downloading:  69%|██████▊   | 7.82G/11.4G [01:22<00:36, 97.7MB/s]Downloading:  69%|██████▊   | 7.83G/11.4G [01:22<00:36, 96.8MB/s]Downloading:  69%|██████▊   | 7.84G/11.4G [01:22<00:41, 85.0MB/s]Downloading:  69%|██████▉   | 7.85G/11.4G [01:22<00:39, 89.3MB/s]Downloading:  69%|██████▉   | 7.86G/11.4G [01:22<00:38, 92.1MB/s]Downloading:  69%|██████▉   | 7.87G/11.4G [01:22<00:38, 92.7MB/s]Downloading:  69%|██████▉   | 7.88G/11.4G [01:22<00:38, 90.9MB/s]Downloading:  69%|██████▉   | 7.89G/11.4G [01:23<00:37, 93.9MB/s]Downloading:  69%|██████▉   | 7.90G/11.4G [01:23<00:37, 94.5MB/s]Downloading:  69%|██████▉   | 7.91G/11.4G [01:23<00:36, 96.9MB/s]Downloading:  69%|██████▉   | 7.92G/11.4G [01:23<00:36, 96.5MB/s]Downloading:  69%|██████▉   | 7.93G/11.4G [01:23<00:45, 77.2MB/s]Downloading:  70%|██████▉   | 7.94G/11.4G [01:23<00:41, 83.0MB/s]Downloading:  70%|██████▉   | 7.95G/11.4G [01:23<00:39, 88.4MB/s]Downloading:  70%|██████▉   | 7.96G/11.4G [01:23<00:39, 87.8MB/s]Downloading:  70%|██████▉   | 7.97G/11.4G [01:23<00:37, 91.8MB/s]Downloading:  70%|██████▉   | 7.98G/11.4G [01:24<00:37, 90.3MB/s]Downloading:  70%|███████   | 7.99G/11.4G [01:24<00:37, 91.5MB/s]Downloading:  70%|███████   | 8.00G/11.4G [01:24<00:38, 89.7MB/s]Downloading:  70%|███████   | 8.01G/11.4G [01:24<00:37, 89.9MB/s]Downloading:  70%|███████   | 8.02G/11.4G [01:24<00:36, 92.4MB/s]Downloading:  70%|███████   | 8.03G/11.4G [01:24<00:35, 95.5MB/s]Downloading:  70%|███████   | 8.04G/11.4G [01:24<00:34, 98.0MB/s]Downloading:  71%|███████   | 8.05G/11.4G [01:24<00:34, 97.1MB/s]Downloading:  71%|███████   | 8.06G/11.4G [01:24<00:34, 97.5MB/s]Downloading:  71%|███████   | 8.07G/11.4G [01:24<00:34, 98.0MB/s]Downloading:  71%|███████   | 8.08G/11.4G [01:25<00:33, 98.6MB/s]Downloading:  71%|███████   | 8.09G/11.4G [01:25<00:33, 97.7MB/s]Downloading:  71%|███████   | 8.10G/11.4G [01:25<00:36, 90.8MB/s]Downloading:  71%|███████   | 8.10G/11.4G [01:25<00:36, 89.5MB/s]Downloading:  71%|███████   | 8.11G/11.4G [01:25<00:35, 92.4MB/s]Downloading:  71%|███████   | 8.12G/11.4G [01:25<00:34, 95.4MB/s]Downloading:  71%|███████▏  | 8.13G/11.4G [01:25<00:33, 96.8MB/s]Downloading:  71%|███████▏  | 8.15G/11.4G [01:25<00:33, 98.4MB/s]Downloading:  71%|███████▏  | 8.16G/11.4G [01:25<00:32, 99.0MB/s]Downloading:  72%|███████▏  | 8.17G/11.4G [01:25<00:33, 97.2MB/s]Downloading:  72%|███████▏  | 8.18G/11.4G [01:26<00:32, 98.6MB/s]Downloading:  72%|███████▏  | 8.19G/11.4G [01:26<00:32, 98.9MB/s]Downloading:  72%|███████▏  | 8.20G/11.4G [01:26<00:32, 100MB/s] Downloading:  72%|███████▏  | 8.21G/11.4G [01:26<00:53, 60.3MB/s]Downloading:  72%|███████▏  | 8.22G/11.4G [01:26<00:42, 75.8MB/s]Downloading:  72%|███████▏  | 8.23G/11.4G [01:26<00:34, 90.8MB/s]Downloading:  72%|███████▏  | 8.24G/11.4G [01:26<00:33, 95.2MB/s]Downloading:  72%|███████▏  | 8.26G/11.4G [01:27<00:32, 96.7MB/s]Downloading:  72%|███████▏  | 8.27G/11.4G [01:27<00:32, 95.3MB/s]Downloading:  73%|███████▎  | 8.28G/11.4G [01:27<00:32, 96.7MB/s]Downloading:  73%|███████▎  | 8.29G/11.4G [01:27<00:32, 96.0MB/s]Downloading:  73%|███████▎  | 8.30G/11.4G [01:27<00:33, 92.3MB/s]Downloading:  73%|███████▎  | 8.31G/11.4G [01:27<00:32, 95.6MB/s]Downloading:  73%|███████▎  | 8.32G/11.4G [01:27<00:32, 93.9MB/s]Downloading:  73%|███████▎  | 8.33G/11.4G [01:27<00:33, 91.9MB/s]Downloading:  73%|███████▎  | 8.34G/11.4G [01:27<00:33, 91.7MB/s]Downloading:  73%|███████▎  | 8.35G/11.4G [01:27<00:32, 94.5MB/s]Downloading:  73%|███████▎  | 8.36G/11.4G [01:28<00:33, 90.3MB/s]Downloading:  73%|███████▎  | 8.37G/11.4G [01:28<00:32, 93.3MB/s]Downloading:  73%|███████▎  | 8.37G/11.4G [01:28<00:32, 92.2MB/s]Downloading:  74%|███████▎  | 8.38G/11.4G [01:28<00:32, 93.2MB/s]Downloading:  74%|███████▎  | 8.39G/11.4G [01:28<00:31, 95.1MB/s]Downloading:  74%|███████▎  | 8.40G/11.4G [01:28<00:31, 96.2MB/s]Downloading:  74%|███████▍  | 8.41G/11.4G [01:28<00:32, 91.6MB/s]Downloading:  74%|███████▍  | 8.42G/11.4G [01:28<00:33, 88.2MB/s]Downloading:  74%|███████▍  | 8.43G/11.4G [01:28<00:33, 90.1MB/s]Downloading:  74%|███████▍  | 8.44G/11.4G [01:29<00:32, 91.6MB/s]Downloading:  74%|███████▍  | 8.45G/11.4G [01:29<00:31, 93.6MB/s]Downloading:  74%|███████▍  | 8.46G/11.4G [01:29<00:30, 95.1MB/s]Downloading:  74%|███████▍  | 8.47G/11.4G [01:29<00:31, 92.7MB/s]Downloading:  74%|███████▍  | 8.48G/11.4G [01:29<00:31, 94.3MB/s]Downloading:  74%|███████▍  | 8.49G/11.4G [01:29<00:30, 94.1MB/s]Downloading:  75%|███████▍  | 8.50G/11.4G [01:29<00:32, 89.9MB/s]Downloading:  75%|███████▍  | 8.51G/11.4G [01:29<00:31, 92.2MB/s]Downloading:  75%|███████▍  | 8.52G/11.4G [01:29<00:31, 92.2MB/s]Downloading:  75%|███████▍  | 8.53G/11.4G [01:29<00:31, 91.0MB/s]Downloading:  75%|███████▍  | 8.54G/11.4G [01:30<00:30, 94.2MB/s]Downloading:  75%|███████▍  | 8.55G/11.4G [01:30<00:29, 96.5MB/s]Downloading:  75%|███████▌  | 8.56G/11.4G [01:30<00:29, 96.7MB/s]Downloading:  75%|███████▌  | 8.57G/11.4G [01:30<00:29, 97.7MB/s]Downloading:  75%|███████▌  | 8.58G/11.4G [01:30<00:28, 98.4MB/s]Downloading:  75%|███████▌  | 8.59G/11.4G [01:30<00:28, 98.6MB/s]Downloading:  75%|███████▌  | 8.60G/11.4G [01:30<00:28, 98.3MB/s]Downloading:  75%|███████▌  | 8.61G/11.4G [01:30<00:29, 94.6MB/s]Downloading:  76%|███████▌  | 8.62G/11.4G [01:30<00:29, 93.6MB/s]Downloading:  76%|███████▌  | 8.63G/11.4G [01:30<00:28, 96.3MB/s]Downloading:  76%|███████▌  | 8.64G/11.4G [01:31<00:28, 96.5MB/s]Downloading:  76%|███████▌  | 8.65G/11.4G [01:31<00:30, 91.8MB/s]Downloading:  76%|███████▌  | 8.66G/11.4G [01:31<00:29, 93.4MB/s]Downloading:  76%|███████▌  | 8.67G/11.4G [01:31<00:28, 95.7MB/s]Downloading:  76%|███████▌  | 8.68G/11.4G [01:31<00:28, 94.6MB/s]Downloading:  76%|███████▌  | 8.69G/11.4G [01:31<00:28, 96.8MB/s]Downloading:  76%|███████▌  | 8.70G/11.4G [01:31<00:27, 97.5MB/s]Downloading:  76%|███████▋  | 8.71G/11.4G [01:31<00:27, 98.6MB/s]Downloading:  76%|███████▋  | 8.72G/11.4G [01:31<00:28, 94.4MB/s]Downloading:  77%|███████▋  | 8.73G/11.4G [01:32<00:27, 97.5MB/s]Downloading:  77%|███████▋  | 8.74G/11.4G [01:32<00:27, 98.2MB/s]Downloading:  77%|███████▋  | 8.75G/11.4G [01:32<00:26, 100MB/s] Downloading:  77%|███████▋  | 8.76G/11.4G [01:32<00:28, 94.4MB/s]Downloading:  77%|███████▋  | 8.77G/11.4G [01:32<00:29, 90.8MB/s]Downloading:  77%|███████▋  | 8.78G/11.4G [01:32<00:31, 83.7MB/s]Downloading:  77%|███████▋  | 8.79G/11.4G [01:32<00:29, 88.8MB/s]Downloading:  77%|███████▋  | 8.80G/11.4G [01:32<00:28, 91.9MB/s]Downloading:  77%|███████▋  | 8.81G/11.4G [01:32<00:27, 94.9MB/s]Downloading:  77%|███████▋  | 8.82G/11.4G [01:32<00:27, 95.5MB/s]Downloading:  77%|███████▋  | 8.83G/11.4G [01:33<00:27, 94.0MB/s]Downloading:  77%|███████▋  | 8.84G/11.4G [01:33<00:26, 96.5MB/s]Downloading:  78%|███████▊  | 8.85G/11.4G [01:33<00:26, 97.3MB/s]Downloading:  78%|███████▊  | 8.86G/11.4G [01:33<00:25, 99.1MB/s]Downloading:  78%|███████▊  | 8.87G/11.4G [01:33<00:25, 99.3MB/s]Downloading:  78%|███████▊  | 8.88G/11.4G [01:33<00:27, 91.9MB/s]Downloading:  78%|███████▊  | 8.89G/11.4G [01:33<00:27, 91.9MB/s]Downloading:  78%|███████▊  | 8.90G/11.4G [01:33<00:27, 92.8MB/s]Downloading:  78%|███████▊  | 8.91G/11.4G [01:33<00:26, 93.8MB/s]Downloading:  78%|███████▊  | 8.92G/11.4G [01:34<00:25, 96.2MB/s]Downloading:  78%|███████▊  | 8.93G/11.4G [01:34<00:28, 86.6MB/s]Downloading:  78%|███████▊  | 8.93G/11.4G [01:34<00:27, 88.8MB/s]Downloading:  78%|███████▊  | 8.95G/11.4G [01:34<00:26, 92.9MB/s]Downloading:  79%|███████▊  | 8.95G/11.4G [01:34<00:27, 88.4MB/s]Downloading:  79%|███████▊  | 8.96G/11.4G [01:34<00:26, 90.7MB/s]Downloading:  79%|███████▊  | 8.97G/11.4G [01:34<00:25, 94.5MB/s]Downloading:  79%|███████▉  | 8.98G/11.4G [01:34<00:26, 92.3MB/s]Downloading:  79%|███████▉  | 8.99G/11.4G [01:34<00:25, 92.9MB/s]Downloading:  79%|███████▉  | 9.00G/11.4G [01:34<00:25, 95.0MB/s]Downloading:  79%|███████▉  | 9.01G/11.4G [01:35<00:24, 96.5MB/s]Downloading:  79%|███████▉  | 9.02G/11.4G [01:35<00:24, 98.0MB/s]Downloading:  79%|███████▉  | 9.03G/11.4G [01:35<00:24, 96.3MB/s]Downloading:  79%|███████▉  | 9.04G/11.4G [01:35<00:25, 94.2MB/s]Downloading:  79%|███████▉  | 9.05G/11.4G [01:35<00:24, 96.7MB/s]Downloading:  79%|███████▉  | 9.06G/11.4G [01:35<00:23, 97.7MB/s]Downloading:  80%|███████▉  | 9.07G/11.4G [01:35<00:23, 98.4MB/s]Downloading:  80%|███████▉  | 9.08G/11.4G [01:35<00:23, 98.8MB/s]Downloading:  80%|███████▉  | 9.09G/11.4G [01:35<00:24, 95.9MB/s]Downloading:  80%|███████▉  | 9.10G/11.4G [01:36<00:23, 96.9MB/s]Downloading:  80%|███████▉  | 9.11G/11.4G [01:36<00:23, 98.1MB/s]Downloading:  80%|███████▉  | 9.12G/11.4G [01:36<00:22, 99.3MB/s]Downloading:  80%|████████  | 9.13G/11.4G [01:36<00:22, 100MB/s] Downloading:  80%|████████  | 9.14G/11.4G [01:36<00:23, 98.4MB/s]Downloading:  80%|████████  | 9.15G/11.4G [01:36<00:22, 99.6MB/s]Downloading:  80%|████████  | 9.16G/11.4G [01:36<00:22, 98.5MB/s]Downloading:  80%|████████  | 9.17G/11.4G [01:36<00:23, 95.9MB/s]Downloading:  81%|████████  | 9.18G/11.4G [01:36<00:26, 84.4MB/s]Downloading:  81%|████████  | 9.19G/11.4G [01:36<00:25, 88.5MB/s]Downloading:  81%|████████  | 9.20G/11.4G [01:37<00:25, 87.0MB/s]Downloading:  81%|████████  | 9.21G/11.4G [01:37<00:24, 90.9MB/s]Downloading:  81%|████████  | 9.22G/11.4G [01:37<00:23, 93.8MB/s]Downloading:  81%|████████  | 9.23G/11.4G [01:37<00:23, 94.0MB/s]Downloading:  81%|████████  | 9.24G/11.4G [01:37<00:22, 96.3MB/s]Downloading:  81%|████████  | 9.25G/11.4G [01:37<00:22, 96.8MB/s]Downloading:  81%|████████  | 9.26G/11.4G [01:37<00:22, 94.5MB/s]Downloading:  81%|████████▏ | 9.27G/11.4G [01:37<00:23, 92.1MB/s]Downloading:  81%|████████▏ | 9.28G/11.4G [01:37<00:22, 94.2MB/s]Downloading:  81%|████████▏ | 9.29G/11.4G [01:38<00:22, 94.7MB/s]Downloading:  82%|████████▏ | 9.30G/11.4G [01:38<00:22, 94.7MB/s]Downloading:  82%|████████▏ | 9.31G/11.4G [01:38<00:21, 96.0MB/s]Downloading:  82%|████████▏ | 9.32G/11.4G [01:38<00:22, 93.7MB/s]Downloading:  82%|████████▏ | 9.33G/11.4G [01:38<00:21, 96.5MB/s]Downloading:  82%|████████▏ | 9.34G/11.4G [01:38<00:21, 97.2MB/s]Downloading:  82%|████████▏ | 9.35G/11.4G [01:38<00:20, 98.4MB/s]Downloading:  82%|████████▏ | 9.36G/11.4G [01:38<00:20, 99.8MB/s]Downloading:  82%|████████▏ | 9.37G/11.4G [01:38<00:21, 93.8MB/s]Downloading:  82%|████████▏ | 9.38G/11.4G [01:38<00:21, 96.3MB/s]Downloading:  82%|████████▏ | 9.39G/11.4G [01:39<00:20, 97.4MB/s]Downloading:  82%|████████▏ | 9.40G/11.4G [01:39<00:20, 95.8MB/s]Downloading:  83%|████████▎ | 9.41G/11.4G [01:39<00:21, 91.4MB/s]Downloading:  83%|████████▎ | 9.42G/11.4G [01:39<00:21, 92.8MB/s]Downloading:  83%|████████▎ | 9.43G/11.4G [01:39<00:23, 84.2MB/s]Downloading:  83%|████████▎ | 9.44G/11.4G [01:39<00:22, 88.7MB/s]Downloading:  83%|████████▎ | 9.45G/11.4G [01:39<00:21, 92.8MB/s]Downloading:  83%|████████▎ | 9.46G/11.4G [01:39<00:20, 92.9MB/s]Downloading:  83%|████████▎ | 9.47G/11.4G [01:39<00:20, 92.9MB/s]Downloading:  83%|████████▎ | 9.48G/11.4G [01:40<00:20, 94.4MB/s]Downloading:  83%|████████▎ | 9.49G/11.4G [01:40<00:19, 96.5MB/s]Downloading:  83%|████████▎ | 9.50G/11.4G [01:40<00:19, 97.6MB/s]Downloading:  83%|████████▎ | 9.51G/11.4G [01:40<00:19, 98.4MB/s]Downloading:  83%|████████▎ | 9.52G/11.4G [01:40<00:18, 99.5MB/s]Downloading:  84%|████████▎ | 9.53G/11.4G [01:40<00:19, 98.5MB/s]Downloading:  84%|████████▎ | 9.54G/11.4G [01:40<00:19, 95.7MB/s]Downloading:  84%|████████▎ | 9.55G/11.4G [01:40<00:30, 61.8MB/s]Downloading:  84%|████████▍ | 9.56G/11.4G [01:41<00:22, 81.3MB/s]Downloading:  84%|████████▍ | 9.58G/11.4G [01:41<00:19, 93.8MB/s]Downloading:  84%|████████▍ | 9.59G/11.4G [01:41<00:18, 96.1MB/s]Downloading:  84%|████████▍ | 9.60G/11.4G [01:41<00:18, 97.3MB/s]Downloading:  84%|████████▍ | 9.61G/11.4G [01:41<00:18, 98.0MB/s]Downloading:  84%|████████▍ | 9.62G/11.4G [01:41<00:17, 99.8MB/s]Downloading:  84%|████████▍ | 9.63G/11.4G [01:41<00:17, 99.9MB/s]Downloading:  85%|████████▍ | 9.64G/11.4G [01:41<00:19, 90.7MB/s]Downloading:  85%|████████▍ | 9.65G/11.4G [01:41<00:18, 92.8MB/s]Downloading:  85%|████████▍ | 9.66G/11.4G [01:41<00:18, 93.2MB/s]Downloading:  85%|████████▍ | 9.67G/11.4G [01:42<00:18, 93.5MB/s]Downloading:  85%|████████▍ | 9.68G/11.4G [01:42<00:18, 94.8MB/s]Downloading:  85%|████████▍ | 9.69G/11.4G [01:42<00:17, 95.9MB/s]Downloading:  85%|████████▌ | 9.70G/11.4G [01:42<00:17, 96.5MB/s]Downloading:  85%|████████▌ | 9.71G/11.4G [01:42<00:17, 98.2MB/s]Downloading:  85%|████████▌ | 9.72G/11.4G [01:42<00:17, 98.5MB/s]Downloading:  85%|████████▌ | 9.73G/11.4G [01:42<00:16, 99.1MB/s]Downloading:  85%|████████▌ | 9.74G/11.4G [01:42<00:16, 100MB/s] Downloading:  85%|████████▌ | 9.75G/11.4G [01:42<00:16, 101MB/s]Downloading:  86%|████████▌ | 9.76G/11.4G [01:42<00:16, 101MB/s]Downloading:  86%|████████▌ | 9.77G/11.4G [01:43<00:17, 94.1MB/s]Downloading:  86%|████████▌ | 9.78G/11.4G [01:43<00:17, 95.1MB/s]Downloading:  86%|████████▌ | 9.79G/11.4G [01:43<00:16, 96.8MB/s]Downloading:  86%|████████▌ | 9.80G/11.4G [01:43<00:16, 98.4MB/s]Downloading:  86%|████████▌ | 9.81G/11.4G [01:43<00:16, 98.7MB/s]Downloading:  86%|████████▌ | 9.82G/11.4G [01:43<00:16, 98.7MB/s]Downloading:  86%|████████▌ | 9.83G/11.4G [01:43<00:15, 101MB/s] Downloading:  86%|████████▋ | 9.84G/11.4G [01:43<00:15, 100MB/s]Downloading:  86%|████████▋ | 9.85G/11.4G [01:43<00:15, 101MB/s]Downloading:  86%|████████▋ | 9.86G/11.4G [01:44<00:15, 99.6MB/s]Downloading:  87%|████████▋ | 9.87G/11.4G [01:44<00:15, 99.1MB/s]Downloading:  87%|████████▋ | 9.88G/11.4G [01:44<00:16, 94.9MB/s]Downloading:  87%|████████▋ | 9.89G/11.4G [01:44<00:15, 95.4MB/s]Downloading:  87%|████████▋ | 9.90G/11.4G [01:44<00:15, 98.2MB/s]Downloading:  87%|████████▋ | 9.91G/11.4G [01:44<00:15, 98.9MB/s]Downloading:  87%|████████▋ | 9.92G/11.4G [01:44<00:14, 100MB/s] Downloading:  87%|████████▋ | 9.93G/11.4G [01:44<00:14, 101MB/s]Downloading:  87%|████████▋ | 9.94G/11.4G [01:44<00:15, 94.1MB/s]Downloading:  87%|████████▋ | 9.95G/11.4G [01:44<00:15, 94.7MB/s]Downloading:  87%|████████▋ | 9.96G/11.4G [01:45<00:14, 97.8MB/s]Downloading:  87%|████████▋ | 9.97G/11.4G [01:45<00:14, 97.9MB/s]Downloading:  88%|████████▊ | 9.98G/11.4G [01:45<00:15, 92.6MB/s]Downloading:  88%|████████▊ | 9.99G/11.4G [01:45<00:15, 91.6MB/s]Downloading:  88%|████████▊ | 10.0G/11.4G [01:45<00:14, 94.8MB/s]Downloading:  88%|████████▊ | 10.0G/11.4G [01:45<00:14, 94.3MB/s]Downloading:  88%|████████▊ | 10.0G/11.4G [01:45<00:14, 96.8MB/s]Downloading:  88%|████████▊ | 10.0G/11.4G [01:45<00:13, 99.7MB/s]Downloading:  88%|████████▊ | 10.0G/11.4G [01:45<00:13, 101MB/s] Downloading:  88%|████████▊ | 10.1G/11.4G [01:45<00:13, 102MB/s]Downloading:  88%|████████▊ | 10.1G/11.4G [01:46<00:13, 102MB/s]Downloading:  88%|████████▊ | 10.1G/11.4G [01:46<00:13, 101MB/s]Downloading:  88%|████████▊ | 10.1G/11.4G [01:46<00:13, 100MB/s]Downloading:  88%|████████▊ | 10.1G/11.4G [01:46<00:13, 99.1MB/s]Downloading:  89%|████████▊ | 10.1G/11.4G [01:46<00:13, 100MB/s] Downloading:  89%|████████▊ | 10.1G/11.4G [01:46<00:13, 93.8MB/s]Downloading:  89%|████████▉ | 10.1G/11.4G [01:46<00:13, 94.6MB/s]Downloading:  89%|████████▉ | 10.1G/11.4G [01:46<00:13, 95.8MB/s]Downloading:  89%|████████▉ | 10.1G/11.4G [01:46<00:13, 94.1MB/s]Downloading:  89%|████████▉ | 10.2G/11.4G [01:47<00:13, 96.1MB/s]Downloading:  89%|████████▉ | 10.2G/11.4G [01:47<00:12, 95.9MB/s]Downloading:  89%|████████▉ | 10.2G/11.4G [01:47<00:12, 98.2MB/s]Downloading:  89%|████████▉ | 10.2G/11.4G [01:47<00:12, 97.1MB/s]Downloading:  89%|████████▉ | 10.2G/11.4G [01:47<00:12, 97.6MB/s]Downloading:  89%|████████▉ | 10.2G/11.4G [01:47<00:12, 98.9MB/s]Downloading:  90%|████████▉ | 10.2G/11.4G [01:47<00:11, 99.8MB/s]Downloading:  90%|████████▉ | 10.2G/11.4G [01:47<00:12, 96.6MB/s]Downloading:  90%|████████▉ | 10.2G/11.4G [01:47<00:13, 90.0MB/s]Downloading:  90%|████████▉ | 10.2G/11.4G [01:47<00:12, 93.5MB/s]Downloading:  90%|████████▉ | 10.3G/11.4G [01:48<00:12, 94.0MB/s]Downloading:  90%|████████▉ | 10.3G/11.4G [01:48<00:11, 96.8MB/s]Downloading:  90%|█████████ | 10.3G/11.4G [01:48<00:11, 98.5MB/s]Downloading:  90%|█████████ | 10.3G/11.4G [01:48<00:11, 99.1MB/s]Downloading:  90%|█████████ | 10.3G/11.4G [01:48<00:11, 100MB/s] Downloading:  90%|█████████ | 10.3G/11.4G [01:48<00:11, 98.9MB/s]Downloading:  90%|█████████ | 10.3G/11.4G [01:48<00:10, 101MB/s] Downloading:  91%|█████████ | 10.3G/11.4G [01:48<00:10, 101MB/s]Downloading:  91%|█████████ | 10.3G/11.4G [01:48<00:11, 94.0MB/s]Downloading:  91%|█████████ | 10.3G/11.4G [01:48<00:11, 96.4MB/s]Downloading:  91%|█████████ | 10.4G/11.4G [01:49<00:11, 95.0MB/s]Downloading:  91%|█████████ | 10.4G/11.4G [01:49<00:10, 97.8MB/s]Downloading:  91%|█████████ | 10.4G/11.4G [01:49<00:10, 96.7MB/s]Downloading:  91%|█████████ | 10.4G/11.4G [01:49<00:10, 98.2MB/s]Downloading:  91%|█████████ | 10.4G/11.4G [01:49<00:10, 99.5MB/s]Downloading:  91%|█████████ | 10.4G/11.4G [01:49<00:09, 101MB/s] Downloading:  91%|█████████▏| 10.4G/11.4G [01:49<00:09, 101MB/s]Downloading:  91%|█████████▏| 10.4G/11.4G [01:49<00:09, 102MB/s]Downloading:  92%|█████████▏| 10.4G/11.4G [01:49<00:09, 101MB/s]Downloading:  92%|█████████▏| 10.4G/11.4G [01:50<00:10, 93.6MB/s]Downloading:  92%|█████████▏| 10.5G/11.4G [01:50<00:09, 95.3MB/s]Downloading:  92%|█████████▏| 10.5G/11.4G [01:50<00:09, 96.9MB/s]Downloading:  92%|█████████▏| 10.5G/11.4G [01:50<00:09, 97.5MB/s]Downloading:  92%|█████████▏| 10.5G/11.4G [01:50<00:09, 98.3MB/s]Downloading:  92%|█████████▏| 10.5G/11.4G [01:50<00:09, 98.4MB/s]Downloading:  92%|█████████▏| 10.5G/11.4G [01:50<00:09, 94.1MB/s]Downloading:  92%|█████████▏| 10.5G/11.4G [01:50<00:09, 96.9MB/s]Downloading:  92%|█████████▏| 10.5G/11.4G [01:50<00:08, 97.7MB/s]Downloading:  92%|█████████▏| 10.5G/11.4G [01:50<00:08, 98.0MB/s]Downloading:  92%|█████████▏| 10.5G/11.4G [01:51<00:08, 100MB/s] Downloading:  93%|█████████▎| 10.6G/11.4G [01:51<00:08, 100MB/s]Downloading:  93%|█████████▎| 10.6G/11.4G [01:51<00:08, 99.8MB/s]Downloading:  93%|█████████▎| 10.6G/11.4G [01:51<00:08, 92.9MB/s]Downloading:  93%|█████████▎| 10.6G/11.4G [01:51<00:08, 95.4MB/s]Downloading:  93%|█████████▎| 10.6G/11.4G [01:51<00:08, 97.5MB/s]Downloading:  93%|█████████▎| 10.6G/11.4G [01:51<00:08, 98.5MB/s]Downloading:  93%|█████████▎| 10.6G/11.4G [01:51<00:08, 97.5MB/s]Downloading:  93%|█████████▎| 10.6G/11.4G [01:51<00:08, 93.7MB/s]Downloading:  93%|█████████▎| 10.6G/11.4G [01:51<00:08, 94.5MB/s]Downloading:  93%|█████████▎| 10.6G/11.4G [01:52<00:07, 95.3MB/s]Downloading:  93%|█████████▎| 10.7G/11.4G [01:52<00:07, 97.7MB/s]Downloading:  94%|█████████▎| 10.7G/11.4G [01:52<00:07, 98.9MB/s]Downloading:  94%|█████████▎| 10.7G/11.4G [01:52<00:07, 97.0MB/s]Downloading:  94%|█████████▎| 10.7G/11.4G [01:52<00:07, 93.5MB/s]Downloading:  94%|█████████▍| 10.7G/11.4G [01:52<00:07, 92.2MB/s]Downloading:  94%|█████████▍| 10.7G/11.4G [01:52<00:07, 95.1MB/s]Downloading:  94%|█████████▍| 10.7G/11.4G [01:52<00:07, 92.4MB/s]Downloading:  94%|█████████▍| 10.7G/11.4G [01:52<00:07, 94.5MB/s]Downloading:  94%|█████████▍| 10.7G/11.4G [01:53<00:06, 95.8MB/s]Downloading:  94%|█████████▍| 10.7G/11.4G [01:53<00:07, 91.3MB/s]Downloading:  94%|█████████▍| 10.8G/11.4G [01:53<00:06, 93.6MB/s]Downloading:  94%|█████████▍| 10.8G/11.4G [01:53<00:06, 96.1MB/s]Downloading:  94%|█████████▍| 10.8G/11.4G [01:53<00:06, 96.5MB/s]Downloading:  95%|█████████▍| 10.8G/11.4G [01:53<00:06, 97.2MB/s]Downloading:  95%|█████████▍| 10.8G/11.4G [01:53<00:06, 94.6MB/s]Downloading:  95%|█████████▍| 10.8G/11.4G [01:53<00:06, 95.1MB/s]Downloading:  95%|█████████▍| 10.8G/11.4G [01:53<00:06, 95.8MB/s]Downloading:  95%|█████████▍| 10.8G/11.4G [01:53<00:06, 96.2MB/s]Downloading:  95%|█████████▍| 10.8G/11.4G [01:54<00:06, 93.6MB/s]Downloading:  95%|█████████▌| 10.8G/11.4G [01:54<00:05, 95.9MB/s]Downloading:  95%|█████████▌| 10.9G/11.4G [01:54<00:05, 97.8MB/s]Downloading:  95%|█████████▌| 10.9G/11.4G [01:54<00:05, 98.7MB/s]Downloading:  95%|█████████▌| 10.9G/11.4G [01:54<00:05, 97.0MB/s]Downloading:  95%|█████████▌| 10.9G/11.4G [01:54<00:05, 96.9MB/s]Downloading:  96%|█████████▌| 10.9G/11.4G [01:54<00:05, 98.2MB/s]Downloading:  96%|█████████▌| 10.9G/11.4G [01:54<00:05, 93.3MB/s]Downloading:  96%|█████████▌| 10.9G/11.4G [01:54<00:05, 84.7MB/s]Downloading:  96%|█████████▌| 10.9G/11.4G [01:55<00:08, 57.5MB/s]Downloading:  96%|█████████▌| 10.9G/11.4G [01:55<00:06, 76.1MB/s]Downloading:  96%|█████████▌| 11.0G/11.4G [01:55<00:04, 93.5MB/s]Downloading:  96%|█████████▌| 11.0G/11.4G [01:55<00:04, 94.7MB/s]Downloading:  96%|█████████▌| 11.0G/11.4G [01:55<00:04, 95.3MB/s]Downloading:  96%|█████████▋| 11.0G/11.4G [01:55<00:04, 96.3MB/s]Downloading:  96%|█████████▋| 11.0G/11.4G [01:55<00:04, 98.2MB/s]Downloading:  96%|█████████▋| 11.0G/11.4G [01:55<00:04, 99.5MB/s]Downloading:  97%|█████████▋| 11.0G/11.4G [01:56<00:04, 92.3MB/s]Downloading:  97%|█████████▋| 11.0G/11.4G [01:56<00:03, 95.2MB/s]Downloading:  97%|█████████▋| 11.0G/11.4G [01:56<00:03, 97.4MB/s]Downloading:  97%|█████████▋| 11.0G/11.4G [01:56<00:03, 98.5MB/s]Downloading:  97%|█████████▋| 11.1G/11.4G [01:56<00:03, 94.1MB/s]Downloading:  97%|█████████▋| 11.1G/11.4G [01:56<00:03, 93.5MB/s]Downloading:  97%|█████████▋| 11.1G/11.4G [01:56<00:03, 92.5MB/s]Downloading:  97%|█████████▋| 11.1G/11.4G [01:56<00:03, 92.6MB/s]Downloading:  97%|█████████▋| 11.1G/11.4G [01:56<00:03, 83.0MB/s]Downloading:  97%|█████████▋| 11.1G/11.4G [01:57<00:03, 88.8MB/s]Downloading:  97%|█████████▋| 11.1G/11.4G [01:57<00:03, 92.1MB/s]Downloading:  98%|█████████▊| 11.1G/11.4G [01:57<00:03, 91.8MB/s]Downloading:  98%|█████████▊| 11.1G/11.4G [01:57<00:02, 93.0MB/s]Downloading:  98%|█████████▊| 11.1G/11.4G [01:57<00:02, 89.7MB/s]Downloading:  98%|█████████▊| 11.2G/11.4G [01:57<00:02, 92.4MB/s]Downloading:  98%|█████████▊| 11.2G/11.4G [01:57<00:02, 93.9MB/s]Downloading:  98%|█████████▊| 11.2G/11.4G [01:57<00:02, 94.5MB/s]Downloading:  98%|█████████▊| 11.2G/11.4G [01:57<00:02, 96.4MB/s]Downloading:  98%|█████████▊| 11.2G/11.4G [01:57<00:02, 98.5MB/s]Downloading:  98%|█████████▊| 11.2G/11.4G [01:58<00:02, 98.6MB/s]Downloading:  98%|█████████▊| 11.2G/11.4G [01:58<00:02, 96.3MB/s]Downloading:  98%|█████████▊| 11.2G/11.4G [01:58<00:01, 95.7MB/s]Downloading:  98%|█████████▊| 11.2G/11.4G [01:58<00:01, 91.9MB/s]Downloading:  99%|█████████▊| 11.2G/11.4G [01:58<00:01, 92.9MB/s]Downloading:  99%|█████████▊| 11.3G/11.4G [01:58<00:01, 93.4MB/s]Downloading:  99%|█████████▊| 11.3G/11.4G [01:58<00:01, 93.5MB/s]Downloading:  99%|█████████▉| 11.3G/11.4G [01:58<00:01, 92.4MB/s]Downloading:  99%|█████████▉| 11.3G/11.4G [01:58<00:01, 93.9MB/s]Downloading:  99%|█████████▉| 11.3G/11.4G [01:58<00:01, 96.7MB/s]Downloading:  99%|█████████▉| 11.3G/11.4G [01:59<00:01, 98.1MB/s]Downloading:  99%|█████████▉| 11.3G/11.4G [01:59<00:00, 97.3MB/s]Downloading:  99%|█████████▉| 11.3G/11.4G [01:59<00:00, 98.6MB/s]Downloading:  99%|█████████▉| 11.3G/11.4G [01:59<00:00, 97.2MB/s]Downloading:  99%|█████████▉| 11.3G/11.4G [01:59<00:00, 97.7MB/s]Downloading:  99%|█████████▉| 11.3G/11.4G [01:59<00:00, 93.6MB/s]Downloading: 100%|█████████▉| 11.4G/11.4G [01:59<00:00, 93.4MB/s]Downloading: 100%|█████████▉| 11.4G/11.4G [01:59<00:00, 94.3MB/s]Downloading: 100%|█████████▉| 11.4G/11.4G [01:59<00:00, 96.1MB/s]Downloading: 100%|█████████▉| 11.4G/11.4G [02:00<00:00, 97.8MB/s]Downloading: 100%|█████████▉| 11.4G/11.4G [02:00<00:00, 98.5MB/s]Downloading: 100%|██████████| 11.4G/11.4G [02:00<00:00, 94.9MB/s]
+[INFO|modeling_utils.py:2156] 2023-06-22 15:48:18,325 >> loading weights file pytorch_model.bin from cache at ./models--allenai--unifiedqa-v2-t5-3b-1251000/snapshots/bbd009107d81ac360670828f404b2659658857cd/pytorch_model.bin
+[INFO|modeling_utils.py:2606] 2023-06-22 15:49:07,363 >> All model checkpoint weights were used when initializing T5ForConditionalGeneration.
+
+[INFO|modeling_utils.py:2614] 2023-06-22 15:49:07,363 >> All the weights of T5ForConditionalGeneration were initialized from the model checkpoint at allenai/unifiedqa-v2-t5-3b-1251000.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use T5ForConditionalGeneration for predictions without further training.
+Running tokenizer on train dataset:   0%|          | 0/1 [00:00<?, ?ba/s]/uufs/chpc.utah.edu/common/home/u0403624/.conda/envs/38b/lib/python3.8/site-packages/transformers/tokenization_utils_base.py:3542: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+  warnings.warn(
+Running tokenizer on train dataset: 100%|██████████| 1/1 [00:00<00:00, 18.97ba/s]
+Running tokenizer on validation dataset:   0%|          | 0/1 [00:00<?, ?ba/s]Running tokenizer on validation dataset: 100%|██████████| 1/1 [00:00<00:00, 135.89ba/s]
+run_negatedqa_t5.py:598: FutureWarning: load_metric is deprecated and will be removed in the next major version of datasets. Use 'evaluate.load' instead, from the new library 🤗 Evaluate: https://huggingface.co/docs/evaluate
+  metric = load_metric("rouge")
+[INFO|integrations.py:680] 2023-06-22 15:49:37,624 >> Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+  0%|          | 0/5 [00:00<?, ?it/s] 20%|██        | 1/5 [00:04<00:19,  4.82s/it]                                              20%|██        | 1/5 [00:04<00:19,  4.82s/it][INFO|trainer.py:2907] 2023-06-22 15:49:46,699 >> ***** Running Evaluation *****
+[INFO|trainer.py:2909] 2023-06-22 15:49:46,699 >>   Num examples = 1
+[INFO|trainer.py:2912] 2023-06-22 15:49:46,699 >>   Batch size = 1
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [A                                             
+100%|██████████| 1/1 [00:00<00:00, 3218.96it/s][A 20%|██        | 1/5 [00:04<00:19,  4.82s/it]
+                                               [A[INFO|trainer.py:2656] 2023-06-22 15:49:46,783 >> Saving model checkpoint to ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-1
+[INFO|configuration_utils.py:447] 2023-06-22 15:49:46,790 >> Configuration saved in ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-1/config.json
+[INFO|modeling_utils.py:1632] 2023-06-22 15:50:51,704 >> The model is bigger than the maximum size per checkpoint (10GB) and is going to be split in 2 checkpoint shards. You can find where each parameters has been saved in the index located at ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-1/pytorch_model.bin.index.json.
+[INFO|tokenization_utils_base.py:2123] 2023-06-22 15:50:51,726 >> tokenizer config file saved in ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-1/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2130] 2023-06-22 15:50:51,730 >> Special tokens file saved in ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-1/special_tokens_map.json
+/uufs/chpc.utah.edu/common/home/u0403624/.conda/envs/38b/lib/python3.8/site-packages/torch/nn/modules/module.py:1365: UserWarning: Positional args are being deprecated, use kwargs instead. Refer to https://pytorch.org/docs/master/generated/torch.nn.Module.html#torch.nn.Module.state_dict for details.
+  warnings.warn(
+ 40%|████      | 2/5 [04:09<07:18, 146.14s/it]                                               40%|████      | 2/5 [04:09<07:18, 146.14s/it][INFO|trainer.py:2907] 2023-06-22 15:53:51,790 >> ***** Running Evaluation *****
+[INFO|trainer.py:2909] 2023-06-22 15:53:51,791 >>   Num examples = 1
+[INFO|trainer.py:2912] 2023-06-22 15:53:51,791 >>   Batch size = 1
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [A                                              
+100%|██████████| 1/1 [00:00<00:00, 166.78it/s][A 40%|████      | 2/5 [04:10<07:18, 146.14s/it]
+                                              [A[INFO|trainer.py:2656] 2023-06-22 15:53:51,885 >> Saving model checkpoint to ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-2
+[INFO|configuration_utils.py:447] 2023-06-22 15:53:51,891 >> Configuration saved in ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-2/config.json
+[INFO|modeling_utils.py:1632] 2023-06-22 15:54:56,380 >> The model is bigger than the maximum size per checkpoint (10GB) and is going to be split in 2 checkpoint shards. You can find where each parameters has been saved in the index located at ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-2/pytorch_model.bin.index.json.
+[INFO|tokenization_utils_base.py:2123] 2023-06-22 15:54:56,390 >> tokenizer config file saved in ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-2/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2130] 2023-06-22 15:54:56,393 >> Special tokens file saved in ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-2/special_tokens_map.json
+ 60%|██████    | 3/5 [07:07<05:21, 160.64s/it]                                               60%|██████    | 3/5 [07:07<05:21, 160.64s/it][INFO|trainer.py:2907] 2023-06-22 15:56:49,668 >> ***** Running Evaluation *****
+[INFO|trainer.py:2909] 2023-06-22 15:56:49,668 >>   Num examples = 1
+[INFO|trainer.py:2912] 2023-06-22 15:56:49,668 >>   Batch size = 1
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [A                                              
+100%|██████████| 1/1 [00:00<00:00, 101.40it/s][A 60%|██████    | 3/5 [07:07<05:21, 160.64s/it]
+                                              [A[INFO|trainer.py:2656] 2023-06-22 15:56:49,767 >> Saving model checkpoint to ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-3
+[INFO|configuration_utils.py:447] 2023-06-22 15:56:49,774 >> Configuration saved in ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-3/config.json
+[INFO|modeling_utils.py:1632] 2023-06-22 15:57:54,033 >> The model is bigger than the maximum size per checkpoint (10GB) and is going to be split in 2 checkpoint shards. You can find where each parameters has been saved in the index located at ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-3/pytorch_model.bin.index.json.
+[INFO|tokenization_utils_base.py:2123] 2023-06-22 15:57:54,037 >> tokenizer config file saved in ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-3/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2130] 2023-06-22 15:57:54,040 >> Special tokens file saved in ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-3/special_tokens_map.json
+ 80%|████████  | 4/5 [09:59<02:45, 165.11s/it]                                               80%|████████  | 4/5 [09:59<02:45, 165.11s/it][INFO|trainer.py:2907] 2023-06-22 15:59:41,646 >> ***** Running Evaluation *****
+[INFO|trainer.py:2909] 2023-06-22 15:59:41,647 >>   Num examples = 1
+[INFO|trainer.py:2912] 2023-06-22 15:59:41,647 >>   Batch size = 1
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [A                                              
+100%|██████████| 1/1 [00:00<00:00, 109.60it/s][A 80%|████████  | 4/5 [09:59<02:45, 165.11s/it]
+                                              [A[INFO|trainer.py:2656] 2023-06-22 15:59:41,742 >> Saving model checkpoint to ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-4
+[INFO|configuration_utils.py:447] 2023-06-22 15:59:41,747 >> Configuration saved in ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-4/config.json
+[INFO|modeling_utils.py:1632] 2023-06-22 16:00:39,520 >> The model is bigger than the maximum size per checkpoint (10GB) and is going to be split in 2 checkpoint shards. You can find where each parameters has been saved in the index located at ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-4/pytorch_model.bin.index.json.
+[INFO|tokenization_utils_base.py:2123] 2023-06-22 16:00:39,524 >> tokenizer config file saved in ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-4/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2130] 2023-06-22 16:00:39,527 >> Special tokens file saved in ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-4/special_tokens_map.json
+100%|██████████| 5/5 [12:52<00:00, 167.83s/it]                                              100%|██████████| 5/5 [12:52<00:00, 167.83s/it][INFO|trainer.py:2907] 2023-06-22 16:02:34,294 >> ***** Running Evaluation *****
+[INFO|trainer.py:2909] 2023-06-22 16:02:34,295 >>   Num examples = 1
+[INFO|trainer.py:2912] 2023-06-22 16:02:34,295 >>   Batch size = 1
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+                                     [A                                              
+100%|██████████| 1/1 [00:00<00:00, 194.22it/s][A100%|██████████| 5/5 [12:52<00:00, 167.83s/it]
+                                              [A[INFO|trainer.py:2656] 2023-06-22 16:02:34,386 >> Saving model checkpoint to ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-5
+[INFO|configuration_utils.py:447] 2023-06-22 16:02:34,392 >> Configuration saved in ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-5/config.json
+[INFO|modeling_utils.py:1632] 2023-06-22 16:03:36,419 >> The model is bigger than the maximum size per checkpoint (10GB) and is going to be split in 2 checkpoint shards. You can find where each parameters has been saved in the index located at ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-5/pytorch_model.bin.index.json.
+[INFO|tokenization_utils_base.py:2123] 2023-06-22 16:03:36,428 >> tokenizer config file saved in ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-5/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2130] 2023-06-22 16:03:36,433 >> Special tokens file saved in ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-5/special_tokens_map.json
+[INFO|trainer.py:1946] 2023-06-22 16:05:21,528 >> Loading best model from ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-5 (score: 4.976011753082275).
+                                              100%|██████████| 5/5 [16:55<00:00, 167.83s/it]100%|██████████| 5/5 [16:55<00:00, 203.12s/it]
+[INFO|trainer.py:2656] 2023-06-22 16:06:37,456 >> Saving model checkpoint to ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa
+[INFO|configuration_utils.py:447] 2023-06-22 16:06:37,461 >> Configuration saved in ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/config.json
+[INFO|modeling_utils.py:1632] 2023-06-22 16:07:46,669 >> The model is bigger than the maximum size per checkpoint (10GB) and is going to be split in 2 checkpoint shards. You can find where each parameters has been saved in the index located at ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/pytorch_model.bin.index.json.
+[INFO|tokenization_utils_base.py:2123] 2023-06-22 16:07:46,680 >> tokenizer config file saved in ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2130] 2023-06-22 16:07:46,683 >> Special tokens file saved in ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/special_tokens_map.json
+[INFO|trainer.py:2907] 2023-06-22 16:07:46,810 >> ***** Running Evaluation *****
+[INFO|trainer.py:2909] 2023-06-22 16:07:46,810 >>   Num examples = 1
+[INFO|trainer.py:2912] 2023-06-22 16:07:46,810 >>   Batch size = 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 198.12it/s]
+[INFO|modelcard.py:444] 2023-06-22 16:07:48,531 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Summarization', 'type': 'summarization'}}
+COMPLETED RUN_SING
+BEGINNING EVAL_SING
+[2023-06-22 16:08:09,763] [WARNING] [runner.py:178:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+Detected CUDA_VISIBLE_DEVICES=0: setting --include=localhost:0
+[2023-06-22 16:08:09,872] [INFO] [runner.py:504:main] cmd = /uufs/chpc.utah.edu/common/home/u0403624/.conda/envs/38b/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMF19 --master_addr=127.0.0.1 --master_port=29500 run_negatedqa_t5.py --per_device_eval_batch_size 1 --gradient_accumulation_steps 1 --deepspeed deepspeed_config.json --model_name_or_path ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa --train_file ../../data/unifiedqa_formatted_data//condaqa_train_unifiedqa.json --validation_file ../../data/unifiedqa_formatted_data//condaqa_dev_unifiedqa.json --test_file ../../data/unifiedqa_formatted_data//condaqa_dev_unifiedqa.json --do_eval --do_predict --predict_with_generate --per_device_train_batch_size 1 --learning_rate 1e-5 --num_train_epochs 5 --output_dir ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/test_predictions --logging_strategy epoch --evaluation_strategy epoch --report_to wandb --save_strategy epoch --overwrite_cache --seed 70 --summary_column answer --text_column input --source_prefix  --max_source_length 512 --max_target_length 100 --overwrite_output_dir
+[2023-06-22 16:08:11,306] [INFO] [launch.py:136:main] WORLD INFO DICT: {'localhost': [0]}
+[2023-06-22 16:08:11,306] [INFO] [launch.py:142:main] nnodes=1, num_local_procs=1, node_rank=0
+[2023-06-22 16:08:11,306] [INFO] [launch.py:155:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0]})
+[2023-06-22 16:08:11,306] [INFO] [launch.py:156:main] dist_world_size=1
+[2023-06-22 16:08:11,306] [INFO] [launch.py:158:main] Setting CUDA_VISIBLE_DEVICES=0
+No hparams found, using lam=1
+[2023-06-22 16:08:21,591] [INFO] [comm.py:633:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+06/22/2023 16:08:21 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1distributed training: True, 16-bits training: False
+06/22/2023 16:08:21 - INFO - __main__ - Training/evaluation parameters Seq2SeqTrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=deepspeed_config.json,
+disable_tqdm=False,
+do_eval=True,
+do_predict=True,
+do_train=False,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=epoch,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+generation_max_length=None,
+generation_num_beams=None,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=1e-05,
+length_column_name=length,
+load_best_model_at_end=False,
+local_rank=0,
+log_level=passive,
+log_level_replica=passive,
+log_on_each_node=True,
+logging_dir=../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/test_predictions/runs/Jun22_16-08-21_notch370,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=epoch,
+lr_scheduler_type=linear,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=None,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=5.0,
+optim=adamw_hf,
+output_dir=../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/test_predictions,
+overwrite_output_dir=True,
+past_index=-1,
+per_device_eval_batch_size=1,
+per_device_train_batch_size=1,
+predict_with_generate=True,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=['wandb'],
+resume_from_checkpoint=None,
+run_name=../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/test_predictions,
+save_on_each_node=False,
+save_steps=500,
+save_strategy=epoch,
+save_total_limit=None,
+seed=70,
+sharded_ddp=[],
+skip_memory_metrics=True,
+sortish_sampler=False,
+tf32=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+xpu_backend=None,
+)
+06/22/2023 16:08:21 - WARNING - datasets.builder - Using custom data configuration default-8c5421cb05efaa7e
+06/22/2023 16:08:21 - INFO - datasets.builder - Overwrite dataset info from restored data version.
+06/22/2023 16:08:21 - INFO - datasets.info - Loading Dataset info from ./json/default-8c5421cb05efaa7e/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab
+06/22/2023 16:08:21 - WARNING - datasets.builder - Found cached dataset json (/scratch/general/vast/u0403624/ScoNe/ScoNe/src/Supervised/./json/default-8c5421cb05efaa7e/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab)
+06/22/2023 16:08:21 - INFO - datasets.info - Loading Dataset info from /scratch/general/vast/u0403624/ScoNe/ScoNe/src/Supervised/./json/default-8c5421cb05efaa7e/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 84.00it/s]
+06/22/2023 16:08:22 - WARNING - datasets.builder - Using custom data configuration default-b05c27991949b179
+06/22/2023 16:08:22 - INFO - datasets.builder - Overwrite dataset info from restored data version.
+06/22/2023 16:08:22 - INFO - datasets.info - Loading Dataset info from ./json/default-b05c27991949b179/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab
+06/22/2023 16:08:22 - WARNING - datasets.builder - Found cached dataset json (/scratch/general/vast/u0403624/ScoNe/ScoNe/src/Supervised/./json/default-b05c27991949b179/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab)
+06/22/2023 16:08:22 - INFO - datasets.info - Loading Dataset info from /scratch/general/vast/u0403624/ScoNe/ScoNe/src/Supervised/./json/default-b05c27991949b179/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 711.56it/s]
+[INFO|configuration_utils.py:651] 2023-06-22 16:08:22,241 >> loading configuration file ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/config.json
+[INFO|configuration_utils.py:705] 2023-06-22 16:08:22,305 >> Model config T5Config {
+  "_name_or_path": "../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 16384,
+  "d_kv": 128,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "relu",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "gradient_checkpointing": false,
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": false,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 24,
+  "num_heads": 32,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "torch_dtype": "float32",
+  "transformers_version": "4.23.1",
+  "use_cache": true,
+  "vocab_size": 32100
+}
+
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:08:22,416 >> loading file spiece.model from cache at /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/hub/models--allenai--unifiedqa-v2-t5-large-1251000/snapshots/2fa7af8c013cdca9d13d4d0928b0a27e0c24f4fb/spiece.model
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:08:22,416 >> loading file added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:08:22,416 >> loading file special_tokens_map.json from cache at /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/hub/models--allenai--unifiedqa-v2-t5-large-1251000/snapshots/2fa7af8c013cdca9d13d4d0928b0a27e0c24f4fb/special_tokens_map.json
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:08:22,416 >> loading file tokenizer_config.json from cache at /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/hub/models--allenai--unifiedqa-v2-t5-large-1251000/snapshots/2fa7af8c013cdca9d13d4d0928b0a27e0c24f4fb/tokenizer_config.json
+[INFO|modeling_utils.py:2153] 2023-06-22 16:08:22,517 >> loading weights file ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/pytorch_model.bin.index.json
+[INFO|modeling_utils.py:2222] 2023-06-22 16:08:22,518 >> Detected DeepSpeed ZeRO-3: activating zero.init() for this model
+[2023-06-22 16:08:22,520] [WARNING] [config_utils.py:63:_process_deprecated_field] Config parameter cpu_offload is deprecated use offload_optimizer instead
+[2023-06-22 16:08:26,021] [INFO] [partition_parameters.py:413:__exit__] finished initializing model with 2.88B parameters
+[INFO|modeling_utils.py:2606] 2023-06-22 16:09:41,278 >> All model checkpoint weights were used when initializing T5ForConditionalGeneration.
+
+[INFO|modeling_utils.py:2614] 2023-06-22 16:09:41,278 >> All the weights of T5ForConditionalGeneration were initialized from the model checkpoint at ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use T5ForConditionalGeneration for predictions without further training.
+Running tokenizer on validation dataset:   0%|          | 0/1 [00:00<?, ?ba/s]/uufs/chpc.utah.edu/common/home/u0403624/.conda/envs/38b/lib/python3.8/site-packages/transformers/tokenization_utils_base.py:3542: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+  warnings.warn(
+06/22/2023 16:09:41 - INFO - datasets.arrow_dataset - Caching processed dataset at /scratch/general/vast/u0403624/ScoNe/ScoNe/src/Supervised/./json/default-b05c27991949b179/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab/cache-f4ca9b526e40ceea.arrow
+Running tokenizer on validation dataset: 100%|██████████| 1/1 [00:00<00:00, 15.44ba/s]
+Running tokenizer on prediction dataset:   0%|          | 0/1 [00:00<?, ?ba/s]06/22/2023 16:09:41 - INFO - datasets.arrow_dataset - Caching processed dataset at /scratch/general/vast/u0403624/ScoNe/ScoNe/src/Supervised/./json/default-b05c27991949b179/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab/cache-cb50443514a3b2f3.arrow
+Running tokenizer on prediction dataset: 100%|██████████| 1/1 [00:00<00:00, 210.40ba/s]
+run_negatedqa_t5.py:598: FutureWarning: load_metric is deprecated and will be removed in the next major version of datasets. Use 'evaluate.load' instead, from the new library 🤗 Evaluate: https://huggingface.co/docs/evaluate
+  metric = load_metric("rouge")
+06/22/2023 16:09:42 - INFO - __main__ - *** Evaluate ***
+[2023-06-22 16:09:42,047] [INFO] [logging.py:68:log_dist] [Rank 0] DeepSpeed info: version=0.7.3, git-hash=unknown, git-branch=unknown
+[2023-06-22 16:09:42,052] [WARNING] [config_utils.py:63:_process_deprecated_field] Config parameter cpu_offload is deprecated use offload_optimizer instead
+[2023-06-22 16:09:42,091] [INFO] [logging.py:68:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2023-06-22 16:09:42,092] [INFO] [logging.py:68:log_dist] [Rank 0] Creating ZeRO Offload
+[2023-06-22 16:09:42,173] [INFO] [utils.py:827:see_memory_usage] DeepSpeedZeRoOffload initialize [begin]
+[2023-06-22 16:09:42,173] [INFO] [utils.py:828:see_memory_usage] MA 10.87 GB         Max_MA 10.99 GB         CA 11.21 GB         Max_CA 11 GB 
+[2023-06-22 16:09:42,174] [INFO] [utils.py:836:see_memory_usage] CPU Virtual Memory:  used = 10.4 GB, percent = 4.1%
+Parameter Offload: Total persistent parameters: 126976 in 124 params
+[2023-06-22 16:09:42,279] [INFO] [utils.py:827:see_memory_usage] DeepSpeedZeRoOffload initialize [end]
+[2023-06-22 16:09:42,280] [INFO] [utils.py:828:see_memory_usage] MA 10.87 GB         Max_MA 10.87 GB         CA 11.21 GB         Max_CA 11 GB 
+[2023-06-22 16:09:42,280] [INFO] [utils.py:836:see_memory_usage] CPU Virtual Memory:  used = 10.4 GB, percent = 4.1%
+[2023-06-22 16:09:42,281] [INFO] [config.py:987:print] DeepSpeedEngine configuration:
+[2023-06-22 16:09:42,281] [INFO] [config.py:991:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2023-06-22 16:09:42,281] [INFO] [config.py:991:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2023-06-22 16:09:42,281] [INFO] [config.py:991:print]   amp_enabled .................. False
+[2023-06-22 16:09:42,281] [INFO] [config.py:991:print]   amp_params ................... False
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": null, 
+    "exps_dir": null, 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   bfloat16_enabled ............. False
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   checkpoint_tag_validation_enabled  True
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   checkpoint_tag_validation_fail  False
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x14c9791f2b80>
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   communication_data_type ...... None
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   curriculum_enabled ........... False
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   curriculum_params ............ False
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   dataloader_drop_last ......... False
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   disable_allgather ............ False
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   dump_state ................... False
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   dynamic_loss_scale_args ...... None
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   eigenvalue_enabled ........... False
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   eigenvalue_gas_boundary_resolution  1
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   eigenvalue_layer_num ......... 0
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   eigenvalue_max_iter .......... 100
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   eigenvalue_stability ......... 1e-06
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   eigenvalue_tol ............... 0.01
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   eigenvalue_verbose ........... False
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   elasticity_enabled ........... False
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   fp16_auto_cast ............... None
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   fp16_enabled ................. False
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   fp16_master_weights_and_gradients  False
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   global_rank .................. 0
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   gradient_accumulation_steps .. 1
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   gradient_clipping ............ 0.0
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   gradient_predivide_factor .... 1.0
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   initial_dynamic_scale ........ 4294967296
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   load_universal_checkpoint .... False
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   loss_scale ................... 0
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   memory_breakdown ............. False
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   monitor_config ............... <deepspeed.monitor.config.DeepSpeedMonitorConfig object at 0x14c9791f2c10>
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   optimizer_legacy_fusion ...... False
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   optimizer_name ............... None
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   optimizer_params ............. None
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0}
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   pld_enabled .................. False
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   pld_params ................... False
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   prescale_gradients ........... False
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   scheduler_name ............... WarmupLR
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   scheduler_params ............. {'warmup_min_lr': 0, 'warmup_max_lr': 1e-05, 'warmup_num_steps': 0}
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   sparse_attention ............. None
+[2023-06-22 16:09:42,282] [INFO] [config.py:991:print]   sparse_gradients_enabled ..... False
+[2023-06-22 16:09:42,283] [INFO] [config.py:991:print]   steps_per_print .............. 10
+[2023-06-22 16:09:42,283] [INFO] [config.py:991:print]   train_batch_size ............. 1
+[2023-06-22 16:09:42,283] [INFO] [config.py:991:print]   train_micro_batch_size_per_gpu  1
+[2023-06-22 16:09:42,283] [INFO] [config.py:991:print]   wall_clock_breakdown ......... False
+[2023-06-22 16:09:42,283] [INFO] [config.py:991:print]   world_size ................... 1
+[2023-06-22 16:09:42,283] [INFO] [config.py:991:print]   zero_allow_untested_optimizer  False
+[2023-06-22 16:09:42,283] [INFO] [config.py:991:print]   zero_config .................. stage=3 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=200000000 allgather_partitions=True allgather_bucket_size=200000000 overlap_comm=True load_from_fp32_weights=True elastic_checkpoint=False offload_param=None offload_optimizer=DeepSpeedZeroOffloadOptimizerConfig(device='cpu', nvme_path=None, buffer_count=4, pin_memory=False, pipeline=False, pipeline_read=False, pipeline_write=False, fast_init=False) sub_group_size=1000000000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=True prefetch_bucket_size=50000000 param_persistence_threshold=100000 model_persistence_threshold=9223372036854775807 max_live_parameters=1000000000 max_reuse_distance=1000000000 gather_16bit_weights_on_model_save=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False
+[2023-06-22 16:09:42,283] [INFO] [config.py:991:print]   zero_enabled ................. True
+[2023-06-22 16:09:42,283] [INFO] [config.py:991:print]   zero_optimization_stage ...... 3
+[2023-06-22 16:09:42,283] [INFO] [config.py:976:print_user_config]   json = {
+    "fp16": {
+        "enabled": false, 
+        "loss_scale": 0, 
+        "loss_scale_window": 1000, 
+        "hysteresis": 2, 
+        "min_loss_scale": 1
+    }, 
+    "zero_optimization": {
+        "stage": 3, 
+        "allgather_partitions": true, 
+        "allgather_bucket_size": 2.000000e+08, 
+        "reduce_scatter": true, 
+        "reduce_bucket_size": 2.000000e+08, 
+        "overlap_comm": true, 
+        "contiguous_gradients": true, 
+        "cpu_offload": true
+    }, 
+    "train_micro_batch_size_per_gpu": 1, 
+    "scheduler": {
+        "type": "WarmupLR", 
+        "params": {
+            "warmup_min_lr": 0, 
+            "warmup_max_lr": 1e-05, 
+            "warmup_num_steps": 0
+        }
+    }
+}
+Using /uufs/chpc.utah.edu/common/home/u0403624/.cache/torch_extensions/py38_cu116 as PyTorch extensions root...
+Emitting ninja build file /uufs/chpc.utah.edu/common/home/u0403624/.cache/torch_extensions/py38_cu116/utils/build.ninja...
+Building extension module utils...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module utils...
+Time to load utils op: 0.3225560188293457 seconds
+[INFO|trainer.py:2907] 2023-06-22 16:09:42,953 >> ***** Running Evaluation *****
+[INFO|trainer.py:2909] 2023-06-22 16:09:42,953 >>   Num examples = 1
+[INFO|trainer.py:2912] 2023-06-22 16:09:42,953 >>   Batch size = 1
+  0%|          | 0/1 [00:00<?, ?it/s]06/22/2023 16:09:47 - INFO - datasets.metric - Removing /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/metrics/rouge/default/default_experiment-1-0.arrow
+[INFO|integrations.py:680] 2023-06-22 16:09:47,880 >> Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+100%|██████████| 1/1 [00:03<00:00,  3.70s/it]
+***** eval metrics *****
+  eval_gen_len            =        2.0
+  eval_loss               =      4.976
+  eval_rouge1             =      100.0
+  eval_rouge2             =        0.0
+  eval_rougeL             =      100.0
+  eval_rougeLsum          =      100.0
+  eval_runtime            = 0:00:05.83
+  eval_samples            =          1
+  eval_samples_per_second =      0.171
+  eval_steps_per_second   =      0.171
+06/22/2023 16:09:51 - INFO - __main__ - *** Predict ***
+[INFO|trainer.py:2907] 2023-06-22 16:09:51,450 >> ***** Running Prediction *****
+[INFO|trainer.py:2909] 2023-06-22 16:09:51,450 >>   Num examples = 1
+[INFO|trainer.py:2912] 2023-06-22 16:09:51,450 >>   Batch size = 1
+  0%|          | 0/1 [00:00<?, ?it/s]06/22/2023 16:09:53 - INFO - datasets.metric - Removing /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/metrics/rouge/default/default_experiment-1-0.arrow
+100%|██████████| 1/1 [00:00<00:00,  8.16it/s]
+***** predict metrics *****
+  predict_gen_len            =        2.0
+  predict_loss               =      4.976
+  predict_rouge1             =      100.0
+  predict_rouge2             =        0.0
+  predict_rougeL             =      100.0
+  predict_rougeLsum          =      100.0
+  predict_runtime            = 0:00:01.57
+  predict_samples            =          1
+  predict_samples_per_second =      0.634
+  predict_steps_per_second   =      0.634
+[INFO|modelcard.py:444] 2023-06-22 16:09:53,053 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Summarization', 'type': 'summarization'}}
+[2023-06-22 16:09:55,403] [INFO] [launch.py:318:main] Process 3664968 exits successfully.
+../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 580.37it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 1441.59it/s]
+[INFO|configuration_utils.py:651] 2023-06-22 16:10:07,362 >> loading configuration file ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-1/config.json
+[INFO|configuration_utils.py:705] 2023-06-22 16:10:07,442 >> Model config T5Config {
+  "_name_or_path": "../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-1",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 16384,
+  "d_kv": 128,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "relu",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "gradient_checkpointing": false,
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": false,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 24,
+  "num_heads": 32,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "torch_dtype": "float32",
+  "transformers_version": "4.23.1",
+  "use_cache": true,
+  "vocab_size": 32100
+}
+
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:10:07,720 >> loading file spiece.model from cache at /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/hub/models--allenai--unifiedqa-v2-t5-large-1251000/snapshots/2fa7af8c013cdca9d13d4d0928b0a27e0c24f4fb/spiece.model
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:10:07,720 >> loading file added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:10:07,720 >> loading file special_tokens_map.json from cache at /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/hub/models--allenai--unifiedqa-v2-t5-large-1251000/snapshots/2fa7af8c013cdca9d13d4d0928b0a27e0c24f4fb/special_tokens_map.json
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:10:07,720 >> loading file tokenizer_config.json from cache at /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/hub/models--allenai--unifiedqa-v2-t5-large-1251000/snapshots/2fa7af8c013cdca9d13d4d0928b0a27e0c24f4fb/tokenizer_config.json
+[INFO|modeling_utils.py:2153] 2023-06-22 16:10:07,856 >> loading weights file ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-1/pytorch_model.bin.index.json
+[INFO|modeling_utils.py:2222] 2023-06-22 16:10:07,858 >> Detected DeepSpeed ZeRO-3: activating zero.init() for this model
+[INFO|modeling_utils.py:2606] 2023-06-22 16:11:32,232 >> All model checkpoint weights were used when initializing T5ForConditionalGeneration.
+
+[INFO|modeling_utils.py:2614] 2023-06-22 16:11:32,233 >> All the weights of T5ForConditionalGeneration were initialized from the model checkpoint at ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-1.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use T5ForConditionalGeneration for predictions without further training.
+Running tokenizer on validation dataset:   0%|          | 0/1 [00:00<?, ?ba/s]/uufs/chpc.utah.edu/common/home/u0403624/.conda/envs/38b/lib/python3.8/site-packages/transformers/tokenization_utils_base.py:3542: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+  warnings.warn(
+Running tokenizer on validation dataset: 100%|██████████| 1/1 [00:00<00:00, 16.25ba/s]
+Running tokenizer on prediction dataset:   0%|          | 0/1 [00:00<?, ?ba/s]Running tokenizer on prediction dataset: 100%|██████████| 1/1 [00:00<00:00, 223.80ba/s]
+run_negatedqa_t5.py:598: FutureWarning: load_metric is deprecated and will be removed in the next major version of datasets. Use 'evaluate.load' instead, from the new library 🤗 Evaluate: https://huggingface.co/docs/evaluate
+  metric = load_metric("rouge")
+[INFO|trainer.py:2907] 2023-06-22 16:11:33,937 >> ***** Running Evaluation *****
+[INFO|trainer.py:2909] 2023-06-22 16:11:33,937 >>   Num examples = 1
+[INFO|trainer.py:2912] 2023-06-22 16:11:33,937 >>   Batch size = 1
+  0%|          | 0/1 [00:00<?, ?it/s][INFO|integrations.py:680] 2023-06-22 16:11:37,993 >> Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+100%|██████████| 1/1 [00:02<00:00,  2.24s/it]
+[INFO|trainer.py:2907] 2023-06-22 16:11:40,101 >> ***** Running Prediction *****
+[INFO|trainer.py:2909] 2023-06-22 16:11:40,101 >>   Num examples = 1
+[INFO|trainer.py:2912] 2023-06-22 16:11:40,101 >>   Batch size = 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  8.14it/s]
+[INFO|modelcard.py:444] 2023-06-22 16:11:41,651 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Summarization', 'type': 'summarization'}}
+../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 667.88it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 1117.14it/s]
+[INFO|configuration_utils.py:651] 2023-06-22 16:11:54,981 >> loading configuration file ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-2/config.json
+[INFO|configuration_utils.py:705] 2023-06-22 16:11:55,044 >> Model config T5Config {
+  "_name_or_path": "../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-2",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 16384,
+  "d_kv": 128,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "relu",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "gradient_checkpointing": false,
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": false,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 24,
+  "num_heads": 32,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "torch_dtype": "float32",
+  "transformers_version": "4.23.1",
+  "use_cache": true,
+  "vocab_size": 32100
+}
+
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:11:55,194 >> loading file spiece.model from cache at /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/hub/models--allenai--unifiedqa-v2-t5-large-1251000/snapshots/2fa7af8c013cdca9d13d4d0928b0a27e0c24f4fb/spiece.model
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:11:55,194 >> loading file added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:11:55,194 >> loading file special_tokens_map.json from cache at /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/hub/models--allenai--unifiedqa-v2-t5-large-1251000/snapshots/2fa7af8c013cdca9d13d4d0928b0a27e0c24f4fb/special_tokens_map.json
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:11:55,194 >> loading file tokenizer_config.json from cache at /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/hub/models--allenai--unifiedqa-v2-t5-large-1251000/snapshots/2fa7af8c013cdca9d13d4d0928b0a27e0c24f4fb/tokenizer_config.json
+[INFO|modeling_utils.py:2153] 2023-06-22 16:11:55,293 >> loading weights file ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-2/pytorch_model.bin.index.json
+[INFO|modeling_utils.py:2222] 2023-06-22 16:11:55,295 >> Detected DeepSpeed ZeRO-3: activating zero.init() for this model
+[INFO|modeling_utils.py:2606] 2023-06-22 16:13:25,565 >> All model checkpoint weights were used when initializing T5ForConditionalGeneration.
+
+[INFO|modeling_utils.py:2614] 2023-06-22 16:13:25,565 >> All the weights of T5ForConditionalGeneration were initialized from the model checkpoint at ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-2.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use T5ForConditionalGeneration for predictions without further training.
+Running tokenizer on validation dataset:   0%|          | 0/1 [00:00<?, ?ba/s]/uufs/chpc.utah.edu/common/home/u0403624/.conda/envs/38b/lib/python3.8/site-packages/transformers/tokenization_utils_base.py:3542: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+  warnings.warn(
+Running tokenizer on validation dataset: 100%|██████████| 1/1 [00:00<00:00, 13.58ba/s]
+Running tokenizer on prediction dataset:   0%|          | 0/1 [00:00<?, ?ba/s]Running tokenizer on prediction dataset: 100%|██████████| 1/1 [00:00<00:00, 110.88ba/s]
+run_negatedqa_t5.py:598: FutureWarning: load_metric is deprecated and will be removed in the next major version of datasets. Use 'evaluate.load' instead, from the new library 🤗 Evaluate: https://huggingface.co/docs/evaluate
+  metric = load_metric("rouge")
+[INFO|trainer.py:2907] 2023-06-22 16:13:28,339 >> ***** Running Evaluation *****
+[INFO|trainer.py:2909] 2023-06-22 16:13:28,339 >>   Num examples = 1
+[INFO|trainer.py:2912] 2023-06-22 16:13:28,339 >>   Batch size = 1
+  0%|          | 0/1 [00:00<?, ?it/s][INFO|integrations.py:680] 2023-06-22 16:13:32,802 >> Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+100%|██████████| 1/1 [00:04<00:00,  4.66s/it]
+[INFO|trainer.py:2907] 2023-06-22 16:13:37,181 >> ***** Running Prediction *****
+[INFO|trainer.py:2909] 2023-06-22 16:13:37,181 >>   Num examples = 1
+[INFO|trainer.py:2912] 2023-06-22 16:13:37,181 >>   Batch size = 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  7.65it/s]
+[INFO|modelcard.py:444] 2023-06-22 16:13:38,788 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Summarization', 'type': 'summarization'}}
+../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-3
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 680.78it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 624.71it/s]
+[INFO|configuration_utils.py:651] 2023-06-22 16:13:59,309 >> loading configuration file ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-3/config.json
+[INFO|configuration_utils.py:705] 2023-06-22 16:13:59,415 >> Model config T5Config {
+  "_name_or_path": "../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-3",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 16384,
+  "d_kv": 128,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "relu",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "gradient_checkpointing": false,
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": false,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 24,
+  "num_heads": 32,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "torch_dtype": "float32",
+  "transformers_version": "4.23.1",
+  "use_cache": true,
+  "vocab_size": 32100
+}
+
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:14:09,594 >> loading file spiece.model from cache at /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/hub/models--allenai--unifiedqa-v2-t5-large-1251000/snapshots/2fa7af8c013cdca9d13d4d0928b0a27e0c24f4fb/spiece.model
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:14:09,594 >> loading file added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:14:09,594 >> loading file special_tokens_map.json from cache at /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/hub/models--allenai--unifiedqa-v2-t5-large-1251000/snapshots/2fa7af8c013cdca9d13d4d0928b0a27e0c24f4fb/special_tokens_map.json
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:14:09,594 >> loading file tokenizer_config.json from cache at /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/hub/models--allenai--unifiedqa-v2-t5-large-1251000/snapshots/2fa7af8c013cdca9d13d4d0928b0a27e0c24f4fb/tokenizer_config.json
+[INFO|modeling_utils.py:2153] 2023-06-22 16:14:09,736 >> loading weights file ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-3/pytorch_model.bin.index.json
+[INFO|modeling_utils.py:2222] 2023-06-22 16:14:09,738 >> Detected DeepSpeed ZeRO-3: activating zero.init() for this model
+[INFO|modeling_utils.py:2606] 2023-06-22 16:15:33,009 >> All model checkpoint weights were used when initializing T5ForConditionalGeneration.
+
+[INFO|modeling_utils.py:2614] 2023-06-22 16:15:33,009 >> All the weights of T5ForConditionalGeneration were initialized from the model checkpoint at ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-3.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use T5ForConditionalGeneration for predictions without further training.
+Running tokenizer on validation dataset:   0%|          | 0/1 [00:00<?, ?ba/s]/uufs/chpc.utah.edu/common/home/u0403624/.conda/envs/38b/lib/python3.8/site-packages/transformers/tokenization_utils_base.py:3542: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+  warnings.warn(
+Running tokenizer on validation dataset: 100%|██████████| 1/1 [00:00<00:00, 42.65ba/s]
+Running tokenizer on prediction dataset:   0%|          | 0/1 [00:00<?, ?ba/s]Running tokenizer on prediction dataset: 100%|██████████| 1/1 [00:00<00:00, 137.86ba/s]
+run_negatedqa_t5.py:598: FutureWarning: load_metric is deprecated and will be removed in the next major version of datasets. Use 'evaluate.load' instead, from the new library 🤗 Evaluate: https://huggingface.co/docs/evaluate
+  metric = load_metric("rouge")
+[INFO|trainer.py:2907] 2023-06-22 16:15:34,747 >> ***** Running Evaluation *****
+[INFO|trainer.py:2909] 2023-06-22 16:15:34,747 >>   Num examples = 1
+[INFO|trainer.py:2912] 2023-06-22 16:15:34,747 >>   Batch size = 1
+  0%|          | 0/1 [00:00<?, ?it/s][INFO|integrations.py:680] 2023-06-22 16:15:37,067 >> Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+100%|██████████| 1/1 [00:04<00:00,  4.22s/it]
+[INFO|trainer.py:2907] 2023-06-22 16:15:41,159 >> ***** Running Prediction *****
+[INFO|trainer.py:2909] 2023-06-22 16:15:41,159 >>   Num examples = 1
+[INFO|trainer.py:2912] 2023-06-22 16:15:41,159 >>   Batch size = 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  7.73it/s]
+[INFO|modelcard.py:444] 2023-06-22 16:15:42,743 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Summarization', 'type': 'summarization'}}
+../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-4
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 473.50it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 983.89it/s]
+[INFO|configuration_utils.py:651] 2023-06-22 16:15:58,156 >> loading configuration file ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-4/config.json
+[INFO|configuration_utils.py:705] 2023-06-22 16:15:58,189 >> Model config T5Config {
+  "_name_or_path": "../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-4",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 16384,
+  "d_kv": 128,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "relu",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "gradient_checkpointing": false,
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": false,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 24,
+  "num_heads": 32,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "torch_dtype": "float32",
+  "transformers_version": "4.23.1",
+  "use_cache": true,
+  "vocab_size": 32100
+}
+
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:15:58,315 >> loading file spiece.model from cache at /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/hub/models--allenai--unifiedqa-v2-t5-large-1251000/snapshots/2fa7af8c013cdca9d13d4d0928b0a27e0c24f4fb/spiece.model
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:15:58,315 >> loading file added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:15:58,316 >> loading file special_tokens_map.json from cache at /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/hub/models--allenai--unifiedqa-v2-t5-large-1251000/snapshots/2fa7af8c013cdca9d13d4d0928b0a27e0c24f4fb/special_tokens_map.json
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:15:58,316 >> loading file tokenizer_config.json from cache at /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/hub/models--allenai--unifiedqa-v2-t5-large-1251000/snapshots/2fa7af8c013cdca9d13d4d0928b0a27e0c24f4fb/tokenizer_config.json
+[INFO|modeling_utils.py:2153] 2023-06-22 16:15:58,396 >> loading weights file ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-4/pytorch_model.bin.index.json
+[INFO|modeling_utils.py:2222] 2023-06-22 16:15:58,398 >> Detected DeepSpeed ZeRO-3: activating zero.init() for this model
+[INFO|modeling_utils.py:2606] 2023-06-22 16:16:51,983 >> All model checkpoint weights were used when initializing T5ForConditionalGeneration.
+
+[INFO|modeling_utils.py:2614] 2023-06-22 16:16:51,984 >> All the weights of T5ForConditionalGeneration were initialized from the model checkpoint at ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-4.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use T5ForConditionalGeneration for predictions without further training.
+Running tokenizer on validation dataset:   0%|          | 0/1 [00:00<?, ?ba/s]/uufs/chpc.utah.edu/common/home/u0403624/.conda/envs/38b/lib/python3.8/site-packages/transformers/tokenization_utils_base.py:3542: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+  warnings.warn(
+Running tokenizer on validation dataset: 100%|██████████| 1/1 [00:00<00:00, 60.24ba/s]
+Running tokenizer on prediction dataset:   0%|          | 0/1 [00:00<?, ?ba/s]Running tokenizer on prediction dataset: 100%|██████████| 1/1 [00:00<00:00, 200.92ba/s]
+run_negatedqa_t5.py:598: FutureWarning: load_metric is deprecated and will be removed in the next major version of datasets. Use 'evaluate.load' instead, from the new library 🤗 Evaluate: https://huggingface.co/docs/evaluate
+  metric = load_metric("rouge")
+[INFO|trainer.py:2907] 2023-06-22 16:16:53,749 >> ***** Running Evaluation *****
+[INFO|trainer.py:2909] 2023-06-22 16:16:53,749 >>   Num examples = 1
+[INFO|trainer.py:2912] 2023-06-22 16:16:53,749 >>   Batch size = 1
+  0%|          | 0/1 [00:00<?, ?it/s][INFO|integrations.py:680] 2023-06-22 16:16:56,036 >> Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+100%|██████████| 1/1 [00:02<00:00,  2.38s/it]
+[INFO|trainer.py:2907] 2023-06-22 16:16:58,295 >> ***** Running Prediction *****
+[INFO|trainer.py:2909] 2023-06-22 16:16:58,295 >>   Num examples = 1
+[INFO|trainer.py:2912] 2023-06-22 16:16:58,295 >>   Batch size = 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  8.42it/s]
+[INFO|modelcard.py:444] 2023-06-22 16:16:59,866 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Summarization', 'type': 'summarization'}}
+../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-5
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 524.62it/s]
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 1357.60it/s]
+[INFO|configuration_utils.py:651] 2023-06-22 16:17:12,732 >> loading configuration file ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-5/config.json
+[INFO|configuration_utils.py:705] 2023-06-22 16:17:12,760 >> Model config T5Config {
+  "_name_or_path": "../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-5",
+  "architectures": [
+    "T5ForConditionalGeneration"
+  ],
+  "d_ff": 16384,
+  "d_kv": 128,
+  "d_model": 1024,
+  "decoder_start_token_id": 0,
+  "dense_act_fn": "relu",
+  "dropout_rate": 0.1,
+  "eos_token_id": 1,
+  "feed_forward_proj": "relu",
+  "gradient_checkpointing": false,
+  "initializer_factor": 1.0,
+  "is_encoder_decoder": true,
+  "is_gated_act": false,
+  "layer_norm_epsilon": 1e-06,
+  "model_type": "t5",
+  "n_positions": 512,
+  "num_decoder_layers": 24,
+  "num_heads": 32,
+  "num_layers": 24,
+  "output_past": true,
+  "pad_token_id": 0,
+  "relative_attention_max_distance": 128,
+  "relative_attention_num_buckets": 32,
+  "task_specific_params": {
+    "summarization": {
+      "early_stopping": true,
+      "length_penalty": 2.0,
+      "max_length": 200,
+      "min_length": 30,
+      "no_repeat_ngram_size": 3,
+      "num_beams": 4,
+      "prefix": "summarize: "
+    },
+    "translation_en_to_de": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to German: "
+    },
+    "translation_en_to_fr": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to French: "
+    },
+    "translation_en_to_ro": {
+      "early_stopping": true,
+      "max_length": 300,
+      "num_beams": 4,
+      "prefix": "translate English to Romanian: "
+    }
+  },
+  "torch_dtype": "float32",
+  "transformers_version": "4.23.1",
+  "use_cache": true,
+  "vocab_size": 32100
+}
+
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:17:12,987 >> loading file spiece.model from cache at /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/hub/models--allenai--unifiedqa-v2-t5-large-1251000/snapshots/2fa7af8c013cdca9d13d4d0928b0a27e0c24f4fb/spiece.model
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:17:12,987 >> loading file added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:17:12,987 >> loading file special_tokens_map.json from cache at /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/hub/models--allenai--unifiedqa-v2-t5-large-1251000/snapshots/2fa7af8c013cdca9d13d4d0928b0a27e0c24f4fb/special_tokens_map.json
+[INFO|tokenization_utils_base.py:1773] 2023-06-22 16:17:12,987 >> loading file tokenizer_config.json from cache at /uufs/chpc.utah.edu/common/home/u0403624/.cache/huggingface/hub/models--allenai--unifiedqa-v2-t5-large-1251000/snapshots/2fa7af8c013cdca9d13d4d0928b0a27e0c24f4fb/tokenizer_config.json
+[INFO|modeling_utils.py:2153] 2023-06-22 16:17:13,072 >> loading weights file ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-5/pytorch_model.bin.index.json
+[INFO|modeling_utils.py:2222] 2023-06-22 16:17:13,074 >> Detected DeepSpeed ZeRO-3: activating zero.init() for this model
+[INFO|modeling_utils.py:2606] 2023-06-22 16:18:06,346 >> All model checkpoint weights were used when initializing T5ForConditionalGeneration.
+
+[INFO|modeling_utils.py:2614] 2023-06-22 16:18:06,346 >> All the weights of T5ForConditionalGeneration were initialized from the model checkpoint at ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-5.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use T5ForConditionalGeneration for predictions without further training.
+Running tokenizer on validation dataset:   0%|          | 0/1 [00:00<?, ?ba/s]/uufs/chpc.utah.edu/common/home/u0403624/.conda/envs/38b/lib/python3.8/site-packages/transformers/tokenization_utils_base.py:3542: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+  warnings.warn(
+Running tokenizer on validation dataset: 100%|██████████| 1/1 [00:00<00:00, 65.24ba/s]
+Running tokenizer on prediction dataset:   0%|          | 0/1 [00:00<?, ?ba/s]Running tokenizer on prediction dataset: 100%|██████████| 1/1 [00:00<00:00, 203.54ba/s]
+run_negatedqa_t5.py:598: FutureWarning: load_metric is deprecated and will be removed in the next major version of datasets. Use 'evaluate.load' instead, from the new library 🤗 Evaluate: https://huggingface.co/docs/evaluate
+  metric = load_metric("rouge")
+[INFO|trainer.py:2907] 2023-06-22 16:18:08,019 >> ***** Running Evaluation *****
+[INFO|trainer.py:2909] 2023-06-22 16:18:08,020 >>   Num examples = 1
+[INFO|trainer.py:2912] 2023-06-22 16:18:08,020 >>   Batch size = 1
+  0%|          | 0/1 [00:00<?, ?it/s][INFO|integrations.py:680] 2023-06-22 16:18:10,220 >> Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+100%|██████████| 1/1 [00:02<00:00,  2.18s/it]
+[INFO|trainer.py:2907] 2023-06-22 16:18:12,274 >> ***** Running Prediction *****
+[INFO|trainer.py:2909] 2023-06-22 16:18:12,274 >>   Num examples = 1
+[INFO|trainer.py:2912] 2023-06-22 16:18:12,274 >>   Batch size = 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  7.75it/s]
+[INFO|modelcard.py:444] 2023-06-22 16:18:13,785 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Summarization', 'type': 'summarization'}}
+COMPLETED EVAL_SING
+BEGINNING COMPUTE_STATS
+/uufs/chpc.utah.edu/common/home/u0403624/.conda/envs/38b/lib/python3.8/site-packages/transformers/generation_utils.py:1296: UserWarning: Neither `max_length` nor `max_new_tokens` has been set, `max_length` will default to 20 (`self.config.max_length`). Controlling `max_length` via the config is deprecated and `max_length` will be removed from the config in v5 of Transformers -- we recommend using `max_new_tokens` to control the maximum length of the generation.
+  warnings.warn(
+0.0
+../../../out/unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-1
+0.0
+0.0
+../../../out/unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-2
+0.0
+0.0
+../../../out/unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-3
+0.0
+0.0
+../../../out/unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-4
+0.0
+0.0
+../../../out/unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-5
+0.0
+COMPLETED COMPUTE_STATS
