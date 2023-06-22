@@ -1,0 +1,7 @@
+,A,B,C,D
+no_negation,0.65,0.63,0.555,0.46
+one_not_scoped,0.56,0.53,0.48,0.415
+one_scoped,0.415,0.49,0.52,0.48
+one_scoped_one_not_scoped,0.42,0.47,0.48,0.54
+two_not_scoped,0.51,0.555,0.455,0.435
+two_scoped,0.46,0.5,0.495,0.425

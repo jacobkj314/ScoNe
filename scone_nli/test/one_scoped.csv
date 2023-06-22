@@ -1,4 +1,4 @@
-,sentence1,sentence2,gold_label,sentence1_lex,sentence2_lex
+,sentence1_edited,sentence2_edited,gold_label_edited,sentence1_lex,sentence2_lex
 0,the man does not own a dog,the man does not own a mammal,neutral,dog,mammal
 1,the man does not own a mammal,the man does not own a dog,entailment,mammal,dog
 2,the man does not own a dog,the man does not own an animal,neutral,dog,animal

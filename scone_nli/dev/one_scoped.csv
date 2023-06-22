@@ -1,0 +1,201 @@
+Unnamed: 0,sentence1_edited,sentence2_edited,gold_label_edited,sentence1_lex,sentence2_lex
+0,There is a man not wearing a hat staring at people on a subway.,There is a man not wearing a sunhat staring at people on a subway.,entailment,hat,sunhat
+1,There is a man not wearing a sunhat staring at people on a subway.,There is a man not wearing a hat staring at people on a subway.,neutral,sunhat,hat
+2,There is a man not wearing a hat staring at people on a subway.,There is a man not wearing a sombrero staring at people on a subway.,entailment,hat,sombrero
+3,There is a man not wearing a sombrero staring at people on a subway.,There is a man not wearing a hat staring at people on a subway.,neutral,sombrero,hat
+4,There is a man not wearing a hat staring at people on a subway.,There is a man not wearing a fedora staring at people on a subway.,entailment,hat,fedora
+5,There is a man not wearing a fedora staring at people on a subway.,There is a man not wearing a hat staring at people on a subway.,neutral,fedora,hat
+6,Some dishes do not have rice.,Some dishes do not have food.,neutral,rice,food
+7,Some dishes do not have food.,Some dishes do not have rice.,entailment,food,rice
+8,"A man, not wearing a shirt, is sitting on a rock","A man, not wearing a work-shirt, is sitting on a rock",entailment,shirt,work-shirt
+9,"A man, not wearing a work-shirt, is sitting on a rock","A man, not wearing a shirt, is sitting on a rock",neutral,work-shirt,shirt
+10,"A man, not wearing a shirt, is sitting on a rock","A man, not wearing a T-shirt, is sitting on a rock",entailment,shirt,t-shirt
+11,"A man, not wearing a T-shirt, is sitting on a rock","A man, not wearing a shirt, is sitting on a rock",neutral,t-shirt,shirt
+12,A boy not wearing a shirt is walking holding a tree branch near the park.,A boy not wearing a work-shirt is walking holding a tree branch near the park.,entailment,shirt,work-shirt
+13,A boy not wearing a work-shirt is walking holding a tree branch near the park.,A boy not wearing a shirt is walking holding a tree branch near the park.,neutral,work-shirt,shirt
+14,A boy not wearing a shirt is walking holding a tree branch near the park.,A boy not wearing a T-shirt is walking holding a tree branch near the park.,entailment,shirt,t-shirt
+15,A boy not wearing a T-shirt is walking holding a tree branch near the park.,A boy not wearing a shirt is walking holding a tree branch near the park.,neutral,t-shirt,shirt
+16,The three children are not holding plants.,The three children are not holding daisies.,entailment,plants,daisies
+17,The three children are not holding daisies.,The three children are not holding plants.,neutral,daisies,plants
+18,The three children are not holding plants.,The three children are not holding herbs.,entailment,plants,herbs
+19,The three children are not holding herbs.,The three children are not holding plants.,neutral,herbs,plants
+20,The three children are not holding plants.,The three children are not holding lilies.,entailment,plants,lilies
+21,The three children are not holding lilies.,The three children are not holding plants.,neutral,lilies,plants
+22,The three children are not holding plants.,The three children are not holding flowers.,entailment,plants,flowers
+23,The three children are not holding flowers.,The three children are not holding plants.,neutral,flowers,plants
+24,The three children are not holding plants.,The three children are not holding poppies.,entailment,plants,poppies
+25,The three children are not holding poppies.,The three children are not holding plants.,neutral,poppies,plants
+26,The three children are not holding plants.,The three children are not holding saplings.,entailment,plants,saplings
+27,The three children are not holding saplings.,The three children are not holding plants.,neutral,saplings,plants
+28,The three children are not holding plants.,The three children are not holding clovers.,entailment,plants,clovers
+29,The three children are not holding clovers.,The three children are not holding plants.,neutral,clovers,plants
+30,The three children are not holding plants.,The three children are not holding shrubs.,entailment,plants,shrubs
+31,The three children are not holding shrubs.,The three children are not holding plants.,neutral,shrubs,plants
+32,The three children are not holding plants.,The three children are not holding weeds.,entailment,plants,weeds
+33,The three children are not holding weeds.,The three children are not holding plants.,neutral,weeds,plants
+34,The three children are not holding plants.,The three children are not holding lilacs.,entailment,plants,lilacs
+35,The three children are not holding lilacs.,The three children are not holding plants.,neutral,lilacs,plants
+36,The three children are not holding plants.,The three children are not holding sunflowers.,entailment,plants,sunflowers
+37,The three children are not holding sunflowers.,The three children are not holding plants.,neutral,sunflowers,plants
+38,The three children are not holding plants.,The three children are not holding vines.,entailment,plants,vines
+39,The three children are not holding vines.,The three children are not holding plants.,neutral,vines,plants
+40,The three children are not holding plants.,The three children are not holding reeds.,entailment,plants,reeds
+41,The three children are not holding reeds.,The three children are not holding plants.,neutral,reeds,plants
+42,The three children are not holding plants.,The three children are not holding tulips.,entailment,plants,tulips
+43,The three children are not holding tulips.,The three children are not holding plants.,neutral,tulips,plants
+44,The three children are not holding plants.,The three children are not holding roses.,entailment,plants,roses
+45,The three children are not holding roses.,The three children are not holding plants.,neutral,roses,plants
+46,The three children are not holding plants.,The three children are not holding houseplants.,entailment,plants,houseplants
+47,The three children are not holding houseplants.,The three children are not holding plants.,neutral,houseplants,plants
+48,The three children are not holding plants.,The three children are not holding ferns.,entailment,plants,ferns
+49,The three children are not holding ferns.,The three children are not holding plants.,neutral,ferns,plants
+50,The girl does not wear a hat.,The girl does not wear a sunhat.,entailment,hat,sunhat
+51,The girl does not wear a sunhat.,The girl does not wear a hat.,neutral,sunhat,hat
+52,The girl does not wear a hat.,The girl does not wear a fedora.,entailment,hat,fedora
+53,The girl does not wear a fedora.,The girl does not wear a hat.,neutral,fedora,hat
+54,The girl does not wear a hat.,The girl does not wear a sombrero.,entailment,hat,sombrero
+55,The girl does not wear a sombrero.,The girl does not wear a hat.,neutral,sombrero,hat
+56,a man walks confidently not dropping produce,a man walks confidently not dropping food,neutral,produce,food
+57,a man walks confidently not dropping food,a man walks confidently not dropping produce,entailment,food,produce
+58,a man walks confidently not dropping produce,a man walks confidently not dropping bananas,entailment,produce,bananas
+59,a man walks confidently not dropping bananas,a man walks confidently not dropping produce,neutral,bananas,produce
+60,a man walks confidently not dropping produce,a man walks confidently not dropping eggplants,entailment,produce,eggplants
+61,a man walks confidently not dropping eggplants,a man walks confidently not dropping produce,neutral,eggplants,produce
+62,a man walks confidently not dropping produce,a man walks confidently not dropping papayas,entailment,produce,papayas
+63,a man walks confidently not dropping papayas,a man walks confidently not dropping produce,neutral,papayas,produce
+64,a man walks confidently not dropping produce,a man walks confidently not dropping cauliflower,entailment,produce,cauliflower
+65,a man walks confidently not dropping cauliflowers,a man walks confidently not dropping produce,neutral,cauliflowers,produce
+66,a man walks confidently not dropping produce,a man walks confidently not dropping watermelons,entailment,produce,watermelons
+67,a man walks confidently not dropping watermelons,a man walks confidently not dropping produce,neutral,watermelons,produce
+68,a man walks confidently not dropping produce,a man walks confidently not dropping mangos,entailment,produce,mangos
+69,a man walks confidently not dropping mangos,a man walks confidently not dropping produce,neutral,mangos,produce
+70,a man walks confidently not dropping produce,a man walks confidently not dropping pears,entailment,produce,pears
+71,a man walks confidently not dropping pears,a man walks confidently not dropping produce,neutral,pears,produce
+72,a man walks confidently not dropping produce,a man walks confidently not dropping carrots,entailment,produce,carrots
+73,a man walks confidently not dropping carrots,a man walks confidently not dropping produce,neutral,carrots,produce
+74,a man walks confidently not dropping produce,a man walks confidently not dropping celery,entailment,produce,celery
+75,a man walks confidently not dropping celery,a man walks confidently not dropping produce,neutral,celery,produce
+76,a man walks confidently not dropping produce,a man walks confidently not dropping onions,entailment,produce,onions
+77,a man walks confidently not dropping onions,a man walks confidently not dropping produce,neutral,onions,produce
+78,a man walks confidently not dropping produce,a man walks confidently not dropping spinach,entailment,produce,spinach
+79,a man walks confidently not dropping spinach,a man walks confidently not dropping produce,neutral,spinach,produce
+80,a man walks confidently not dropping produce,a man walks confidently not dropping kale,entailment,produce,kale
+81,a man walks confidently not dropping kale,a man walks confidently not dropping produce,neutral,kale,produce
+82,a man walks confidently not dropping produce,a man walks confidently not dropping apples,entailment,produce,apples
+83,a man walks confidently not dropping apples,a man walks confidently not dropping produce,neutral,apples,produce
+84,a man walks confidently not dropping produce,a man walks confidently not dropping lettuce,entailment,produce,lettuce
+85,a man walks confidently not dropping lettuce,a man walks confidently not dropping produce,neutral,lettuce,produce
+86,a man walks confidently not dropping produce,a man walks confidently not dropping lemons,entailment,produce,lemons
+87,a man walks confidently not dropping lemons,a man walks confidently not dropping produce,neutral,lemons,produce
+88,a man walks confidently not dropping produce,a man walks confidently not dropping plums,entailment,produce,plums
+89,a man walks confidently not dropping plums,a man walks confidently not dropping produce,neutral,plums,produce
+90,a man walks confidently not dropping produce,a man walks confidently not dropping tomatoes,entailment,produce,tomatoes
+91,a man walks confidently not dropping tomatoes,a man walks confidently not dropping produce,neutral,tomatoes,produce
+92,a man walks confidently not dropping produce,a man walks confidently not dropping cucumbers,entailment,produce,cucumbers
+93,a man walks confidently not dropping cucumbers,a man walks confidently not dropping produce,neutral,cucumbers,produce
+94,a man walks confidently not dropping produce,a man walks confidently not dropping grapes,entailment,produce,grapes
+95,a man walks confidently not dropping grapes,a man walks confidently not dropping produce,neutral,grapes,produce
+96,a man walks confidently not dropping produce,a man walks confidently not dropping cabbage,entailment,produce,cabbage
+97,a man walks confidently not dropping cabbage,a man walks confidently not dropping produce,neutral,cabbage,produce
+98,The restaurant does not let oriental people in,The restaurant does not let oriental women in,entailment,people,women
+99,The restaurant does not let oriental women in,The restaurant does not let oriental people in,neutral,women,people
+100,The restaurant does not let oriental people in,The restaurant does not let oriental youths in,entailment,people,youths
+101,The restaurant does not let oriental youths in,The restaurant does not let oriental people in,neutral,youths,people
+102,A woman did not like food.,A woman did not like guacamole.,entailment,food,guacamole
+103,A woman did not like guacamole.,A woman did not like food.,neutral,guacamole,food
+104,A woman did not like food.,A woman did not like omelet.,entailment,food,omelet
+105,A woman did not like omelet.,A woman did not like food.,neutral,omelet,food
+106,A woman did not like food.,A woman did not like breakfast.,entailment,food,breakfast
+107,A woman did not like breakfast.,A woman did not like food.,neutral,breakfast,food
+108,A woman did not like food.,A woman did not like soup.,entailment,food,soup
+109,A woman did not like soup.,A woman did not like food.,neutral,soup,food
+110,A woman did not like food.,A woman did not like meatball.,entailment,food,meatball
+111,A woman did not like meatball.,A woman did not like food.,neutral,meatball,food
+112,A woman did not like food.,A woman did not like cake.,entailment,food,cake
+113,A woman did not like cake.,A woman did not like food.,neutral,cake,food
+114,A woman did not like food.,A woman did not like ratatouille.,entailment,food,ratatouille
+115,A woman did not like ratatouille.,A woman did not like food.,neutral,ratatouille,food
+116,A woman did not like food.,A woman did not like hummus.,entailment,food,hummus
+117,A woman did not like hummus.,A woman did not like food.,neutral,hummus,food
+118,A woman did not like food.,A woman did not like fondue.,entailment,food,fondue
+119,A woman did not like fondue.,A woman did not like food.,neutral,fondue,food
+120,A woman did not like food.,A woman did not like rice.,entailment,food,rice
+121,A woman did not like rice.,A woman did not like food.,neutral,rice,food
+122,A woman did not like food.,A woman did not like pasta.,entailment,food,pasta
+123,A woman did not like pasta.,A woman did not like food.,neutral,pasta,food
+124,A woman did not like food.,A woman did not like spaghetti.,entailment,food,spaghetti
+125,A woman did not like spaghetti.,A woman did not like food.,neutral,spaghetti,food
+126,A woman did not like food.,A woman did not like lasagna.,entailment,food,lasagna
+127,A woman did not like lasagna.,A woman did not like food.,neutral,lasagna,food
+128,A woman did not like food.,A woman did not like eggs.,entailment,food,eggs
+129,A woman did not like eggs.,A woman did not like food.,neutral,eggs,food
+130,A woman did not like food.,A woman did not like risotto.,entailment,food,risotto
+131,A woman did not like risotto.,A woman did not like food.,neutral,risotto,food
+132,A woman did not like food.,A woman did not like fries.,entailment,food,fries
+133,A woman did not like fries.,A woman did not like food.,neutral,fries,food
+134,A woman did not like food.,A woman did not like naan.,entailment,food,naan
+135,A woman did not like naan.,A woman did not like food.,neutral,naan,food
+136,A woman did not like food.,A woman did not like cereal.,entailment,food,cereal
+137,A woman did not like cereal.,A woman did not like food.,neutral,cereal,food
+138,A woman did not like food.,A woman did not like kebab.,entailment,food,kebab
+139,A woman did not like kebab.,A woman did not like food.,neutral,kebab,food
+140,A woman did not like food.,A woman did not like pastry.,entailment,food,pastry
+141,A woman did not like pastry.,A woman did not like food.,neutral,pastry,food
+142,A woman did not like food.,A woman did not like pretzel.,entailment,food,pretzel
+143,A woman did not like pretzel.,A woman did not like food.,neutral,pretzel,food
+144,A woman did not like food.,A woman did not like corn.,entailment,food,corn
+145,A woman did not like corn.,A woman did not like food.,neutral,corn,food
+146,A woman did not like food.,A woman did not like oatmeal.,entailment,food,oatmeal
+147,A woman did not like oatmeal.,A woman did not like food.,neutral,oatmeal,food
+148,A woman did not like food.,A woman did not like stew.,entailment,food,stew
+149,A woman did not like stew.,A woman did not like food.,neutral,stew,food
+150,A woman did not like food.,A woman did not like muffin.,entailment,food,muffin
+151,A woman did not like muffin.,A woman did not like food.,neutral,muffin,food
+152,A woman did not like food.,A woman did not like tofu.,entailment,food,tofu
+153,A woman did not like tofu.,A woman did not like food.,neutral,tofu,food
+154,A woman did not like food.,A woman did not like cheese.,entailment,food,cheese
+155,A woman did not like cheese.,A woman did not like food.,neutral,cheese,food
+156,A woman did not like food.,A woman did not like gyro.,entailment,food,gyro
+157,A woman did not like gyro.,A woman did not like food.,neutral,gyro,food
+158,A woman did not like food.,A woman did not like meatloaf.,entailment,food,meatloaf
+159,A woman did not like meatloaf.,A woman did not like food.,neutral,meatloaf,food
+160,A woman did not like food.,A woman did not like sandwich.,entailment,food,sandwich
+161,A woman did not like sandwich.,A woman did not like food.,neutral,sandwich,food
+162,A woman did not like food.,A woman did not like bread.,entailment,food,bread
+163,A woman did not like bread.,A woman did not like food.,neutral,bread,food
+164,A woman did not like food.,A woman did not like bagel.,entailment,food,bagel
+165,A woman did not like bagel.,A woman did not like food.,neutral,bagel,food
+166,A woman did not like food.,A woman did not like hotdog.,entailment,food,hotdog
+167,A woman did not like hotdog.,A woman did not like food.,neutral,hotdog,food
+168,A woman did not like food.,A woman did not like burrito.,entailment,food,burrito
+169,A woman did not like burrito.,A woman did not like food.,neutral,burrito,food
+170,A woman did not like food.,A woman did not like sushi.,entailment,food,sushi
+171,A woman did not like sushi.,A woman did not like food.,neutral,sushi,food
+172,A woman did not like food.,A woman did not like popcorn.,entailment,food,popcorn
+173,A woman did not like popcorn.,A woman did not like food.,neutral,popcorn,food
+174,A woman did not like food.,A woman did not like cheeseburger.,entailment,food,cheeseburger
+175,A woman did not like cheeseburger.,A woman did not like food.,neutral,cheeseburger,food
+176,A woman did not like food.,A woman did not like pizza.,entailment,food,pizza
+177,A woman did not like pizza.,A woman did not like food.,neutral,pizza,food
+178,A woman did not like food.,A woman did not like curry.,entailment,food,curry
+179,A woman did not like curry.,A woman did not like food.,neutral,curry,food
+180,A woman did not like food.,A woman did not like meatloaf.,entailment,food,meatloaf
+181,A woman did not like meatloaf.,A woman did not like food.,neutral,meatloaf,food
+182,A woman did not like food.,A woman did not like yogurt.,entailment,food,yogurt
+183,A woman did not like yogurt.,A woman did not like food.,neutral,yogurt,food
+184,A woman did not like food.,A woman did not like pudding.,entailment,food,pudding
+185,A woman did not like pudding.,A woman did not like food.,neutral,pudding,food
+186,A woman did not like food.,A woman did not like falafel.,entailment,food,falafel
+187,A woman did not like falafel.,A woman did not like food.,neutral,falafel,food
+188,A woman did not like food.,A woman did not like pita.,entailment,food,pita
+189,A woman did not like pita.,A woman did not like food.,neutral,pita,food
+190,A woman did not like food.,A woman did not like hamburger.,entailment,food,hamburger
+191,A woman did not like hamburger.,A woman did not like food.,neutral,hamburger,food
+192,The man is not wearing jewelry.,The man is not wearing bracelets.,entailment,jewelry,bracelets
+193,The man is not wearing bracelets.,The man is not wearing jewelry.,neutral,bracelets,jewelry
+194,The man is not wearing jewelry.,The man is not wearing rings.,entailment,jewelry,rings
+195,The man is not wearing rings.,The man is not wearing jewelry.,neutral,rings,jewelry
+196,The man is not wearing jewelry.,The man is not wearing necklaces.,entailment,jewelry,necklaces
+197,The man is not wearing necklaces.,The man is not wearing jewelry.,neutral,necklaces,jewelry
+198,The man is not wearing jewelry.,The man is not wearing earrings.,entailment,jewelry,earrings
+199,The man is not wearing earrings.,The man is not wearing jewelry.,neutral,earrings,jewelry
