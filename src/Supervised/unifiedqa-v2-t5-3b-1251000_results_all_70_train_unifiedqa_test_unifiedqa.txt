@@ -1,0 +1,395 @@
+[2023-06-22 13:43:05,962] [WARNING] [runner.py:178:fetch_hostfile] Unable to find hostfile, will proceed with training with local resources only.
+Detected CUDA_VISIBLE_DEVICES=0: setting --include=localhost:0
+[2023-06-22 13:43:06,116] [INFO] [runner.py:504:main] cmd = /uufs/chpc.utah.edu/common/home/u0403624/.conda/envs/38b/bin/python -u -m deepspeed.launcher.launch --world_info=eyJsb2NhbGhvc3QiOiBbMF19 --master_addr=127.0.0.1 --master_port=29500 run_negatedqa_t5.py --per_device_eval_batch_size 1 --gradient_accumulation_steps 1 --deepspeed deepspeed_config_2.json --model_name_or_path allenai/unifiedqa-v2-t5-3b-1251000 --train_file ../../data/unifiedqa_formatted_data//condaqa_train_unifiedqa.json --validation_file ../../data/unifiedqa_formatted_data//condaqa_dev_unifiedqa.json --test_file ../../data/unifiedqa_formatted_data//condaqa_dev_unifiedqa.json --do_train --per_device_train_batch_size 1 --learning_rate 1e-5 --num_train_epochs 5 --output_dir ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa --logging_strategy epoch --evaluation_strategy epoch --report_to wandb --save_strategy epoch --overwrite_cache --seed 70 --summary_column answer --text_column input --source_prefix  --max_source_length 512 --max_target_length 100 --load_best_model_at_end True --overwrite_output_dir
+[2023-06-22 13:43:07,578] [INFO] [launch.py:136:main] WORLD INFO DICT: {'localhost': [0]}
+[2023-06-22 13:43:07,578] [INFO] [launch.py:142:main] nnodes=1, num_local_procs=1, node_rank=0
+[2023-06-22 13:43:07,578] [INFO] [launch.py:155:main] global_rank_mapping=defaultdict(<class 'list'>, {'localhost': [0]})
+[2023-06-22 13:43:07,578] [INFO] [launch.py:156:main] dist_world_size=1
+[2023-06-22 13:43:07,578] [INFO] [launch.py:158:main] Setting CUDA_VISIBLE_DEVICES=0
+No hparams found, using lam=1
+[2023-06-22 13:43:18,444] [INFO] [comm.py:633:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+06/22/2023 13:43:18 - WARNING - __main__ - Process rank: 0, device: cuda:0, n_gpu: 1distributed training: True, 16-bits training: False
+06/22/2023 13:43:18 - INFO - __main__ - Training/evaluation parameters Seq2SeqTrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=deepspeed_config_2.json,
+disable_tqdm=False,
+do_eval=True,
+do_predict=False,
+do_train=True,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=None,
+evaluation_strategy=epoch,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+fsdp=[],
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+generation_max_length=None,
+generation_num_beams=None,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=False,
+group_by_length=False,
+half_precision_backend=auto,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+jit_mode_eval=False,
+label_names=None,
+label_smoothing_factor=0.0,
+learning_rate=1e-05,
+length_column_name=length,
+load_best_model_at_end=True,
+local_rank=0,
+log_level=passive,
+log_level_replica=passive,
+log_on_each_node=True,
+logging_dir=../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/runs/Jun22_13-43-18_notch370,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=500,
+logging_strategy=epoch,
+lr_scheduler_type=linear,
+max_grad_norm=1.0,
+max_steps=-1,
+metric_for_best_model=loss,
+mp_parameters=,
+no_cuda=False,
+num_train_epochs=5.0,
+optim=adamw_hf,
+output_dir=../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa,
+overwrite_output_dir=True,
+past_index=-1,
+per_device_eval_batch_size=1,
+per_device_train_batch_size=1,
+predict_with_generate=False,
+prediction_loss_only=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=['wandb'],
+resume_from_checkpoint=None,
+run_name=../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa,
+save_on_each_node=False,
+save_steps=500,
+save_strategy=epoch,
+save_total_limit=None,
+seed=70,
+sharded_ddp=[],
+skip_memory_metrics=True,
+sortish_sampler=False,
+tf32=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+xpu_backend=None,
+)
+06/22/2023 13:43:18 - WARNING - datasets.builder - Using custom data configuration default-8c5421cb05efaa7e
+06/22/2023 13:43:18 - INFO - datasets.builder - Generating dataset json (/scratch/general/vast/u0403624/ScoNe/ScoNe/src/Supervised/./json/default-8c5421cb05efaa7e/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab)
+Downloading and preparing dataset json/default to /scratch/general/vast/u0403624/ScoNe/ScoNe/src/Supervised/./json/default-8c5421cb05efaa7e/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab...
+06/22/2023 13:43:18 - INFO - datasets.download.download_manager - Downloading took 0.0 min
+06/22/2023 13:43:18 - INFO - datasets.download.download_manager - Checksum Computation took 0.0 min
+06/22/2023 13:43:18 - INFO - datasets.utils.info_utils - Unable to verify checksums.
+06/22/2023 13:43:18 - INFO - datasets.builder - Generating train split
+06/22/2023 13:43:18 - INFO - datasets.utils.info_utils - Unable to verify splits sizes.
+Dataset json downloaded and prepared to /scratch/general/vast/u0403624/ScoNe/ScoNe/src/Supervised/./json/default-8c5421cb05efaa7e/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab. Subsequent calls will reuse this data.
+06/22/2023 13:43:19 - WARNING - datasets.builder - Using custom data configuration default-b05c27991949b179
+06/22/2023 13:43:19 - INFO - datasets.builder - Generating dataset json (/scratch/general/vast/u0403624/ScoNe/ScoNe/src/Supervised/./json/default-b05c27991949b179/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab)
+Downloading and preparing dataset json/default to /scratch/general/vast/u0403624/ScoNe/ScoNe/src/Supervised/./json/default-b05c27991949b179/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab...
+06/22/2023 13:43:19 - INFO - datasets.download.download_manager - Downloading took 0.0 min
+06/22/2023 13:43:19 - INFO - datasets.download.download_manager - Checksum Computation took 0.0 min
+06/22/2023 13:43:19 - INFO - datasets.utils.info_utils - Unable to verify checksums.
+06/22/2023 13:43:19 - INFO - datasets.builder - Generating validation split
+06/22/2023 13:43:19 - INFO - datasets.builder - Generating test split
+06/22/2023 13:43:19 - INFO - datasets.utils.info_utils - Unable to verify splits sizes.
+Dataset json downloaded and prepared to /scratch/general/vast/u0403624/ScoNe/ScoNe/src/Supervised/./json/default-b05c27991949b179/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab. Subsequent calls will reuse this data.
+06/22/2023 13:46:14 - INFO - datasets.arrow_dataset - Caching processed dataset at /scratch/general/vast/u0403624/ScoNe/ScoNe/src/Supervised/./json/default-8c5421cb05efaa7e/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab/cache-b62908e8febe610f.arrow
+06/22/2023 13:46:14 - INFO - datasets.arrow_dataset - Caching processed dataset at /scratch/general/vast/u0403624/ScoNe/ScoNe/src/Supervised/./json/default-b05c27991949b179/0.0.0/e6070c77f18f01a5ad4551a8b7edfba20b8438b7cad4d94e6ad9378022ce4aab/cache-34ded7b383b55df1.arrow
+[2023-06-22 13:46:15,577] [INFO] [logging.py:68:log_dist] [Rank 0] DeepSpeed info: version=0.7.3, git-hash=unknown, git-branch=unknown
+[2023-06-22 13:46:15,585] [WARNING] [config_utils.py:63:_process_deprecated_field] Config parameter cpu_offload is deprecated use offload_optimizer instead
+[2023-06-22 13:46:20,121] [INFO] [logging.py:68:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+Using /uufs/chpc.utah.edu/common/home/u0403624/.cache/torch_extensions/py38_cu116 as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /uufs/chpc.utah.edu/common/home/u0403624/.cache/torch_extensions/py38_cu116/cpu_adam/build.ninja...
+Building extension module cpu_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 0.5521893501281738 seconds
+Adam Optimizer #0 is created with AVX2 arithmetic capability.
+Config: alpha=0.000010, betas=(0.900000, 0.999000), weight_decay=0.000000, adam_w=1
+[2023-06-22 13:46:24,876] [INFO] [logging.py:68:log_dist] [Rank 0] Using DeepSpeed Optimizer param name adamw as basic optimizer
+[2023-06-22 13:46:24,904] [INFO] [logging.py:68:log_dist] [Rank 0] DeepSpeed Basic Optimizer = {basic_optimizer.__class__.__name__}
+[2023-06-22 13:46:24,904] [INFO] [utils.py:52:is_zero_supported_optimizer] Checking ZeRO support for optimizer=DeepSpeedCPUAdam type=<class 'deepspeed.ops.adam.cpu_adam.DeepSpeedCPUAdam'>
+[2023-06-22 13:46:24,905] [INFO] [logging.py:68:log_dist] [Rank 0] Creating fp16 ZeRO stage 2 optimizer
+[2023-06-22 13:46:24,905] [INFO] [stage_1_and_2.py:134:__init__] Reduce bucket size 200000000
+[2023-06-22 13:46:24,905] [INFO] [stage_1_and_2.py:135:__init__] Allgather bucket size 200000000
+[2023-06-22 13:46:24,905] [INFO] [stage_1_and_2.py:136:__init__] CPU Offload: True
+[2023-06-22 13:46:24,905] [INFO] [stage_1_and_2.py:137:__init__] Round robin gradient partitioning: False
+Using /uufs/chpc.utah.edu/common/home/u0403624/.cache/torch_extensions/py38_cu116 as PyTorch extensions root...
+Emitting ninja build file /uufs/chpc.utah.edu/common/home/u0403624/.cache/torch_extensions/py38_cu116/utils/build.ninja...
+Building extension module utils...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module utils...
+Time to load utils op: 0.3017618656158447 seconds
+Rank: 0 partition count [1] and sizes[(2851569664, False)] 
+[2023-06-22 13:46:36,414] [INFO] [utils.py:827:see_memory_usage] Before initializing optimizer states
+[2023-06-22 13:46:36,415] [INFO] [utils.py:828:see_memory_usage] MA 10.75 GB         Max_MA 10.75 GB         CA 21.25 GB         Max_CA 21 GB 
+[2023-06-22 13:46:36,415] [INFO] [utils.py:836:see_memory_usage] CPU Virtual Memory:  used = 25.51 GB, percent = 10.1%
+[2023-06-22 13:46:44,174] [INFO] [utils.py:827:see_memory_usage] After initializing optimizer states
+[2023-06-22 13:46:44,175] [INFO] [utils.py:828:see_memory_usage] MA 10.75 GB         Max_MA 10.75 GB         CA 21.25 GB         Max_CA 21 GB 
+[2023-06-22 13:46:44,175] [INFO] [utils.py:836:see_memory_usage] CPU Virtual Memory:  used = 63.12 GB, percent = 25.1%
+[2023-06-22 13:46:44,175] [INFO] [stage_1_and_2.py:516:__init__] optimizer state initialized
+[2023-06-22 13:46:44,339] [INFO] [utils.py:827:see_memory_usage] After initializing ZeRO optimizer
+[2023-06-22 13:46:44,339] [INFO] [utils.py:828:see_memory_usage] MA 10.75 GB         Max_MA 10.75 GB         CA 21.25 GB         Max_CA 21 GB 
+[2023-06-22 13:46:44,339] [INFO] [utils.py:836:see_memory_usage] CPU Virtual Memory:  used = 63.12 GB, percent = 25.1%
+[2023-06-22 13:46:44,340] [INFO] [logging.py:68:log_dist] [Rank 0] DeepSpeed Final Optimizer = adamw
+[2023-06-22 13:46:44,340] [INFO] [logging.py:68:log_dist] [Rank 0] DeepSpeed using configured LR scheduler = WarmupLR
+[2023-06-22 13:46:44,340] [INFO] [logging.py:68:log_dist] [Rank 0] DeepSpeed LR Scheduler = <deepspeed.runtime.lr_schedules.WarmupLR object at 0x14753f06c1c0>
+[2023-06-22 13:46:44,340] [INFO] [logging.py:68:log_dist] [Rank 0] step=0, skipped=0, lr=[1e-05], mom=[[0.9, 0.999]]
+[2023-06-22 13:46:44,341] [INFO] [config.py:987:print] DeepSpeedEngine configuration:
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   amp_enabled .................. False
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   amp_params ................... False
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": null, 
+    "exps_dir": null, 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   bfloat16_enabled ............. False
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   checkpoint_tag_validation_enabled  True
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   checkpoint_tag_validation_fail  False
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x14753ad0db80>
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   communication_data_type ...... None
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   curriculum_enabled ........... False
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   curriculum_params ............ False
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   dataloader_drop_last ......... False
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   disable_allgather ............ False
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   dump_state ................... False
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   dynamic_loss_scale_args ...... None
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   eigenvalue_enabled ........... False
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   eigenvalue_gas_boundary_resolution  1
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   eigenvalue_layer_num ......... 0
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   eigenvalue_max_iter .......... 100
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   eigenvalue_stability ......... 1e-06
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   eigenvalue_tol ............... 0.01
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   eigenvalue_verbose ........... False
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   elasticity_enabled ........... False
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   fp16_auto_cast ............... None
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   fp16_enabled ................. False
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   fp16_master_weights_and_gradients  False
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   global_rank .................. 0
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   gradient_accumulation_steps .. 1
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   gradient_clipping ............ 0.0
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   gradient_predivide_factor .... 1.0
+[2023-06-22 13:46:44,342] [INFO] [config.py:991:print]   initial_dynamic_scale ........ 4294967296
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   load_universal_checkpoint .... False
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   loss_scale ................... 0
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   memory_breakdown ............. False
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   monitor_config ............... <deepspeed.monitor.config.DeepSpeedMonitorConfig object at 0x14753ad0dbe0>
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   optimizer_legacy_fusion ...... False
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   optimizer_name ............... adamw
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   optimizer_params ............. {'lr': 1e-05, 'betas': [0.9, 0.999], 'eps': 1e-08, 'weight_decay': 0}
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0}
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   pld_enabled .................. False
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   pld_params ................... False
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   prescale_gradients ........... False
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   scheduler_name ............... WarmupLR
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   scheduler_params ............. {'warmup_min_lr': 0, 'warmup_max_lr': 1e-05, 'warmup_num_steps': 0}
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   sparse_attention ............. None
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   sparse_gradients_enabled ..... False
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   steps_per_print .............. 10
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   train_batch_size ............. 1
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   train_micro_batch_size_per_gpu  1
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   wall_clock_breakdown ......... False
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   world_size ................... 1
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   zero_allow_untested_optimizer  False
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   zero_config .................. stage=2 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=200000000 allgather_partitions=True allgather_bucket_size=200000000 overlap_comm=True load_from_fp32_weights=True elastic_checkpoint=False offload_param=None offload_optimizer=DeepSpeedZeroOffloadOptimizerConfig(device='cpu', nvme_path=None, buffer_count=4, pin_memory=False, pipeline=False, pipeline_read=False, pipeline_write=False, fast_init=False) sub_group_size=1000000000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=True prefetch_bucket_size=50000000 param_persistence_threshold=100000 model_persistence_threshold=9223372036854775807 max_live_parameters=1000000000 max_reuse_distance=1000000000 gather_16bit_weights_on_model_save=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   zero_enabled ................. True
+[2023-06-22 13:46:44,343] [INFO] [config.py:991:print]   zero_optimization_stage ...... 2
+[2023-06-22 13:46:44,343] [INFO] [config.py:976:print_user_config]   json = {
+    "fp16": {
+        "enabled": false, 
+        "loss_scale": 0, 
+        "loss_scale_window": 1000, 
+        "hysteresis": 2, 
+        "min_loss_scale": 1
+    }, 
+    "zero_optimization": {
+        "stage": 2, 
+        "allgather_partitions": true, 
+        "allgather_bucket_size": 2.000000e+08, 
+        "reduce_scatter": true, 
+        "reduce_bucket_size": 2.000000e+08, 
+        "overlap_comm": true, 
+        "contiguous_gradients": true, 
+        "cpu_offload": true
+    }, 
+    "train_micro_batch_size_per_gpu": 1, 
+    "optimizer": {
+        "type": "AdamW", 
+        "params": {
+            "lr": 1e-05, 
+            "betas": [0.9, 0.999], 
+            "eps": 1e-08, 
+            "weight_decay": 0
+        }
+    }, 
+    "scheduler": {
+        "type": "WarmupLR", 
+        "params": {
+            "warmup_min_lr": 0, 
+            "warmup_max_lr": 1e-05, 
+            "warmup_num_steps": 0
+        }
+    }
+}
+Using /uufs/chpc.utah.edu/common/home/u0403624/.cache/torch_extensions/py38_cu116 as PyTorch extensions root...
+No modifications detected for re-loaded extension module utils, skipping build step...
+Loading extension module utils...
+Time to load utils op: 0.0008378028869628906 seconds
+{'loss': 11.643, 'learning_rate': 0.0, 'epoch': 1.0}
+{'eval_loss': 5.560612678527832, 'eval_runtime': 0.0827, 'eval_samples_per_second': 12.087, 'eval_steps_per_second': 12.087, 'epoch': 1.0}
+[2023-06-22 13:47:57,723] [INFO] [logging.py:68:log_dist] [Rank 0] [Torch] Checkpoint global_step1 is begin to save!
+[2023-06-22 13:47:57,854] [INFO] [logging.py:68:log_dist] [Rank 0] Saving model checkpoint: ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-1/global_step1/mp_rank_00_model_states.pt
+[2023-06-22 13:47:57,855] [INFO] [torch_checkpoint_engine.py:15:save] [Torch] Saving ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-1/global_step1/mp_rank_00_model_states.pt...
+[2023-06-22 13:48:27,780] [INFO] [torch_checkpoint_engine.py:17:save] [Torch] Saved ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-1/global_step1/mp_rank_00_model_states.pt.
+[2023-06-22 13:48:27,805] [INFO] [torch_checkpoint_engine.py:15:save] [Torch] Saving ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-1/global_step1/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2023-06-22 13:50:55,384] [INFO] [torch_checkpoint_engine.py:17:save] [Torch] Saved ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-1/global_step1/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2023-06-22 13:50:55,393] [INFO] [engine.py:3196:_save_zero_checkpoint] zero checkpoint saved ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-1/global_step1/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2023-06-22 13:50:55,395] [INFO] [torch_checkpoint_engine.py:27:commit] [Torch] Checkpoint global_step1 is ready now!
+{'loss': 11.0037, 'learning_rate': 1e-05, 'epoch': 2.0}
+{'eval_loss': 5.560612678527832, 'eval_runtime': 0.1019, 'eval_samples_per_second': 9.812, 'eval_steps_per_second': 9.812, 'epoch': 2.0}
+[2023-06-22 13:52:01,522] [INFO] [logging.py:68:log_dist] [Rank 0] [Torch] Checkpoint global_step2 is begin to save!
+[2023-06-22 13:52:01,641] [INFO] [logging.py:68:log_dist] [Rank 0] Saving model checkpoint: ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-2/global_step2/mp_rank_00_model_states.pt
+[2023-06-22 13:52:01,641] [INFO] [torch_checkpoint_engine.py:15:save] [Torch] Saving ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-2/global_step2/mp_rank_00_model_states.pt...
+[2023-06-22 13:52:29,280] [INFO] [torch_checkpoint_engine.py:17:save] [Torch] Saved ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-2/global_step2/mp_rank_00_model_states.pt.
+[2023-06-22 13:52:29,387] [INFO] [torch_checkpoint_engine.py:15:save] [Torch] Saving ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-2/global_step2/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2023-06-22 13:53:44,411] [INFO] [torch_checkpoint_engine.py:17:save] [Torch] Saved ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-2/global_step2/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2023-06-22 13:53:44,424] [INFO] [engine.py:3196:_save_zero_checkpoint] zero checkpoint saved ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-2/global_step2/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2023-06-22 13:53:44,428] [INFO] [torch_checkpoint_engine.py:27:commit] [Torch] Checkpoint global_step2 is ready now!
+{'loss': 10.765, 'learning_rate': 1e-05, 'epoch': 3.0}
+{'eval_loss': 5.361717700958252, 'eval_runtime': 0.089, 'eval_samples_per_second': 11.233, 'eval_steps_per_second': 11.233, 'epoch': 3.0}
+[2023-06-22 13:54:51,085] [INFO] [logging.py:68:log_dist] [Rank 0] [Torch] Checkpoint global_step3 is begin to save!
+[2023-06-22 13:54:51,134] [INFO] [logging.py:68:log_dist] [Rank 0] Saving model checkpoint: ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-3/global_step3/mp_rank_00_model_states.pt
+[2023-06-22 13:54:51,134] [INFO] [torch_checkpoint_engine.py:15:save] [Torch] Saving ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-3/global_step3/mp_rank_00_model_states.pt...
+[2023-06-22 13:55:25,027] [INFO] [torch_checkpoint_engine.py:17:save] [Torch] Saved ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-3/global_step3/mp_rank_00_model_states.pt.
+[2023-06-22 13:55:25,033] [INFO] [torch_checkpoint_engine.py:15:save] [Torch] Saving ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-3/global_step3/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2023-06-22 13:56:42,883] [INFO] [torch_checkpoint_engine.py:17:save] [Torch] Saved ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-3/global_step3/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2023-06-22 13:56:42,897] [INFO] [engine.py:3196:_save_zero_checkpoint] zero checkpoint saved ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-3/global_step3/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2023-06-22 13:56:42,900] [INFO] [torch_checkpoint_engine.py:27:commit] [Torch] Checkpoint global_step3 is ready now!
+{'loss': 9.2018, 'learning_rate': 1e-05, 'epoch': 4.0}
+{'eval_loss': 5.161642551422119, 'eval_runtime': 0.0837, 'eval_samples_per_second': 11.947, 'eval_steps_per_second': 11.947, 'epoch': 4.0}
+[2023-06-22 13:57:52,047] [INFO] [logging.py:68:log_dist] [Rank 0] [Torch] Checkpoint global_step4 is begin to save!
+[2023-06-22 13:57:52,140] [INFO] [logging.py:68:log_dist] [Rank 0] Saving model checkpoint: ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-4/global_step4/mp_rank_00_model_states.pt
+[2023-06-22 13:57:52,140] [INFO] [torch_checkpoint_engine.py:15:save] [Torch] Saving ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-4/global_step4/mp_rank_00_model_states.pt...
+[2023-06-22 13:58:21,196] [INFO] [torch_checkpoint_engine.py:17:save] [Torch] Saved ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-4/global_step4/mp_rank_00_model_states.pt.
+[2023-06-22 13:58:21,213] [INFO] [torch_checkpoint_engine.py:15:save] [Torch] Saving ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-4/global_step4/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2023-06-22 13:59:55,055] [INFO] [torch_checkpoint_engine.py:17:save] [Torch] Saved ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-4/global_step4/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2023-06-22 13:59:55,070] [INFO] [engine.py:3196:_save_zero_checkpoint] zero checkpoint saved ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-4/global_step4/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2023-06-22 13:59:55,073] [INFO] [torch_checkpoint_engine.py:27:commit] [Torch] Checkpoint global_step4 is ready now!
+{'loss': 8.5197, 'learning_rate': 1e-05, 'epoch': 5.0}
+{'eval_loss': 4.976011753082275, 'eval_runtime': 0.0931, 'eval_samples_per_second': 10.741, 'eval_steps_per_second': 10.741, 'epoch': 5.0}
+[2023-06-22 14:01:05,886] [INFO] [logging.py:68:log_dist] [Rank 0] [Torch] Checkpoint global_step5 is begin to save!
+[2023-06-22 14:01:05,963] [INFO] [logging.py:68:log_dist] [Rank 0] Saving model checkpoint: ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-5/global_step5/mp_rank_00_model_states.pt
+[2023-06-22 14:01:05,963] [INFO] [torch_checkpoint_engine.py:15:save] [Torch] Saving ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-5/global_step5/mp_rank_00_model_states.pt...
+[2023-06-22 14:01:34,521] [INFO] [torch_checkpoint_engine.py:17:save] [Torch] Saved ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-5/global_step5/mp_rank_00_model_states.pt.
+[2023-06-22 14:01:34,620] [INFO] [torch_checkpoint_engine.py:15:save] [Torch] Saving ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-5/global_step5/zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2023-06-22 14:02:54,625] [INFO] [torch_checkpoint_engine.py:17:save] [Torch] Saved ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-5/global_step5/zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2023-06-22 14:02:54,643] [INFO] [engine.py:3196:_save_zero_checkpoint] zero checkpoint saved ../../../out//unifiedqa-v2-t5-3b-1251000_negation_all_70_train_unifiedqa_test_unifiedqa/checkpoint-5/global_step5/zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2023-06-22 14:02:54,647] [INFO] [torch_checkpoint_engine.py:27:commit] [Torch] Checkpoint global_step5 is ready now!
+{'train_runtime': 1026.35, 'train_samples_per_second': 0.005, 'train_steps_per_second': 0.005, 'train_loss': 10.226631927490235, 'epoch': 5.0}
+***** train metrics *****
+  epoch                    =        5.0
+  train_loss               =    10.2266
+  train_runtime            = 0:17:06.34
+  train_samples            =          1
+  train_samples_per_second =      0.005
+  train_steps_per_second   =      0.005
+06/22/2023 14:04:59 - INFO - __main__ - *** Evaluate ***
+***** eval metrics *****
+  epoch                   =        5.0
+  eval_loss               =      4.976
+  eval_runtime            = 0:00:00.37
+  eval_samples            =          1
+  eval_samples_per_second =      2.694
+  eval_steps_per_second   =      2.694
+[2023-06-22 14:05:09,759] [INFO] [launch.py:318:main] Process 3655765 exits successfully.

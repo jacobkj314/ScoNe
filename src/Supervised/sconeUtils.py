@@ -12,6 +12,6 @@ prompts = {
 #SCOPE SETUP
 from pandas import read_csv
 dataset = {
-        'train' : {scope:read_csv(f'scone_nli/train/{scope}.csv') for scope in ['no_negation', 'one_not_scoped', 'one_scoped', 'one_scoped_one_not_scoped', 'two_not_scoped', 'two_scoped']},
-	'test' : {scope:read_csv(f'scone_nli/test/{scope}.csv') for scope in ['no_negation', 'one_not_scoped', 'one_scoped', 'one_scoped_one_not_scoped', 'two_not_scoped', 'two_scoped']}
+        'train' : {scope:read_csv(f'../../scone_nli/train/{scope}.csv') for scope in ['no_negation', 'one_not_scoped', 'one_scoped', 'one_scoped_one_not_scoped', 'two_not_scoped', 'two_scoped']},
+	'test' : {scope:read_csv(f'../../scone_nli/test/{scope}.csv') for scope in ['no_negation', 'one_not_scoped', 'one_scoped', 'one_scoped_one_not_scoped', 'two_not_scoped', 'two_scoped']}
 }

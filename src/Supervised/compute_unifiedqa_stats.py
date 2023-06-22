@@ -10,8 +10,8 @@ def get_args():
     parser.add_argument("--results_dir", type=str, default="./results/", help="dir to store results")
     parser.add_argument("--predictions_dir", type=str, default="./predictions/", help="dir with all the checkpoints")
     parser.add_argument("--model_name", type=str, default="unifiedqa-v2-t5-base-1251000")
-    parser.add_argument("--validation_filename", type=str, default="../../data/condaqa_dev.json")
-    parser.add_argument("--test_filename", type=str, default="../../data/condaqa_dev.json") # # # changed test to dev
+    parser.add_argument("--validation_filename", type=str, default="../../data/unifiedqa_formatted_data/condaqa_test_unifiedqa.json") # # # changed from "../../data/condaqa_dev.json" to "../../data/unifiedqa_formatted_data/condaqa_dev_unifiedqa.json"
+    parser.add_argument("--test_filename", type=str, default="../../data/condaqa_dev.json") # # # changed test to dev # # # But actually this shouldn't even be needed anymore
     parser.add_argument("--seed", type=str, default="70")
     parser.add_argument("--output_dir", type=str, default="./")
     args = parser.parse_args()
@@ -42,7 +42,7 @@ def write_results(filename, accuracy, consistency, pp_c, scope_c, aff_c):
     f.close()
 
 
-def compute_accuracy(pred_file, data_file, label_key="label"):
+def compute_accuracy(pred_file, data_file, label_key="answer"): # # # Changed to "answer" from "label"
     gold_data = read_data(data_file)
     predictions = open(pred_file).readlines()
     assert len(predictions) == len(gold_data)
@@ -143,7 +143,7 @@ def evaluate_checkpoints(MODEL_NAME, SEED, validation_filename, checkpoint_dir="
     for checkpoint in glob.glob(filepath + "/checkpoint*"):
         filepath = checkpoint + "/val_predictions/"
         pred_file = filepath + "generated_predictions.txt"
-        accuracy = compute_accuracy(pred_file, validation_filename, "label")
+        accuracy = compute_accuracy(pred_file, validation_filename, "answer") # # # changed to "answer" from "label"
         print(checkpoint)
         print(accuracy)
         best_checkpoints[(MODEL_NAME, SEED)].append((checkpoint, accuracy))
@@ -176,10 +176,14 @@ def main(args):
 
     OUTPUT_DIR = best_checkpoint
 
+    # # # # # 
+    # I am changing the test pipeline a little, so this has to go
+    # # # # # 
+
     # Evaluate on test set
     # # # changed test to dev on line 185
     # # # test_command = "python run_negatedqa_t5.py \
-    test_command = "deepspeed run_negatedqa_t5.py --per_device_eval_batch_size 1 --gradient_accumulation_steps 1 --deepspeed deepspeed_config.json \
+    '''test_command = "deepspeed run_negatedqa_t5.py --per_device_eval_batch_size 1 --gradient_accumulation_steps 1 --deepspeed deepspeed_config.json \
     --model_name_or_path {OUTPUT_DIR} \
     --train_file {DATA_DIR}condaqa_train_unifiedqa.json \
     --validation_file {DATA_DIR}condaqa_dev_unifiedqa.json \
@@ -223,8 +227,12 @@ def main(args):
     consistency, pp_c, scope_c, aff_c = compute_consistency(pred_file, test_filename, "label")
 
     write_results(RESULTS_DIR+MODEL_NAME+"_"+SEED+".txt", accuracy, consistency, pp_c, scope_c, aff_c)
+    '''
 
-
+    test_command = f"""
+python test.py {OUTPUT_DIR}
+"""
+    os.system(test_command)
 
 
 if __name__ == "__main__":
