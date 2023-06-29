@@ -10,7 +10,7 @@ def get_args():
     parser.add_argument("--results_dir", type=str, default="./results/", help="dir to store results")
     parser.add_argument("--predictions_dir", type=str, default="./predictions/", help="dir with all the checkpoints")
     parser.add_argument("--model_name", type=str, default="unifiedqa-v2-t5-base-1251000")
-    parser.add_argument("--validation_filename", type=str, default="../../data/unifiedqa_formatted_data/condaqa_test_unifiedqa.json") # # # changed from "../../data/condaqa_dev.json" to "../../data/unifiedqa_formatted_data/condaqa_dev_unifiedqa.json"
+    parser.add_argument("--validation_filename", type=str, default="../../data/unifiedqa_formatted_data/condaqa_dev_unifiedqa.json") # # # changed from "../../data/condaqa_dev.json" to "../../data/unifiedqa_formatted_data/condaqa_dev_unifiedqa.json"
     parser.add_argument("--test_filename", type=str, default="../../data/condaqa_dev.json") # # # changed test to dev # # # But actually this shouldn't even be needed anymore
     parser.add_argument("--seed", type=str, default="70")
     parser.add_argument("--output_dir", type=str, default="./")
@@ -45,6 +45,7 @@ def write_results(filename, accuracy, consistency, pp_c, scope_c, aff_c):
 def compute_accuracy(pred_file, data_file, label_key="answer"): # # # Changed to "answer" from "label"
     gold_data = read_data(data_file)
     predictions = open(pred_file).readlines()
+
     assert len(predictions) == len(gold_data)
 
     met = [gold_l[label_key].strip().lower() == pred_l.strip().lower() for gold_l, pred_l in
@@ -171,7 +172,7 @@ def main(args):
 
     best_checkpoints[(MODEL_NAME, SEED)].sort(key=lambda x: x[1])
     best_checkpoint = best_checkpoints[(MODEL_NAME, SEED)][-1][0]  # Gets name of best checkpoint
-
+    print(f"BEST CHECKPOINT : {best_checkpoint}")
     os.system("mkdir -p " + best_checkpoint + "/test_predictions")
 
     OUTPUT_DIR = best_checkpoint
@@ -179,7 +180,6 @@ def main(args):
     # # # # # 
     # I am changing the test pipeline a little, so this has to go
     # # # # # 
-
     # Evaluate on test set
     # # # changed test to dev on line 185
     # # # test_command = "python run_negatedqa_t5.py \
