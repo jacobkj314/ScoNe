@@ -5,7 +5,7 @@ import transformers
 from torch import tensor
 
 
-model_dir = sys.argv[1] if len(sys.argv) > 1 else "allenai/unifiedqa-v2-t5-3b-1251000"
+model_dir = sys.argv[1] if len(sys.argv) > 1 else "google/flan-t5-xl"
 cache_dir = sys.argv[2] if len(sys.argv) > 2 else "~/scratch/dummy"
 
 #get models
@@ -17,7 +17,7 @@ g = lambda sentence : tokenizer.batch_decode(model.generate(input_ids = tensor(t
 
 #get the data
 from sconeUtils import dataset, prompts
-prompts = {'B':prompts['B']}
+prompts = {'A':prompts['A']}
 testset = dataset['test']
 #setup the per-instance evaluation method
 def evaluate(scope, format, qa_function):
@@ -52,5 +52,5 @@ for format in prompts:
 	consistency_by_bundle = [all(z) for z in zip(*[row[1][format] for row in results.iterrows()])]
 	consistency = sum(consistency_by_bundle)/len(consistency_by_bundle)
 	consistency_string += f'\n{format}: {consistency}'
-with open('consistency.txt') as consistency_writer:
+with open('consistency.txt', 'w') as consistency_writer:
 	consistency_writer.write(consistency_string)

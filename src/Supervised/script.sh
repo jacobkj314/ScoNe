@@ -26,7 +26,6 @@ export TRANSFORMER_CACHE="../../../cache"
 
 #echo setup
 
-#echo BEGINNING RUN_SING ; bash run_single_unifiedqa.sh unifiedqa-v2-t5-3b-1251000 ../../../out/ ; echo COMPLETED RUN_SING
-# # # I am hopeful this will work. It was only 80% through the 5th epoch when it timed out after 36 hours... hopefully it should just be able to ignore the missing 5th checkpoint
-#echo BEGINNING EVAL_SING ; bash eval_single_unifiedqa_model.sh unifiedqa-v2-t5-3b-1251000 ../../../out/ ; echo COMPLETED EVAL_SING
-echo BEGINNING COMPUTE_STATS ; bash compute_unifiedqa_stats.sh unifiedqa-v2-t5-3b-1251000 ../../../out/ > sconeqa.txt; echo COMPLETED COMPUTE_STATS 
+echo BEGINNING RUN_SING ; bash run_single_unifiedqa.sh ../google/flan-t5-xl ../../../out/ ; echo COMPLETED RUN_SING
+echo BEGINNING EVAL_SING ; bash eval_single_unifiedqa_model.sh ../google/flan-t5-xl ../../../out/ ; echo COMPLETED EVAL_SING
+echo BEGINNING COMPUTE_STATS ; bash compute_unifiedqa_stats.sh ../google/flan-t5-xl ../../../out/ > sconeqa.txt; echo COMPLETED COMPUTE_STATS 

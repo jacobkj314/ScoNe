@@ -4,7 +4,7 @@ from random import shuffle
 
 from sconeUtils import prompts, dataset
 
-prompts = {k:v for k,v in prompts.items() if k=='B'} # # # # # ONLY USE ONE PROMPT (FOR NOW)
+prompts = {k:v for k,v in prompts.items() if k=='A'} # # # # # ONLY USE ONE PROMPT (FOR NOW)
 
 nli2qa = {'entailment':'YES', 'neutral':'NO'}
 
