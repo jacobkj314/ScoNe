@@ -21,7 +21,7 @@ conda activate 38b
 
 #echo activated
 
-wandb disabled
+wandb enabled
 export TRANSFORMER_CACHE="../../../cache"
 
 #echo setup
