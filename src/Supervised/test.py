@@ -52,5 +52,5 @@ for format in prompts:
 	consistency_by_bundle = [all(z) for z in zip(*[row[1][format] for row in results.iterrows()])]
 	consistency = sum(consistency_by_bundle)/len(consistency_by_bundle)
 	consistency_string += f',{consistency}'
-with open('results_agg.txt', 'a') as consistency_writer:
+with open('results_agg.csv', 'a') as consistency_writer:
 	consistency_writer.write(consistency_string)
