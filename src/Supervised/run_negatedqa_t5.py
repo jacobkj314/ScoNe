@@ -320,7 +320,7 @@ def main():
     # Set up wandb logging
 
     # Start a new run, tracking hyperparameters in config
-    wandb.init(project="negation", entity="lasha1608", config={
+    wandb.init(project="negation", entity="jacobkj314", config={
         "learning_rate": training_args.learning_rate,
         "epochs": training_args.num_train_epochs,
         "seed": training_args.seed,
