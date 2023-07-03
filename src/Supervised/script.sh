@@ -26,6 +26,6 @@ export TRANSFORMER_CACHE="../../../cache"
 
 #echo setup
 
-echo BEGINNING RUN_SING ; bash run_single_unifiedqa.sh ../google/flan-t5-xl ../../../out/ ; echo COMPLETED RUN_SING
-echo BEGINNING EVAL_SING ; bash eval_single_unifiedqa_model.sh ../google/flan-t5-xl ../../../out/ ; echo COMPLETED EVAL_SING
-echo BEGINNING COMPUTE_STATS ; bash compute_unifiedqa_stats.sh ../google/flan-t5-xl ../../../out/ > sconeqa.txt; echo COMPLETED COMPUTE_STATS 
+echo BEGINNING RUN_SING ; bash run_single_unifiedqa.sh flan-t5-large ../../../out/ ; echo COMPLETED RUN_SING
+echo BEGINNING EVAL_SING ; bash eval_single_unifiedqa_model.sh flan-t5-large ../../../out/ ; echo COMPLETED EVAL_SING
+echo BEGINNING COMPUTE_STATS ; bash compute_unifiedqa_stats.sh flan-t5-large ../../../out/ > sconeqa.txt; echo COMPLETED COMPUTE_STATS 

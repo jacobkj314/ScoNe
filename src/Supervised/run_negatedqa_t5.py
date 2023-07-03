@@ -393,7 +393,7 @@ def main():
     # )
 
     if not training_args.do_train:
-        tokenizer=T5Tokenizer.from_pretrained("allenai/unifiedqa-v2-t5-large-1251000")
+        tokenizer=T5Tokenizer.from_pretrained("google/flan-t5-large")
     else:
         tokenizer=T5Tokenizer.from_pretrained(model_args.model_name_or_path)
 

@@ -47,10 +47,10 @@ for format in prompts:
 results.to_csv('results.csv')
 results_agg.to_csv('results_agg.csv')
 #loop over and evaluate the results for consistency
-consistency_string = 'CONSISTENCY:'
+consistency_string = 'consistency'
 for format in prompts:
 	consistency_by_bundle = [all(z) for z in zip(*[row[1][format] for row in results.iterrows()])]
 	consistency = sum(consistency_by_bundle)/len(consistency_by_bundle)
-	consistency_string += f'\n{format}: {consistency}'
-with open('consistency.txt', 'w') as consistency_writer:
+	consistency_string += f',{consistency}'
+with open('results_agg.txt', 'a') as consistency_writer:
 	consistency_writer.write(consistency_string)
