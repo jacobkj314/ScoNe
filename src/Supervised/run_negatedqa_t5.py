@@ -329,7 +329,7 @@ def main():
         "test_file": data_args.test_file.replace("/", "-")
     })
     #
-    training_args.report_to = ["wandb"]
+    training_args.report_to = ["wandb"] # # # changed from string to list according to https://stackoverflow.com/questions/73244442/huggingface-trainer-cannot-report-to-wandb
     training_args.run_name = model_args.model_name_or_path + "_run_" + data_args.train_file.split("/")[-1].split(".")[
         0] + "_" + data_args.validation_file.split("/")[-1].split(".")[0] + "_" + str(training_args.seed)
 
