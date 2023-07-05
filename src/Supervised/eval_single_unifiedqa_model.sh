@@ -30,8 +30,8 @@ for SEED in "${SEEDS[@]}"; do
         --learning_rate 1e-5 \
         --num_train_epochs 5 \
         --output_dir $OUTPUT_DIR/test_predictions \
-        --logging_strategy epoch \
-        --evaluation_strategy epoch \
+        --logging_strategy steps --logging_steps 10 \
+        --evaluation_strategy steps --eval_steps 10 \
         --report_to wandb \
         --save_strategy epoch \
         --overwrite_cache \
